@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>codesoup_20260704_081531</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#000}
+canvas{position:fixed;inset:0;display:block;width:100%!important;height:100%!important}
+#hud{
+  position:fixed;top:12px;left:12px;z-index:9999;
+  background:rgba(0,0,0,0.82);border:1px solid #0ff;
+  border-radius:4px;color:#0ff;
+  font:12px/1.5 'Courier New',monospace;
+  padding:8px 10px;min-width:180px;
+  box-shadow:0 0 14px #0ff4;
+  user-select:none;
+}
+#hud-name{font-size:11px;color:#fff;margin-bottom:4px;letter-spacing:1px}
+#hud-status{font-size:10px;color:#0ff9;margin-bottom:6px;min-height:14px;word-break:break-word}
+#hud-btns{display:flex;gap:5px;flex-wrap:wrap}
+#hud-btns button{
+  background:none;border:1px solid #0ff6;color:#0ff;
+  font:11px 'Courier New',monospace;padding:2px 7px;
+  border-radius:2px;cursor:pointer;
+}
+#hud-btns button:hover{background:#0ff2;border-color:#0ff}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</head>
+<body>
+<canvas id="art"></canvas>
+<div id="hud">
+  <div id="hud-name">codesoup_20260704_081531.js</div>
+  <div id="hud-status">loading…</div>
+  <div id="hud-btns">
+    <button id="btn-hide">Hide</button>
+    <button id="btn-save">Save PNG</button>
+    <button id="btn-reset">Reset</button>
+  </div>
+</div>
+<script>
+(function(){
+  'use strict';
+
+  // ── Globals ──────────────────────────────────────────────────────────────
+  const canvas = document.getElementById('art');
+  const grid   = { width: 0, height: 0 };
+  let   time   = 0;
+  const mouse  = { x: 0, y: 0, isPressed: false, pressed: false, down: false };
+  let   input  = '';
+  const THREE_GLOBAL = window.THREE || null;
+
+  // ── Canvas / context ─────────────────────────────────────────────────────
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const CTX_TYPE = 'webgl2';
+  let ctx = null;
+
+  function initContext() {
+    ctx = canvas.getContext(CTX_TYPE, { antialias: false, alpha: true });
+  }
+
+  function resize() {
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    canvas.width  = Math.round(w * DPR);
+    canvas.height = Math.round(h * DPR);
+    canvas.style.width  = w + 'px';
+    canvas.style.height = h + 'px';
+    grid.width  = canvas.width;
+    grid.height = canvas.height;
+  }
+
+  initContext();
+  resize();
+  window.addEventListener('resize', resize);
+
+  // ── Mouse / Touch ─────────────────────────────────────────────────────────
+  function updateMouse(e) {
+    const r = canvas.getBoundingClientRect();
+    const scaleX = canvas.width  / r.width;
+    const scaleY = canvas.height / r.height;
+    const src = e.touches ? e.touches[0] : e;
+    mouse.x = (src.clientX - r.left) * scaleX;
+    mouse.y = (src.clientY - r.top)  * scaleY;
+  }
+  canvas.addEventListener('mousedown',  e => { updateMouse(e); mouse.isPressed = true; mouse.pressed = true; mouse.down = true; });
+  canvas.addEventListener('mousemove',  e => { updateMouse(e); });
+  canvas.addEventListener('mouseup',    ()=> { mouse.isPressed = false; mouse.pressed = false; mouse.down = false; });
+  canvas.addEventListener('touchstart', e => { e.preventDefault(); updateMouse(e); mouse.isPressed = true; mouse.pressed = true; mouse.down = true; }, {passive:false});
+  canvas.addEventListener('touchmove',  e => { e.preventDefault(); updateMouse(e); }, {passive:false});
+  canvas.addEventListener('touchend',   ()=> { mouse.isPressed = false; mouse.pressed = false; mouse.down = false; });
+
+  // ── Keyboard input ───────────────────────────────────────────────────────
+  window.addEventListener('keydown', e => {
+    if (e.key === 'H' || e.key === 'h') { removeHud(); return; }
+    if (e.key.length === 1) input += e.key;
+    else if (e.key === 'Backspace') input = input.slice(0, -1);
+  });
+
+  // ── HUD ──────────────────────────────────────────────────────────────────
+  const hud       = document.getElementById('hud');
+  const statusEl  = document.getElementById('hud-status');
+
+  function setStatus(msg) { if (statusEl) statusEl.textContent = msg; }
+  function removeHud()    { if (hud && hud.parentNode) hud.parentNode.removeChild(hud); }
+
+  document.getElementById('btn-hide').addEventListener('click', removeHud);
+
+  document.getElementById('btn-save').addEventListener('click', function() {
+    try {
+      const a = document.createElement('a');
+      a.href     = canvas.toDataURL('image/png');
+      a.download = 'codesoup_20260704_081531.png';
+      a.click();
+    } catch(e) { setStatus('save failed: ' + e.message); }
+  });
+
+  document.getElementById('btn-reset').addEventListener('click', resetSketch);
+
+  // ── Sketch source (base64) ────────────────────────────────────────────────
+  const _b64 = 'aWYgKCFjYW52YXMuX190aHJlZSkgewogICAgdHJ5IHsKICAgICAgICBpZiAoIWN0eCkgdGhyb3cgbmV3IEVycm9yKCJXZWJHTCAyIGNvbnRleHQgbm90IGF2YWlsYWJsZSIpOwogICAgICAgIAogICAgICAgIGNvbnN0IHJlbmRlcmVyID0gbmV3IFRIUkVFLldlYkdMUmVuZGVyZXIoeyBjYW52YXMsIGNvbnRleHQ6IGN0eCwgYWxwaGE6IHRydWUsIGFudGlhbGlhczogdHJ1ZSB9KTsKICAgICAgICBjb25zdCBzY2VuZSA9IG5ldyBUSFJFRS5TY2VuZSgpOwogICAgICAgIGNvbnN0IGNhbWVyYSA9IG5ldyBUSFJFRS5QZXJzcGVjdGl2ZUNhbWVyYSg3NSwgZ3JpZC53aWR0aC9ncmlkLmhlaWdodCwgMC4xLCAxMDAwKTsKICAgICAgICBjYW1lcmEucG9zaXRpb24ueiA9IDE7CiAgICAgICAgCiAgICAgICAgY29uc3QgdmVydGV4U2hhZGVyID0gYAogICAgICAgICAgICBvdXQgdmVjMiB2VXY7CiAgICAgICAgICAgIHZvaWQgbWFpbigpIHsKICAgICAgICAgICAgICAgIHZVdiA9IHV2OwogICAgICAgICAgICAgICAgZ2xfUG9zaXRpb24gPSB2ZWM0KHBvc2l0aW9uLCAxLjApOwogICAgICAgICAgICB9CiAgICAgICAgYDsKICAgICAgICAKICAgICAgICBjb25zdCBmcmFnbWVudFNoYWRlciA9IGAKICAgICAgICAgICAgaW4gdmVjMiB2VXY7CiAgICAgICAgICAgIG91dCB2ZWM0IGZyYWdDb2xvcjsKICAgICAgICAgICAgCiAgICAgICAgICAgIHVuaWZvcm0gZmxvYXQgdV90aW1lOwogICAgICAgICAgICB1bmlmb3JtIHZlYzIgdV9yZXNvbHV0aW9uOwogICAgICAgICAgICAKICAgICAgICAgICAgI2RlZmluZSBQSSAzLjE0MTU5MjY1MzU5CiAgICAgICAgICAgIAogICAgICAgICAgICAvLyBIQVNIICYgTk9JU0UgKEFjb3VzdGljIFNwZWNrbGUgLyBHcmFpbikKICAgICAgICAgICAgdmVjMiBoYXNoMjIodmVjMiBwKSB7CiAgICAgICAgICAgICAgICB2ZWMzIHAzID0gZnJhY3QodmVjMyhwLnh5eCkgKiB2ZWMzKC4xMDMxLCAuMTAzMCwgLjA5NzMpKTsKICAgICAgICAgICAgICAgIHAzICs9IGRvdChwMywgcDMueXp4ICsgMzMuMzMpOwogICAgICAgICAgICAgICAgcmV0dXJuIGZyYWN0KChwMy54eCtwMy55eikqcDMuenkpOwogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAvLyBDSExBRE5JIFZJQlJBVElPTiAoZnJvbSAndmlicmF0aW9uJyByZXBvKQogICAgICAgICAgICBmbG9hdCBjaGxhZG5pKHZlYzIgcCwgZmxvYXQgdCkgewogICAgICAgICAgICAgICAgZmxvYXQgdjEgPSBzaW4ocC54KlBJICsgdCkgKiBjb3MocC55KlBJIC0gdCk7CiAgICAgICAgICAgICAgICBmbG9hdCB2MiA9IHNpbihwLngqUEkqMS41IC0gdCowLjgpICogY29zKHAueSpQSSoxLjUgKyB0KjAuOCk7CiAgICAgICAgICAgICAgICByZXR1cm4gdjEgKiB2MjsKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgLy8gTU9JUsOJIFNQSVJBTCAoZnJvbSAnbW9pcmUnIHJlcG8pCiAgICAgICAgICAgIGZsb2F0IHNwaXJhbE1vaXJlKHZlYzIgcCwgZmxvYXQgdCkgewogICAgICAgICAgICAgICAgZmxvYXQgciA9IGxlbmd0aChwKTsKICAgICAgICAgICAgICAgIGZsb2F0IGEgPSBhdGFuKHAueSwgcC54KTsKICAgICAgICAgICAgICAgIGZsb2F0IHMxID0gc2luKGEgKiA3LjAgKyBsb2cociArIDAuMSkqMTUuMCArIHQqMi4wKTsKICAgICAgICAgICAgICAgIGZsb2F0IHMyID0gc2luKGEgKiA4LjAgKyBsb2cociArIDAuMSkqMTYuMCAtIHQqMi41KTsKICAgICAgICAgICAgICAgIHJldHVybiBzMSAqIHMyOwogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAvLyBMRU5JQSBLRVJORUwgKGZyb20gJ2xlbmlhJyByZXBvKQogICAgICAgICAgICBmbG9hdCBsZW5pYVJpbmcoZmxvYXQgciwgZmxvYXQgbXUsIGZsb2F0IHNpZ21hKSB7CiAgICAgICAgICAgICAgICBmbG9hdCBkID0gciAtIG11OwogICAgICAgICAgICAgICAgcmV0dXJuIGV4cCgtKGQqZCkvKDIuMCpzaWdtYSpzaWdtYSkpOwogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAvLyBQTEFURUFVIEZPQU0gKyBBQkVMSUFOIFNBTkRQSUxFIAogICAgICAgICAgICAvLyBBZGRpdGl2ZSB3ZWlnaHRlZCBWb3Jvbm9pIHJlcHJlc2VudGluZyBjZWxsdWxhciB0aXNzdWUgJiBkaXNjcmV0ZSB0b3BwbGUgdGVycmFjZXMKICAgICAgICAgICAgdmVjNCBmb2FtKHZlYzIgcCwgZmxvYXQgdCkgewogICAgICAgICAgICAgICAgdmVjMiBpcCA9IGZsb29yKHApOwogICAgICAgICAgICAgICAgdmVjMiBmcCA9IGZyYWN0KHApOwogICAgICAgICAgICAgICAgZmxvYXQgZjEgPSAxZTksIGYyID0gMWU5LCBpZCA9IDAuMDsKICAgICAgICAgICAgICAgIGZvcihpbnQgaj0tMjsgajw9MjsgaisrKSB7CiAgICAgICAgICAgICAgICAgICAgZm9yKGludCBpPS0yOyBpPD0yOyBpKyspIHsKICAgICAgICAgICAgICAgICAgICAgICAgdmVjMiBvZmZzZXQgPSB2ZWMyKGksIGopOwogICAgICAgICAgICAgICAgICAgICAgICB2ZWMyIGggPSBoYXNoMjIoaXAgKyBvZmZzZXQpOwogICAgICAgICAgICAgICAgICAgICAgICB2ZWMyIHBvcyA9IG9mZnNldCArIDAuNSArIDAuNCAqIHNpbih0KjAuNSArIDYuMjgqaCk7CiAgICAgICAgICAgICAgICAgICAgICAgIGZsb2F0IHdlaWdodCA9IGgueCAqIDAuMzU7IC8vIGN1cnZlZCBQbGF0ZWF1IGJvcmRlcnMKICAgICAgICAgICAgICAgICAgICAgICAgZmxvYXQgZCA9IGxlbmd0aChmcCAtIHBvcykgLSB3ZWlnaHQ7CiAgICAgICAgICAgICAgICAgICAgICAgIGlmKGQgPCBmMSkgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgZjIgPSBmMTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGYxID0gZDsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlkID0gaC55OwogICAgICAgICAgICAgICAgICAgICAgICB9IGVsc2UgaWYoZCA8IGYyKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmMiA9IGQ7CiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBmbG9hdCBib3JkZXIgPSBmMiAtIGYxOyAKICAgICAgICAgICAgICAgIC8vIFNhbmRwaWxlIHN0ZXBwaW5nOiBmb3JjaW5nIGRpc2NyZXRlIGludGVnZXIgc3RhdGVzIG9uIGNvbnRpbnVvdXMgZmllbGRzCiAgICAgICAgICAgICAgICBmbG9hdCBzYW5kcGlsZSA9IGZsb29yKG1vZChpZCAqIDEwMC4wICsgdCAqIDUuMCwgNC4wKSkgLyAzLjA7IAogICAgICAgICAgICAgICAgcmV0dXJuIHZlYzQoZjEsIGJvcmRlciwgaWQsIHNhbmRwaWxlKTsKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgLy8gT0tMQUIgUEVSQ0VQVFVBTCBTUEFDRSAoZnJvbSAnY29sb3Jfc3BhY2Vfd2FycCcgJiAnY29sb3Jfc3lzdGVtcycpCiAgICAgICAgICAgIHZlYzMgb2tsYWIyc3JnYih2ZWMzIGMpIHsKICAgICAgICAgICAgICAgIGZsb2F0IGwgPSBjLnggKyAwLjM5NjMzNzc3NzQgKiBjLnkgKyAwLjIxNTgwMzc1NzMgKiBjLno7CiAgICAgICAgICAgICAgICBmbG9hdCBtID0gYy54IC0gMC4xMDU1NjEzNDU4ICogYy55IC0gMC4wNjM4NTQxNzI4ICogYy56OwogICAgICAgICAgICAgICAgZmxvYXQgcyA9IGMueCAtIDAuMDg5NDg0MTc3NSAqIGMueSAtIDEuMjkxNDg1NTQ4MCAqIGMuejsKICAgICAgICAgICAgICAgIGZsb2F0IGxfID0gbCpsKmwsIG1fID0gbSptKm0sIHNfID0gcypzKnM7CiAgICAgICAgICAgICAgICByZXR1cm4gdmVjMygKICAgICAgICAgICAgICAgICAgICAgNC4wNzY3NDE2NjIxICogbF8gLSAzLjMwNzcxMTU5MTMgKiBtXyArIDAuMjMwOTY5OTI5MiAqIHNfLAogICAgICAgICAgICAgICAgICAgIC0xLjI2ODQzODAwNDYgKiBsXyArIDIuNjA5NzU3NDAxMSAqIG1fIC0gMC4zNDEzMTkzOTY1ICogc18sCiAgICAgICAgICAgICAgICAgICAgLTAuMDA0MTk2MDg2MyAqIGxfIC0gMC43MDM0MTg2MTQ3ICogbV8gKyAxLjcwNzYxNDcwMTAgKiBzXwogICAgICAgICAgICAgICAgKTsKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgLy8gQ0FORFktQUNJRCBQQUxFVFRFIHZpYSBHT0xERU4gQU5HTEUKICAgICAgICAgICAgdmVjMyBjYW5keUFjaWQoZmxvYXQgdCkgewogICAgICAgICAgICAgICAgZmxvYXQgaCA9IHQgKiAyLjM5OTk2ICsgdV90aW1lICogMC4yOyAvLyBHb2xkZW4gYW5nbGUgcHJvZ3Jlc3Npb24KICAgICAgICAgICAgICAgIGZsb2F0IEMgPSAwLjM4ICsgMC4xMiAqIHNpbih0ICogMTUuMCk7IC8vIEh5cGVyYm9saWMgY2hyb21hIHB1c2ggKGltcG9zc2libGVfY29sb3JzKQogICAgICAgICAgICAgICAgZmxvYXQgTCA9IDAuNjUgKyAwLjIgKiBjb3ModCAqIDguMCk7CiAgICAgICAgICAgICAgICBmbG9hdCBhID0gQyAqIGNvcyhoKTsKICAgICAgICAgICAgICAgIGZsb2F0IGIgPSBDICogc2luKGgpOwogICAgICAgICAgICAgICAgcmV0dXJuIG9rbGFiMnNyZ2IodmVjMyhMLCBhLCBiKSk7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIC8vIFVOSUZJRUQgQ09NUFVUQVRJT05BTCBTT1VQCiAgICAgICAgICAgIHZlYzMgc2FtcGxlU291cCh2ZWMyIHV2LCBmbG9hdCB0LCBmbG9hdCB3YXZlT2Zmc2V0KSB7CiAgICAgICAgICAgICAgICB2ZWMyIHAgPSAodXYgLSAwLjUpICogMy41OwogICAgICAgICAgICAgICAgcC54ICo9IHVfcmVzb2x1dGlvbi54IC8gdV9yZXNvbHV0aW9uLnk7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIC8vIFNsb3cgYmlvbG9naWNhbCByb3RhdGlvbgogICAgICAgICAgICAgICAgZmxvYXQgYyA9IGNvcyh0KjAuMDUpLCBzID0gc2luKHQqMC4wNSk7CiAgICAgICAgICAgICAgICBwICo9IG1hdDIoYywgLXMsIHMsIGMpOwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBmbG9hdCBjaCA9IGNobGFkbmkocCwgdCk7CiAgICAgICAgICAgICAgICBmbG9hdCBtb2lyZSA9IHNwaXJhbE1vaXJlKHAsIHQpOwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAvLyBVbHRyYXNvdW5kIGRvbWFpbiB3YXJwaW5nCiAgICAgICAgICAgICAgICBwICs9IHZlYzIoY2gsIG1vaXJlKSAqIDAuMTUgKiB3YXZlT2Zmc2V0OwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB2ZWM0IGYgPSB2ZWM0KDAuMCk7CiAgICAgICAgICAgICAgICBmbG9hdCBhbXAgPSAxLjAsIGZyZXEgPSAxLjA7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIC8vIE11bHRpLXNjYWxlIHRpc3N1ZSBsYXllcnMKICAgICAgICAgICAgICAgIGZvcihpbnQgaT0wOyBpPDM7IGkrKykgewogICAgICAgICAgICAgICAgICAgIGYgKz0gZm9hbShwICogZnJlcSwgdCkgKiBhbXA7CiAgICAgICAgICAgICAgICAgICAgZnJlcSAqPSAxLjg7CiAgICAgICAgICAgICAgICAgICAgYW1wICo9IDAuNTU7CiAgICAgICAgICAgICAgICAgICAgcCAqPSBtYXQyKDAuOCwgLTAuNiwgMC42LCAwLjgpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBmbG9hdCBzcGVja2xlID0gZnJhY3Qoc2luKGRvdChwLCB2ZWMyKDEyLjk4OTgsIDc4LjIzMykpKSAqIDQzNzU4LjU0NTMpOwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAvLyBMZW5pYSB3ZXQtZW5naW5lIG9yZ2FuaXNtcyBsaXZpbmcgaW5zaWRlIHRoZSBmb2FtCiAgICAgICAgICAgICAgICBmbG9hdCBsZW5pYSA9IGxlbmlhUmluZyhmLngsIDAuMywgMC4xKSAqIGxlbmlhUmluZyhmLnksIDAuMSwgMC4wNSk7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIC8vIFNhbmRwaWxlIHRlcnJhY2VzCiAgICAgICAgICAgICAgICBmbG9hdCB0ZXJyYWNlcyA9IGYudzsKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgLy8gQmlyZWZyaW5nZW5jZSBNaWNoZWwtTMOpdnkgUmV0YXJkYW5jZSBNYXAKICAgICAgICAgICAgICAgIGZsb2F0IHJldGFyZGFuY2UgPSBmLnggKiA0LjAgKyBmLnkgKiA2LjAgKyBsZW5pYSAqIDMuMCArIHRlcnJhY2VzICogMS41OwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICByZXR1cm4gY2FuZHlBY2lkKHJldGFyZGFuY2UgKyBzcGVja2xlICogMC4wOCk7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIHZvaWQgbWFpbigpIHsKICAgICAgICAgICAgICAgIHZlYzIgdXYgPSB2VXY7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIC8vIENBVUNIWSBESVNQRVJTSU9OIChmcm9tICdwcmlzbV9kaXNwZXJzaW9uJykKICAgICAgICAgICAgICAgIC8vIFNhbXBsaW5nIHRoZSBmaWVsZCBwZXItd2F2ZWxlbmd0aCB3aXRoIGFuIG9mZnNldAogICAgICAgICAgICAgICAgZmxvYXQgciA9IHNhbXBsZVNvdXAodXYsIHVfdGltZSwgMS4wKS5yOwogICAgICAgICAgICAgICAgZmxvYXQgZyA9IHNhbXBsZVNvdXAodXYsIHVfdGltZSwgMS4wMykuZzsKICAgICAgICAgICAgICAgIGZsb2F0IGIgPSBzYW1wbGVTb3VwKHV2LCB1X3RpbWUsIDEuMDYpLmI7CiAgICAgICAgICAgICAgICB2ZWMzIGNvbCA9IHZlYzMociwgZywgYik7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIC8vIFNIT0VHQVpFIEhBTEFUSU9OICYgQkxPT00KICAgICAgICAgICAgICAgIGZsb2F0IGx1bSA9IGRvdChjb2wsIHZlYzMoMC4yOTksIDAuNTg3LCAwLjExNCkpOwogICAgICAgICAgICAgICAgdmVjMyBoYWxhdGlvbiA9IHZlYzMoMS4wLCAwLjMsIDAuOCkgKiBzbW9vdGhzdGVwKDAuNSwgMS4wLCBsdW0pOwogICAgICAgICAgICAgICAgY29sICs9IGhhbGF0aW9uICogMC42OwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAvLyBGSUxNIEdSQUlOIC8gVUxUUkFTT1VORCBOT0lTRSBWRUlMCiAgICAgICAgICAgICAgICBmbG9hdCBncmFpbiA9IGZyYWN0KHNpbihkb3QodXYgKyB1X3RpbWUsIHZlYzIoMTIuOTg5OCw3OC4yMzMpKSkgKiA0Mzc1OC41NDUzKTsKICAgICAgICAgICAgICAgIGNvbCArPSAoZ3JhaW4gLSAwLjUpICogMC4xNTsKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgLy8gSU1QT1NTSUJMRSBDT0xPUlMgKFN0eWdpYW4gZGFya3MgLyBIeXBlcmJvbGljIG92ZXJzYXR1cmF0aW9uKQogICAgICAgICAgICAgICAgY29sID0gbWl4KGNvbCwgY29sICogMS41IC0gMC4xLCAwLjI1KTsKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgLy8gU09GVCBWSUdORVRURQogICAgICAgICAgICAgICAgZmxvYXQgdmlnID0gbGVuZ3RoKHV2IC0gMC41KSAqIDIuMDsKICAgICAgICAgICAgICAgIGNvbCAqPSAxLjAgLSBwb3codmlnLCAzLjApICogMC4zOwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBmcmFnQ29sb3IgPSB2ZWM0KGNsYW1wKGNvbCwgMC4wLCAxLjApLCAxLjApOwogICAgICAgICAgICB9CiAgICAgICAgYDsKICAgICAgICAKICAgICAgICBjb25zdCBtYXRlcmlhbCA9IG5ldyBUSFJFRS5TaGFkZXJNYXRlcmlhbCh7CiAgICAgICAgICAgIGdsc2xWZXJzaW9uOiBUSFJFRS5HTFNMMywKICAgICAgICAgICAgdW5pZm9ybXM6IHsKICAgICAgICAgICAgICAgIHVfdGltZTogeyB2YWx1ZTogMCB9LAogICAgICAgICAgICAgICAgdV9yZXNvbHV0aW9uOiB7IHZhbHVlOiBuZXcgVEhSRUUuVmVjdG9yMihncmlkLndpZHRoLCBncmlkLmhlaWdodCkgfQogICAgICAgICAgICB9LAogICAgICAgICAgICB2ZXJ0ZXhTaGFkZXIsCiAgICAgICAgICAgIGZyYWdtZW50U2hhZGVyLAogICAgICAgICAgICBkZXB0aFdyaXRlOiBmYWxzZSwKICAgICAgICAgICAgZGVwdGhUZXN0OiBmYWxzZQogICAgICAgIH0pOwogICAgICAgIAogICAgICAgIGNvbnN0IG1lc2ggPSBuZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuUGxhbmVHZW9tZXRyeSgyLCAyKSwgbWF0ZXJpYWwpOwogICAgICAgIHNjZW5lLmFkZChtZXNoKTsKICAgICAgICAKICAgICAgICBjYW52YXMuX190aHJlZSA9IHsgcmVuZGVyZXIsIHNjZW5lLCBjYW1lcmEsIG1hdGVyaWFsIH07CiAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgY29uc29sZS5lcnJvcigiV2ViR0wgSW5pdGlhbGl6YXRpb24gRmFpbGVkOiIsIGUpOwogICAgICAgIHRocm93IGU7CiAgICB9Cn0KCmNvbnN0IHsgcmVuZGVyZXIsIHNjZW5lLCBjYW1lcmEsIG1hdGVyaWFsIH0gPSBjYW52YXMuX190aHJlZTsKaWYgKG1hdGVyaWFsICYmIG1hdGVyaWFsLnVuaWZvcm1zKSB7CiAgICBtYXRlcmlhbC51bmlmb3Jtcy51X3RpbWUudmFsdWUgPSB0aW1lOwogICAgbWF0ZXJpYWwudW5pZm9ybXMudV9yZXNvbHV0aW9uLnZhbHVlLnNldChncmlkLndpZHRoLCBncmlkLmhlaWdodCk7Cn0KCnJlbmRlcmVyLnNldFNpemUoZ3JpZC53aWR0aCwgZ3JpZC5oZWlnaHQsIGZhbHNlKTsKcmVuZGVyZXIucmVuZGVyKHNjZW5lLCBjYW1lcmEpOw==';
+  const source = decodeURIComponent(escape(atob(_b64)));
+
+  // ── Compile sketch ────────────────────────────────────────────────────────
+  let sketchFn = null;
+  try {
+    sketchFn = new Function('canvas','ctx','grid','time','mouse','input','THREE', source + '\n');
+    setStatus('ok');
+  } catch(e) {
+    setStatus('compile error: ' + e.message);
+    console.error('[codesoup_20260704_081531] compile error:', e);
+  }
+
+  // ── Reset ─────────────────────────────────────────────────────────────────
+  function resetSketch() {
+    try {
+      // Dispose Three.js renderer if present
+      if (canvas.__three) {
+        const t = canvas.__three;
+        if (t.renderer) { try { t.renderer.dispose(); } catch(_){} }
+        if (t.rtA)      { try { t.rtA.dispose(); }      catch(_){} }
+        if (t.rtB)      { try { t.rtB.dispose(); }      catch(_){} }
+        if (t.material) { try { t.material.dispose(); } catch(_){} }
+        delete canvas.__three;
+      }
+      // Clear any other custom state
+      for (const k of Object.keys(canvas)) {
+        if (k.startsWith('__')) { try { delete canvas[k]; } catch(_){} }
+      }
+      // Clear Canvas2D if applicable
+      if (CTX_TYPE === '2d' && ctx) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      // Reset context after dispose
+      initContext();
+      startTime = performance.now();
+      setStatus('reset ok');
+    } catch(e) {
+      setStatus('reset error: ' + e.message);
+    }
+  }
+
+  // ── Animation loop ────────────────────────────────────────────────────────
+  let startTime = performance.now();
+
+  function frame() {
+    time = (performance.now() - startTime) / 1000;
+    mouse.pressed = false; // single-frame pulse reset
+    if (sketchFn) {
+      try {
+        sketchFn(canvas, ctx, grid, time, mouse, input, THREE_GLOBAL);
+      } catch(e) {
+        setStatus('runtime error: ' + e.message);
+        console.error('[codesoup_20260704_081531] runtime error:', e);
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
