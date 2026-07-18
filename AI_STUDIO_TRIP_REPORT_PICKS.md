@@ -1,0 +1,1 @@
+<local file: /tmp/AI_STUDIO_TRIP_REPORT_PICKS.md>
