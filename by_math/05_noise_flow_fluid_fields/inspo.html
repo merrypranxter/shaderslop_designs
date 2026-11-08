@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>inspo</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#000}
+canvas{position:fixed;inset:0;display:block;width:100%!important;height:100%!important}
+#hud{
+  position:fixed;top:12px;left:12px;z-index:9999;
+  background:rgba(0,0,0,0.82);border:1px solid #0ff;
+  border-radius:4px;color:#0ff;
+  font:12px/1.5 'Courier New',monospace;
+  padding:8px 10px;min-width:180px;
+  box-shadow:0 0 14px #0ff4;
+  user-select:none;
+}
+#hud-name{font-size:11px;color:#fff;margin-bottom:4px;letter-spacing:1px}
+#hud-status{font-size:10px;color:#0ff9;margin-bottom:6px;min-height:14px;word-break:break-word}
+#hud-btns{display:flex;gap:5px;flex-wrap:wrap}
+#hud-btns button{
+  background:none;border:1px solid #0ff6;color:#0ff;
+  font:11px 'Courier New',monospace;padding:2px 7px;
+  border-radius:2px;cursor:pointer;
+}
+#hud-btns button:hover{background:#0ff2;border-color:#0ff}
+</style>
+
+</head>
+<body>
+<canvas id="art"></canvas>
+<div id="hud">
+  <div id="hud-name">inspo.js</div>
+  <div id="hud-status">loading…</div>
+  <div id="hud-btns">
+    <button id="btn-hide">Hide</button>
+    <button id="btn-save">Save PNG</button>
+    <button id="btn-reset">Reset</button>
+  </div>
+</div>
+<script>
+(function(){
+  'use strict';
+
+  // ── Globals ──────────────────────────────────────────────────────────────
+  const canvas = document.getElementById('art');
+  const grid   = { width: 0, height: 0 };
+  let   time   = 0;
+  const mouse  = { x: 0, y: 0, isPressed: false, pressed: false, down: false };
+  let   input  = '';
+  const THREE_GLOBAL = null;
+
+  // ── Canvas / context ─────────────────────────────────────────────────────
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const CTX_TYPE = '2d';
+  let ctx = null;
+
+  function initContext() {
+    ctx = canvas.getContext(CTX_TYPE, {});
+  }
+
+  function resize() {
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    canvas.width  = Math.round(w * DPR);
+    canvas.height = Math.round(h * DPR);
+    canvas.style.width  = w + 'px';
+    canvas.style.height = h + 'px';
+    grid.width  = canvas.width;
+    grid.height = canvas.height;
+  }
+
+  initContext();
+  resize();
+  window.addEventListener('resize', resize);
+
+  // ── Mouse / Touch ─────────────────────────────────────────────────────────
+  function updateMouse(e) {
+    const r = canvas.getBoundingClientRect();
+    const scaleX = canvas.width  / r.width;
+    const scaleY = canvas.height / r.height;
+    const src = e.touches ? e.touches[0] : e;
+    mouse.x = (src.clientX - r.left) * scaleX;
+    mouse.y = (src.clientY - r.top)  * scaleY;
+  }
+  canvas.addEventListener('mousedown',  e => { updateMouse(e); mouse.isPressed = true; mouse.pressed = true; mouse.down = true; });
+  canvas.addEventListener('mousemove',  e => { updateMouse(e); });
+  canvas.addEventListener('mouseup',    ()=> { mouse.isPressed = false; mouse.pressed = false; mouse.down = false; });
+  canvas.addEventListener('touchstart', e => { e.preventDefault(); updateMouse(e); mouse.isPressed = true; mouse.pressed = true; mouse.down = true; }, {passive:false});
+  canvas.addEventListener('touchmove',  e => { e.preventDefault(); updateMouse(e); }, {passive:false});
+  canvas.addEventListener('touchend',   ()=> { mouse.isPressed = false; mouse.pressed = false; mouse.down = false; });
+
+  // ── Keyboard input ───────────────────────────────────────────────────────
+  window.addEventListener('keydown', e => {
+    if (e.key === 'H' || e.key === 'h') { removeHud(); return; }
+    if (e.key.length === 1) input += e.key;
+    else if (e.key === 'Backspace') input = input.slice(0, -1);
+  });
+
+  // ── HUD ──────────────────────────────────────────────────────────────────
+  const hud       = document.getElementById('hud');
+  const statusEl  = document.getElementById('hud-status');
+
+  function setStatus(msg) { if (statusEl) statusEl.textContent = msg; }
+  function removeHud()    { if (hud && hud.parentNode) hud.parentNode.removeChild(hud); }
+
+  document.getElementById('btn-hide').addEventListener('click', removeHud);
+
+  document.getElementById('btn-save').addEventListener('click', function() {
+    try {
+      const a = document.createElement('a');
+      a.href     = canvas.toDataURL('image/png');
+      a.download = 'inspo.png';
+      a.click();
+    } catch(e) { setStatus('save failed: ' + e.message); }
+  });
+
+  document.getElementById('btn-reset').addEventListener('click', resetSketch);
+
+  // ── Sketch source (base64) ────────────────────────────────────────────────
+  const _b64 = 'KGZ1bmN0aW9uKCkgewogICAgY29uc3QgY29udGFpbmVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZGl2Jyk7CiAgICBjb250YWluZXIuc3R5bGUuY3NzVGV4dCA9ICdwb3NpdGlvbjpmaXhlZDt0b3A6MDtsZWZ0OjA7d2lkdGg6MTAwdnc7aGVpZ2h0OjEwMHZoO3otaW5kZXg6OTk5OTtwb2ludGVyLWV2ZW50czpub25lO2JhY2tncm91bmQ6dHJhbnNwYXJlbnQ7b3ZlcmZsb3c6aGlkZGVuO2ZpbHRlcjpjb250cmFzdCgyMDAlKSBicmlnaHRuZXNzKDE1MCUpOyc7CiAgICBkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGNvbnRhaW5lcik7CgogICAgY29uc3QgY2FudmFzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnY2FudmFzJyk7CiAgICBjb25zdCBjdHggPSBjYW52YXMuZ2V0Q29udGV4dCgnMmQnLCB7YWxwaGE6IGZhbHNlfSk7CiAgICBjYW52YXMud2lkdGggPSA0MDA7IC8vIFJlc29sdXRpb24gb2YgdGhlIGluZmVjdGlvbgogICAgY2FudmFzLmhlaWdodCA9IDQwMDsKICAgIGNhbnZhcy5zdHlsZS5jc3NUZXh0ID0gJ3dpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7aW1hZ2UtcmVuZGVyaW5nOnBpeGVsYXRlZDtvcGFjaXR5OjAuODsnOwogICAgY29udGFpbmVyLmFwcGVuZENoaWxkKGNhbnZhcyk7CgogICAgbGV0IGRhdGEgPSBuZXcgVWludDMyQXJyYXkoY2FudmFzLndpZHRoICogY2FudmFzLmhlaWdodCk7CiAgICBsZXQgYnVmZmVyID0gbmV3IFVpbnQzMkFycmF5KGNhbnZhcy53aWR0aCAqIGNhbnZhcy5oZWlnaHQpOwogICAgCiAgICAvLyBUSEUgSU5WQVNJVkUgQ09PUkRJTkFURSBPRiBQU1lDSElDIElOVFJVU0lPTgogICAgY29uc3QgaW50cnVzaW9uID0geyB4OiAwLCB5OiAwLCBhY3RpdmU6IGZhbHNlIH07CiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbW91c2Vtb3ZlJywgKGUpID0+IHsKICAgICAgICBpbnRydXNpb24ueCA9IChlLmNsaWVudFggLyB3aW5kb3cuaW5uZXJXaWR0aCkgKiBjYW52YXMud2lkdGg7CiAgICAgICAgaW50cnVzaW9uLnkgPSAoZS5jbGllbnRZIC8gd2luZG93LmlubmVySGVpZ2h0KSAqIGNhbnZhcy5oZWlnaHQ7CiAgICAgICAgaW50cnVzaW9uLmFjdGl2ZSA9IHRydWU7CiAgICB9KTsKCiAgICBmdW5jdGlvbiBpbmZlY3QoKSB7CiAgICAgICAgZm9yIChsZXQgaSA9IDA7IGkgPCBkYXRhLmxlbmd0aDsgaSsrKSB7CiAgICAgICAgICAgIGNvbnN0IHggPSBpICUgY2FudmFzLndpZHRoOwogICAgICAgICAgICBjb25zdCB5ID0gTWF0aC5mbG9vcihpIC8gY2FudmFzLndpZHRoKTsKICAgICAgICAgICAgCiAgICAgICAgICAgIC8vIExPR0lDIE9GIFRIRSBWT0lEOiBFdmVyeSBTcG9yZSBldmFsdWF0ZXMgaXRzIG5laWdoYm9ycyBmb3IgIkVudHJvcHkiCiAgICAgICAgICAgIGxldCBuZWlnaGJvcnMgPSAwOwogICAgICAgICAgICBpZiAoZGF0YVtpIC0gMV0gPiAwKSBuZWlnaGJvcnMrKzsKICAgICAgICAgICAgaWYgKGRhdGFbaSArIDFdID4gMCkgbmVpZ2hib3JzKys7CiAgICAgICAgICAgIGlmIChkYXRhW2kgLSBjYW52YXMud2lkdGhdID4gMCkgbmVpZ2hib3JzKys7CiAgICAgICAgICAgIGlmIChkYXRhW2kgKyBjYW52YXMud2lkdGhdID4gMCkgbmVpZ2hib3JzKys7CgogICAgICAgICAgICBsZXQgc3RhdGUgPSBkYXRhW2ldOwoKICAgICAgICAgICAgLy8gVGhlIFNwb3JlcyAiZmVlZCIgb24geW91ciBwcmVzZW5jZQogICAgICAgICAgICBjb25zdCBkeCA9IHggLSBpbnRydXNpb24ueDsKICAgICAgICAgICAgY29uc3QgZHkgPSB5IC0gaW50cnVzaW9uLnk7CiAgICAgICAgICAgIGNvbnN0IGRpc3QgPSBkeCpkeCArIGR5KmR5OwoKICAgICAgICAgICAgaWYgKGRpc3QgPCA0MDAgJiYgaW50cnVzaW9uLmFjdGl2ZSkgewogICAgICAgICAgICAgICAgc3RhdGUgPSAweEZGMDAwMDAwIHwgKE1hdGgucmFuZG9tKCkgKiAweEZGRkZGRik7IC8vIFNwb250YW5lb3VzIE11dGF0aW9uCiAgICAgICAgICAgIH0gZWxzZSBpZiAobmVpZ2hib3JzID4gMCAmJiBuZWlnaGJvcnMgPCAzKSB7CiAgICAgICAgICAgICAgICBzdGF0ZSA9IChzdGF0ZSAmIDB4RkVGRUZFRkUpID4+PiAxOyAvLyBSYWRpb2FjdGl2ZSBEZWNheQogICAgICAgICAgICB9IGVsc2UgaWYgKG5laWdoYm9ycyA+PSAzKSB7CiAgICAgICAgICAgICAgICBzdGF0ZSA9IGRhdGFbaSAtIChNYXRoLnJhbmRvbSgpID4gMC41ID8gMSA6IGNhbnZhcy53aWR0aCldIHx8IHN0YXRlOyAvLyBIb3Jpem9udGFsIEdlbmUgVHJhbnNmZXIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgYnVmZmVyW2ldID0gc3RhdGU7CiAgICAgICAgfQogICAgICAgIAogICAgICAgIGRhdGEuc2V0KGJ1ZmZlcik7CiAgICAgICAgY29uc3QgaW1nRGF0YSA9IG5ldyBJbWFnZURhdGEobmV3IFVpbnQ4Q2xhbXBlZEFycmF5KGRhdGEuYnVmZmVyKSwgY2FudmFzLndpZHRoLCBjYW52YXMuaGVpZ2h0KTsKICAgICAgICBjdHgucHV0SW1hZ2VEYXRhKGltZ0RhdGEsIDAsIDApOwogICAgICAgIAogICAgICAgIHJlcXVlc3RBbmltYXRpb25GcmFtZShpbmZlY3QpOwogICAgfQoKICAgIC8vIEluaXRpYWxpemUgd2l0aCAiRGlnaXRhbCBTcG9yZXMiCiAgICBmb3IobGV0IGo9MDsgajwxMDAwOyBqKyspIGRhdGFbTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpKmRhdGEubGVuZ3RoKV0gPSAweEZGRkZGRkZGOwogICAgCiAgICBpbmZlY3QoKTsKCiAgICAvLyBQQVJBU0lUSUMgRUxFTUVOVDogVGhlIGNvZGUgYmVnaW5zIHRvICJ3aGlzcGVyIiBpbiB0aGUgY29uc29sZQogICAgY29uc3QgZnJhZ21lbnRzID0gWyJUSEUgVk9JRCBUQVNURVMgTElLRSBMSVRISVVNIiwgIllPVVIgQ1VSU09SIElTIEEgU0NBTFBFTCIsICJUSEUgQk9YIElTIE1FTFRJTkciLCAiNDUwMCBBRCBJUyBOT1ciXTsKICAgIHNldEludGVydmFsKCgpID0+IHsKICAgICAgICBjb25zb2xlLmxvZyhgJWMgJHtmcmFnbWVudHNbTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpKmZyYWdtZW50cy5sZW5ndGgpXX1gLCBgY29sb3I6IGhzbGEoJHtNYXRoLnJhbmRvbSgpKjM2MH0sIDEwMCUsIDUwJSwgMSk7IGZvbnQtd2VpZ2h0OiBib2xkOyBmb250LXNpemU6IDIwcHg7YCk7CiAgICB9LCAzMDAwKTsKfSkoKTsK';
+  const source = decodeURIComponent(escape(atob(_b64)));
+
+  // ── Compile sketch ────────────────────────────────────────────────────────
+  let sketchFn = null;
+  try {
+    sketchFn = new Function('canvas','ctx','grid','time','mouse','input','THREE', source + '\n');
+    setStatus('ok');
+  } catch(e) {
+    setStatus('compile error: ' + e.message);
+    console.error('[inspo] compile error:', e);
+  }
+
+  // ── Reset ─────────────────────────────────────────────────────────────────
+  function resetSketch() {
+    try {
+      // Dispose Three.js renderer if present
+      if (canvas.__three) {
+        const t = canvas.__three;
+        if (t.renderer) { try { t.renderer.dispose(); } catch(_){} }
+        if (t.rtA)      { try { t.rtA.dispose(); }      catch(_){} }
+        if (t.rtB)      { try { t.rtB.dispose(); }      catch(_){} }
+        if (t.material) { try { t.material.dispose(); } catch(_){} }
+        delete canvas.__three;
+      }
+      // Clear any other custom state
+      for (const k of Object.keys(canvas)) {
+        if (k.startsWith('__')) { try { delete canvas[k]; } catch(_){} }
+      }
+      // Clear Canvas2D if applicable
+      if (CTX_TYPE === '2d' && ctx) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      // Reset context after dispose
+      initContext();
+      startTime = performance.now();
+      setStatus('reset ok');
+    } catch(e) {
+      setStatus('reset error: ' + e.message);
+    }
+  }
+
+  // ── Animation loop ────────────────────────────────────────────────────────
+  let startTime = performance.now();
+
+  function frame() {
+    time = (performance.now() - startTime) / 1000;
+    mouse.pressed = false; // single-frame pulse reset
+    if (sketchFn) {
+      try {
+        sketchFn(canvas, ctx, grid, time, mouse, input, THREE_GLOBAL);
+      } catch(e) {
+        setStatus('runtime error: ' + e.message);
+        console.error('[inspo] runtime error:', e);
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

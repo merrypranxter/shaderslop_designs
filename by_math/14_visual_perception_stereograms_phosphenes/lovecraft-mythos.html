@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lovecraft-mythos</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#000}
+canvas{position:fixed;inset:0;display:block;width:100%!important;height:100%!important}
+#hud{
+  position:fixed;top:12px;left:12px;z-index:9999;
+  background:rgba(0,0,0,0.82);border:1px solid #0ff;
+  border-radius:4px;color:#0ff;
+  font:12px/1.5 'Courier New',monospace;
+  padding:8px 10px;min-width:180px;
+  box-shadow:0 0 14px #0ff4;
+  user-select:none;
+}
+#hud-name{font-size:11px;color:#fff;margin-bottom:4px;letter-spacing:1px}
+#hud-status{font-size:10px;color:#0ff9;margin-bottom:6px;min-height:14px;word-break:break-word}
+#hud-btns{display:flex;gap:5px;flex-wrap:wrap}
+#hud-btns button{
+  background:none;border:1px solid #0ff6;color:#0ff;
+  font:11px 'Courier New',monospace;padding:2px 7px;
+  border-radius:2px;cursor:pointer;
+}
+#hud-btns button:hover{background:#0ff2;border-color:#0ff}
+</style>
+
+</head>
+<body>
+<canvas id="art"></canvas>
+<div id="hud">
+  <div id="hud-name">lovecraft-mythos.js</div>
+  <div id="hud-status">loading…</div>
+  <div id="hud-btns">
+    <button id="btn-hide">Hide</button>
+    <button id="btn-save">Save PNG</button>
+    <button id="btn-reset">Reset</button>
+  </div>
+</div>
+<script>
+(function(){
+  'use strict';
+
+  // ── Globals ──────────────────────────────────────────────────────────────
+  const canvas = document.getElementById('art');
+  const grid   = { width: 0, height: 0 };
+  let   time   = 0;
+  const mouse  = { x: 0, y: 0, isPressed: false, pressed: false, down: false };
+  let   input  = '';
+  const THREE_GLOBAL = null;
+
+  // ── Canvas / context ─────────────────────────────────────────────────────
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const CTX_TYPE = '2d';
+  let ctx = null;
+
+  function initContext() {
+    ctx = canvas.getContext(CTX_TYPE, {});
+  }
+
+  function resize() {
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    canvas.width  = Math.round(w * DPR);
+    canvas.height = Math.round(h * DPR);
+    canvas.style.width  = w + 'px';
+    canvas.style.height = h + 'px';
+    grid.width  = canvas.width;
+    grid.height = canvas.height;
+  }
+
+  initContext();
+  resize();
+  window.addEventListener('resize', resize);
+
+  // ── Mouse / Touch ─────────────────────────────────────────────────────────
+  function updateMouse(e) {
+    const r = canvas.getBoundingClientRect();
+    const scaleX = canvas.width  / r.width;
+    const scaleY = canvas.height / r.height;
+    const src = e.touches ? e.touches[0] : e;
+    mouse.x = (src.clientX - r.left) * scaleX;
+    mouse.y = (src.clientY - r.top)  * scaleY;
+  }
+  canvas.addEventListener('mousedown',  e => { updateMouse(e); mouse.isPressed = true; mouse.pressed = true; mouse.down = true; });
+  canvas.addEventListener('mousemove',  e => { updateMouse(e); });
+  canvas.addEventListener('mouseup',    ()=> { mouse.isPressed = false; mouse.pressed = false; mouse.down = false; });
+  canvas.addEventListener('touchstart', e => { e.preventDefault(); updateMouse(e); mouse.isPressed = true; mouse.pressed = true; mouse.down = true; }, {passive:false});
+  canvas.addEventListener('touchmove',  e => { e.preventDefault(); updateMouse(e); }, {passive:false});
+  canvas.addEventListener('touchend',   ()=> { mouse.isPressed = false; mouse.pressed = false; mouse.down = false; });
+
+  // ── Keyboard input ───────────────────────────────────────────────────────
+  window.addEventListener('keydown', e => {
+    if (e.key === 'H' || e.key === 'h') { removeHud(); return; }
+    if (e.key.length === 1) input += e.key;
+    else if (e.key === 'Backspace') input = input.slice(0, -1);
+  });
+
+  // ── HUD ──────────────────────────────────────────────────────────────────
+  const hud       = document.getElementById('hud');
+  const statusEl  = document.getElementById('hud-status');
+
+  function setStatus(msg) { if (statusEl) statusEl.textContent = msg; }
+  function removeHud()    { if (hud && hud.parentNode) hud.parentNode.removeChild(hud); }
+
+  document.getElementById('btn-hide').addEventListener('click', removeHud);
+
+  document.getElementById('btn-save').addEventListener('click', function() {
+    try {
+      const a = document.createElement('a');
+      a.href     = canvas.toDataURL('image/png');
+      a.download = 'lovecraft-mythos.png';
+      a.click();
+    } catch(e) { setStatus('save failed: ' + e.message); }
+  });
+
+  document.getElementById('btn-reset').addEventListener('click', resetSketch);
+
+  // ── Sketch source (base64) ────────────────────────────────────────────────
+  const _b64 = 'Y29uc3QgY3ggPSBncmlkLndpZHRoIC8gMjsKY29uc3QgY3kgPSBncmlkLmhlaWdodCAvIDI7CmNvbnN0IG14ID0gbW91c2UueCB8fCBjeDsKY29uc3QgbXkgPSBtb3VzZS55IHx8IGN5OwoKLy8gVGhlICJDaGFvcyBFbmdpbmVlcmluZyIgcGFuaWMgc3RhdGUKY29uc3QgcGFuaWMgPSBtb3VzZS5pc1ByZXNzZWQgPyA1LjAgOiAxLjA7CmNvbnN0IHQgPSB0aW1lICogcGFuaWM7CgovLyBQYWxldHRlcyBleHRyYWN0ZWQgZnJvbSByZXBvc2l0b3J5IGNsYXNoCi8vIFBzeWNoZWRlbGljIFBvcCBtZWV0cyBUZXJtaW5hbCBHcmVlbiBtZWV0cyBPcC1BcnQgSGlnaCBDb250cmFzdApjb25zdCBQT1BfQ09MT1JTID0gWycjRkYwMEZGJywgJyMwMEZGRkYnLCAnI0ZGRkYwMCcsICcjRkYzMzY2JywgJyMzOUZGMTQnXTsKY29uc3QgT1NfTE9HUyA9IFsKICAgICJJTklUOiBBWkFUSE9USF9DUFVfQk9PVC4uLiIsCiAgICAiV0FSTjogUkFGVF9DTFVTVEVSX0RSSUZUIERFVEVDVEVEIiwKICAgICJFUlI6IE1ZU1BBQ0VfQ1NTX09WRVJGTE9XIiwKICAgICJQUk9DOiBSRVRJTkFMX1NVUlJFQUxJU00uRVhFIiwKICAgICJDUklUOiBOT05fRVVDTElERUFOX01FTU9SWV9MRUFLIiwKICAgICJNU0c6IENVVEVfQ1RIVUxIVV9BRVNUSEVUSUNfQVBQTElFRCIKXTsKCi8vIENsZWFuIHNsYXRlLCBkZWVwIHZvaWQKY3R4LmZpbGxTdHlsZSA9ICcjMDgwODA4JzsKY3R4LmZpbGxSZWN0KDAsIDAsIGdyaWQud2lkdGgsIGdyaWQuaGVpZ2h0KTsKCi8vIC0tLSBMQVlFUiAxOiBPUC1BUlQgLyBSQURJQUwgSFlQTk9TSVMgQkFDS0dST1VORCAtLS0KLy8gU2ltdWxhdGVzIHRoZSBjaHVybmluZyBjZW50ZXIgb2YgdGhlIHNpbXVsYXRpb24gT1MKY3R4LnNhdmUoKTsKY3R4LnRyYW5zbGF0ZShjeCwgY3kpOwpjdHgucm90YXRlKHQgKiAwLjIpOwpjb25zdCBtYXhSYWRpdXMgPSBNYXRoLmh5cG90KGN4LCBjeSkgKiAxLjU7Cgpmb3IgKGxldCByID0gbWF4UmFkaXVzOyByID4gMTA7IHIgLT0gMjUpIHsKICAgIGN0eC5iZWdpblBhdGgoKTsKICAgIC8vIE1vaXJlIGRpc3RvcnRpb24gYmFzZWQgb24gbW91c2UgcHJveGltaXR5CiAgICBjb25zdCBkaXN0b3J0aW9uID0gTWF0aC5zaW4odCAqIDMgKyByICogMC4wMikgKiAobW91c2UuaXNQcmVzc2VkID8gMzAgOiA1KTsKICAgIGN0eC5hcmMoZGlzdG9ydGlvbiwgMCwgciwgMCwgTWF0aC5QSSAqIDIpOwogICAgCiAgICBjdHgubGluZVdpZHRoID0gMTAgKyBNYXRoLnNpbih0ICsgciAqIDAuMSkgKiA4OwogICAgY3R4LnN0cm9rZVN0eWxlID0gciAlIDUwID09PSAwID8gUE9QX0NPTE9SU1swXSA6ICcjRkZGRkZGJzsKICAgIAogICAgLy8gRWFybHkgSW50ZXJuZXQgYWxpYXNlZC9yYXcgbG9vawogICAgaWYgKHIgJSA3NSA9PT0gMCkgewogICAgICAgIGN0eC5zZXRMaW5lRGFzaChbMTAsIDE1XSk7CiAgICB9IGVsc2UgewogICAgICAgIGN0eC5zZXRMaW5lRGFzaChbXSk7CiAgICB9CiAgICBjdHguc3Ryb2tlKCk7Cn0KY3R4LnJlc3RvcmUoKTsKCi8vIC0tLSBMQVlFUiAyOiBUSEUgUFJPQ0VTU19FTlRJVFkgKExvdmVjcmFmdCArIFBzeWNoZWRlbGljIFBvcCkgLS0tCi8vIFRlbnRhY2xlcyBtYXBwZWQgYXMgT1MgcHJvY2VzcyB0aHJlYWRzIGdvaW5nIHJvZ3VlCmNvbnN0IG51bVRocmVhZHMgPSAxNjsKY3R4LmxpbmVDYXAgPSAncm91bmQnOwpjdHgubGluZUpvaW4gPSAncm91bmQnOwoKZm9yIChsZXQgaSA9IDA7IGkgPCBudW1UaHJlYWRzOyBpKyspIHsKICAgIGNvbnN0IGFuZ2xlID0gKGkgLyBudW1UaHJlYWRzKSAqIE1hdGguUEkgKiAyICsgTWF0aC5zaW4odCAqIDAuNSkgKiAwLjU7CiAgICBjb25zdCBiYXNlTGVuZ3RoID0gZ3JpZC5oZWlnaHQgKiAwLjQ1OwogICAgCiAgICAvLyBDaGFvcyBlbmdpbmVlcmluZzogdGhyZWFkIGxlbmd0aCBmbHVjdHVhdGVzIHdpbGRseQogICAgY29uc3QgbGVuZ3RoID0gYmFzZUxlbmd0aCArIE1hdGguc2luKHQgKiA0ICsgaSAqIDEuMykgKiAxMDAgKiBwYW5pYzsKICAgIAogICAgY29uc3QgZW5kWCA9IGN4ICsgTWF0aC5jb3MoYW5nbGUpICogbGVuZ3RoOwogICAgY29uc3QgZW5kWSA9IGN5ICsgTWF0aC5zaW4oYW5nbGUpICogbGVuZ3RoOwogICAgCiAgICAvLyBDb250cm9sIHBvaW50cyBmb3IgYmV6aWVyIChvcmdhbmljLCBnb29leSBtb3ZlbWVudCkKICAgIGNvbnN0IGNwMXggPSBjeCArIE1hdGguY29zKGFuZ2xlICsgMSkgKiBsZW5ndGggKiAwLjQ7CiAgICBjb25zdCBjcDF5ID0gY3kgKyBNYXRoLnNpbihhbmdsZSArIDEpICogbGVuZ3RoICogMC40OwogICAgY29uc3QgY3AyeCA9IGVuZFggKyBNYXRoLmNvcyhhbmdsZSAtIDEpICogbGVuZ3RoICogMC4yOwogICAgY29uc3QgY3AyeSA9IGVuZFkgKyBNYXRoLnNpbihhbmdsZSAtIDEpICogbGVuZ3RoICogMC4yOwoKICAgIC8vIFZlY3RvciBwb3AtYXJ0IHN0eWxlOiB0aGljayBibGFjayBvdXRsaW5lLCBicmlnaHQgZmxhdCBmaWxsCiAgICBjdHguYmVnaW5QYXRoKCk7CiAgICBjdHgubW92ZVRvKGN4LCBjeSk7CiAgICBjdHguYmV6aWVyQ3VydmVUbyhjcDF4LCBjcDF5LCBjcDJ4LCBjcDJ5LCBlbmRYLCBlbmRZKTsKICAgIAogICAgLy8gT3V0bGluZQogICAgY3R4LnN0cm9rZVN0eWxlID0gJyMwMDAwMDAnOwogICAgY3R4LmxpbmVXaWR0aCA9IDQwOwogICAgY3R4LnN0cm9rZSgpOwogICAgCiAgICAvLyBGaWxsCiAgICBjdHguc3Ryb2tlU3R5bGUgPSBQT1BfQ09MT1JTW2kgJSBQT1BfQ09MT1JTLmxlbmd0aF07CiAgICBjdHgubGluZVdpZHRoID0gMjQ7CiAgICBjdHguc3Ryb2tlKCk7CgogICAgLy8gU3VjdGlvbiBjdXBzIC8gRGF0YSBub2RlcyAoQ3V0ZSBQb3AgbW90aWYpCiAgICBjb25zdCBzdGVwcyA9IDQ7CiAgICBmb3IgKGxldCBqID0gMTsgaiA8PSBzdGVwczsgaisrKSB7CiAgICAgICAgY29uc3QgdF9iZXogPSBqIC8gc3RlcHM7CiAgICAgICAgLy8gQmFzaWMgYmV6aWVyIGludGVycG9sYXRpb24gZm9yIG5vZGUgcGxhY2VtZW50CiAgICAgICAgY29uc3QgYnggPSBNYXRoLnBvdygxLXRfYmV6LCAzKSpjeCArIDMqTWF0aC5wb3coMS10X2JleiwyKSp0X2JleipjcDF4ICsgMyooMS10X2JleikqTWF0aC5wb3codF9iZXosMikqY3AyeCArIE1hdGgucG93KHRfYmV6LDMpKmVuZFg7CiAgICAgICAgY29uc3QgYnkgPSBNYXRoLnBvdygxLXRfYmV6LCAzKSpjeSArIDMqTWF0aC5wb3coMS10X2JleiwyKSp0X2JleipjcDF5ICsgMyooMS10X2JleikqTWF0aC5wb3codF9iZXosMikqY3AyeSArIE1hdGgucG93KHRfYmV6LDMpKmVuZFk7CiAgICAgICAgCiAgICAgICAgY3R4LmJlZ2luUGF0aCgpOwogICAgICAgIGN0eC5hcmMoYngsIGJ5LCA4ICsgTWF0aC5zaW4odCAqIDEwICsgaikgKiA0LCAwLCBNYXRoLlBJICogMik7CiAgICAgICAgY3R4LmZpbGxTdHlsZSA9ICcjRkZGRkZGJzsKICAgICAgICBjdHguZmlsbCgpOwogICAgICAgIGN0eC5zdHJva2VTdHlsZSA9ICcjMDAwMDAwJzsKICAgICAgICBjdHgubGluZVdpZHRoID0gMzsKICAgICAgICBjdHguc3Ryb2tlKCk7CiAgICB9Cn0KCi8vIC0tLSBMQVlFUiAzOiBUSEUgQUxMLVNFRUlORyBLRVJORUwgUEFOSUMgKEV5ZSBPYmplY3QgSWNvbm9ncmFwaHkpIC0tLQovLyBBIGdpYW50LCBjdXRlLCBidXQgdW5zZXR0bGluZyBleWUgc2VydmluZyBhcyB0aGUgQ1BVIGNvcmUKY3R4LmJlZ2luUGF0aCgpOwpjb25zdCBleWVXID0gZ3JpZC53aWR0aCAqIDAuMTUgKyBNYXRoLnNpbih0ICogNikgKiAxNSAqIHBhbmljOwpjb25zdCBleWVIID0gZ3JpZC53aWR0aCAqIDAuMSArIE1hdGguY29zKHQgKiA0KSAqIDEwOwpjdHguZWxsaXBzZShjeCwgY3ksIGV5ZVcsIGV5ZUgsIDAsIDAsIE1hdGguUEkgKiAyKTsKY3R4LmZpbGxTdHlsZSA9ICcjRkZGRkZGJzsKY3R4LmZpbGwoKTsKY3R4LmxpbmVXaWR0aCA9IDEyOwpjdHguc3Ryb2tlU3R5bGUgPSAnIzAwMDAwMCc7CmN0eC5zdHJva2UoKTsKCi8vIElyaXMgKENocm9tYXRpYyBJbnRlcmZlcmVuY2UpCmNvbnN0IGR4ID0gbXggLSBjeDsKY29uc3QgZHkgPSBteSAtIGN5Owpjb25zdCBkaXN0ID0gTWF0aC5oeXBvdChkeCwgZHkpOwpjb25zdCBtYXhQdXBpbFNoaWZ0ID0gZXllVyAqIDAuNDsKY29uc3QgbG9va1ggPSBjeCArIChkeCAvIGRpc3QpICogTWF0aC5taW4oZGlzdCAqIDAuMSwgbWF4UHVwaWxTaGlmdCkgfHwgY3g7CmNvbnN0IGxvb2tZID0gY3kgKyAoZHkgLyBkaXN0KSAqIE1hdGgubWluKGRpc3QgKiAwLjEsIGV5ZUggKiAwLjQpIHx8IGN5OwoKY3R4LmJlZ2luUGF0aCgpOwpjdHguYXJjKGxvb2tYLCBsb29rWSwgZXllSCAqIDAuNiwgMCwgTWF0aC5QSSAqIDIpOwpjdHguZmlsbFN0eWxlID0gUE9QX0NPTE9SU1sxXTsgLy8gQ3lhbgpjdHguZmlsbCgpOwpjdHguc3Ryb2tlKCk7CgovLyBQdXBpbCAoTG92ZWNyYWZ0aWFuIFNsaXQgKyBPcC1BcnQgZ2VvbWV0cnkpCmN0eC5iZWdpblBhdGgoKTsKY3R4LmVsbGlwc2UobG9va1gsIGxvb2tZLCBleWVIICogMC4xLCBleWVIICogMC41ICsgTWF0aC5zaW4odCo4KSoxMCwgMCwgMCwgTWF0aC5QSSAqIDIpOwpjdHguZmlsbFN0eWxlID0gJyMwMDAwMDAnOwpjdHguZmlsbCgpOwoKLy8gLS0tIExBWUVSIDQ6IFNZU1RFTSBPVkVSTEFZUyAmIENIUk9NQVRJQyBJTlRFUkZFUkVOQ0UgLS0tCi8vIFNpbXVsYXRpbmcgdGhlICJMb3ZlY3JhZnQgT1MiIGZhaWxpbmcgdG8gcmVuZGVyIHRoZSAiUHN5Y2hlZGVsaWMgUG9wIiBjbGVhbmx5CmN0eC5nbG9iYWxDb21wb3NpdGVPcGVyYXRpb24gPSAnZGlmZmVyZW5jZSc7CgovLyBZMksvRWFybHkgV2ViIEdsaXRjaCBiYXJzCmNvbnN0IG51bUdsaXRjaEJhcnMgPSBtb3VzZS5pc1ByZXNzZWQgPyAyMCA6IDU7CmZvciAobGV0IGkgPSAwOyBpIDwgbnVtR2xpdGNoQmFyczsgaSsrKSB7CiAgICBjb25zdCB5UG9zID0gKHQgKiAyMDAgKyBpICogMTUwKSAlIGdyaWQuaGVpZ2h0OwogICAgY3R4LmZpbGxTdHlsZSA9IFBPUF9DT0xPUlNbaSAlIFBPUF9DT0xPUlMubGVuZ3RoXTsKICAgIGN0eC5maWxsUmVjdCgwLCB5UG9zLCBncmlkLndpZHRoLCAxMCArIE1hdGgucmFuZG9tKCkgKiAzMCk7Cn0KCmN0eC5nbG9iYWxDb21wb3NpdGVPcGVyYXRpb24gPSAnc291cmNlLW92ZXInOwoKLy8gVGVybWluYWwgT3V0cHV0IE92ZXJsYXkgKERlYWQgV2ViIE5vc3RhbGdpYSArIE9TIEFyY2hpdGVjdHVyZSkKY3R4LmZvbnQgPSAiYm9sZCAxNHB4IG1vbm9zcGFjZSI7CmN0eC50ZXh0QWxpZ24gPSAibGVmdCI7Cgpmb3IgKGxldCBpID0gMDsgaSA8IE9TX0xPR1MubGVuZ3RoOyBpKyspIHsKICAgIGNvbnN0IGxvZ1kgPSA0MCArIGkgKiAyNTsKICAgIC8vIEdsaXRjaCB0aGUgeCBwb3NpdGlvbiBzbGlnaHRseQogICAgY29uc3QgbG9nWCA9IDIwICsgKE1hdGgucmFuZG9tKCkgPiAwLjk1ID8gTWF0aC5yYW5kb20oKSAqIDEwIC0gNSA6IDApOwogICAgCiAgICAvLyBUZXh0IGJhY2tncm91bmQgYm94IChPbGQgd2ViIGFlc3RoZXRpYykKICAgIGN0eC5maWxsU3R5bGUgPSAncmdiYSgwLCAwLCAwLCAwLjcpJzsKICAgIGNvbnN0IHRleHRXaWR0aCA9IGN0eC5tZWFzdXJlVGV4dChPU19MT0dTW2ldKS53aWR0aDsKICAgIGN0eC5maWxsUmVjdChsb2dYIC0gNSwgbG9nWSAtIDE0LCB0ZXh0V2lkdGggKyAxMCwgMjApOwogICAgCiAgICAvLyBUZXh0CiAgICBjdHguZmlsbFN0eWxlID0gUE9QX0NPTE9SU1s0XTsgLy8gVGVybWluYWwgTGltZSBHcmVlbgogICAgCiAgICAvLyBDb3JydXB0IHRleHQgcmFuZG9tbHkKICAgIGxldCBkaXNwbGF5VGV4dCA9IE9TX0xPR1NbaV07CiAgICBpZiAoTWF0aC5yYW5kb20oKSA+IDAuOSkgewogICAgICAgIGNvbnN0IGNoYXJzID0gZGlzcGxheVRleHQuc3BsaXQoJycpOwogICAgICAgIGNoYXJzW01hdGguZmxvb3IoTWF0aC5yYW5kb20oKSAqIGNoYXJzLmxlbmd0aCldID0gU3RyaW5nLmZyb21DaGFyQ29kZSgzMyArIE1hdGgucmFuZG9tKCkgKiA5MCk7CiAgICAgICAgZGlzcGxheVRleHQgPSBjaGFycy5qb2luKCcnKTsKICAgIH0KICAgIAogICAgY3R4LmZpbGxUZXh0KGRpc3BsYXlUZXh0LCBsb2dYLCBsb2dZKTsKfQoKLy8gRHJhdyBhIGZha2UgY3Vyc29yIHRyYWlsaW5nIGJlaGluZCB0aGUgcmVhbCBvbmUgKEVhcmx5IGludGVybmV0IGN1c3RvbSBjdXJzb3JzKQpjdHguZmlsbFN0eWxlID0gUE9QX0NPTE9SU1swXTsKY3R4LmJlZ2luUGF0aCgpOwpjdHgubW92ZVRvKG14LCBteSk7CmN0eC5saW5lVG8obXggKyAxNSwgbXkgKyAxNSk7CmN0eC5saW5lVG8obXggKyA1LCBteSArIDIwKTsKY3R4LmxpbmVUbyhteCwgbXkgKyAzMCk7CmN0eC5jbG9zZVBhdGgoKTsKY3R4LmZpbGwoKTsKY3R4LnN0cm9rZVN0eWxlID0gJyNGRkZGRkYnOwpjdHgubGluZVdpZHRoID0gMjsKY3R4LnN0cm9rZSgpOw==';
+  const source = decodeURIComponent(escape(atob(_b64)));
+
+  // ── Compile sketch ────────────────────────────────────────────────────────
+  let sketchFn = null;
+  try {
+    sketchFn = new Function('canvas','ctx','grid','time','mouse','input','THREE', source + '\n');
+    setStatus('ok');
+  } catch(e) {
+    setStatus('compile error: ' + e.message);
+    console.error('[lovecraft-mythos] compile error:', e);
+  }
+
+  // ── Reset ─────────────────────────────────────────────────────────────────
+  function resetSketch() {
+    try {
+      // Dispose Three.js renderer if present
+      if (canvas.__three) {
+        const t = canvas.__three;
+        if (t.renderer) { try { t.renderer.dispose(); } catch(_){} }
+        if (t.rtA)      { try { t.rtA.dispose(); }      catch(_){} }
+        if (t.rtB)      { try { t.rtB.dispose(); }      catch(_){} }
+        if (t.material) { try { t.material.dispose(); } catch(_){} }
+        delete canvas.__three;
+      }
+      // Clear any other custom state
+      for (const k of Object.keys(canvas)) {
+        if (k.startsWith('__')) { try { delete canvas[k]; } catch(_){} }
+      }
+      // Clear Canvas2D if applicable
+      if (CTX_TYPE === '2d' && ctx) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      // Reset context after dispose
+      initContext();
+      startTime = performance.now();
+      setStatus('reset ok');
+    } catch(e) {
+      setStatus('reset error: ' + e.message);
+    }
+  }
+
+  // ── Animation loop ────────────────────────────────────────────────────────
+  let startTime = performance.now();
+
+  function frame() {
+    time = (performance.now() - startTime) / 1000;
+    mouse.pressed = false; // single-frame pulse reset
+    if (sketchFn) {
+      try {
+        sketchFn(canvas, ctx, grid, time, mouse, input, THREE_GLOBAL);
+      } catch(e) {
+        setStatus('runtime error: ' + e.message);
+        console.error('[lovecraft-mythos] runtime error:', e);
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
