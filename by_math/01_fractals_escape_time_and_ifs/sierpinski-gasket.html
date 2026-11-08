@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sierpinski-gasket</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#000}
+canvas{position:fixed;inset:0;display:block;width:100%!important;height:100%!important}
+#hud{
+  position:fixed;top:12px;left:12px;z-index:9999;
+  background:rgba(0,0,0,0.82);border:1px solid #0ff;
+  border-radius:4px;color:#0ff;
+  font:12px/1.5 'Courier New',monospace;
+  padding:8px 10px;min-width:180px;
+  box-shadow:0 0 14px #0ff4;
+  user-select:none;
+}
+#hud-name{font-size:11px;color:#fff;margin-bottom:4px;letter-spacing:1px}
+#hud-status{font-size:10px;color:#0ff9;margin-bottom:6px;min-height:14px;word-break:break-word}
+#hud-btns{display:flex;gap:5px;flex-wrap:wrap}
+#hud-btns button{
+  background:none;border:1px solid #0ff6;color:#0ff;
+  font:11px 'Courier New',monospace;padding:2px 7px;
+  border-radius:2px;cursor:pointer;
+}
+#hud-btns button:hover{background:#0ff2;border-color:#0ff}
+</style>
+
+</head>
+<body>
+<canvas id="art"></canvas>
+<div id="hud">
+  <div id="hud-name">sierpinski-gasket.js</div>
+  <div id="hud-status">loading…</div>
+  <div id="hud-btns">
+    <button id="btn-hide">Hide</button>
+    <button id="btn-save">Save PNG</button>
+    <button id="btn-reset">Reset</button>
+  </div>
+</div>
+<script>
+(function(){
+  'use strict';
+
+  // ── Globals ──────────────────────────────────────────────────────────────
+  const canvas = document.getElementById('art');
+  const grid   = { width: 0, height: 0 };
+  let   time   = 0;
+  const mouse  = { x: 0, y: 0, isPressed: false, pressed: false, down: false };
+  let   input  = '';
+  const THREE_GLOBAL = null;
+
+  // ── Canvas / context ─────────────────────────────────────────────────────
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const CTX_TYPE = '2d';
+  let ctx = null;
+
+  function initContext() {
+    ctx = canvas.getContext(CTX_TYPE, {});
+  }
+
+  function resize() {
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    canvas.width  = Math.round(w * DPR);
+    canvas.height = Math.round(h * DPR);
+    canvas.style.width  = w + 'px';
+    canvas.style.height = h + 'px';
+    grid.width  = canvas.width;
+    grid.height = canvas.height;
+  }
+
+  initContext();
+  resize();
+  window.addEventListener('resize', resize);
+
+  // ── Mouse / Touch ─────────────────────────────────────────────────────────
+  function updateMouse(e) {
+    const r = canvas.getBoundingClientRect();
+    const scaleX = canvas.width  / r.width;
+    const scaleY = canvas.height / r.height;
+    const src = e.touches ? e.touches[0] : e;
+    mouse.x = (src.clientX - r.left) * scaleX;
+    mouse.y = (src.clientY - r.top)  * scaleY;
+  }
+  canvas.addEventListener('mousedown',  e => { updateMouse(e); mouse.isPressed = true; mouse.pressed = true; mouse.down = true; });
+  canvas.addEventListener('mousemove',  e => { updateMouse(e); });
+  canvas.addEventListener('mouseup',    ()=> { mouse.isPressed = false; mouse.pressed = false; mouse.down = false; });
+  canvas.addEventListener('touchstart', e => { e.preventDefault(); updateMouse(e); mouse.isPressed = true; mouse.pressed = true; mouse.down = true; }, {passive:false});
+  canvas.addEventListener('touchmove',  e => { e.preventDefault(); updateMouse(e); }, {passive:false});
+  canvas.addEventListener('touchend',   ()=> { mouse.isPressed = false; mouse.pressed = false; mouse.down = false; });
+
+  // ── Keyboard input ───────────────────────────────────────────────────────
+  window.addEventListener('keydown', e => {
+    if (e.key === 'H' || e.key === 'h') { removeHud(); return; }
+    if (e.key.length === 1) input += e.key;
+    else if (e.key === 'Backspace') input = input.slice(0, -1);
+  });
+
+  // ── HUD ──────────────────────────────────────────────────────────────────
+  const hud       = document.getElementById('hud');
+  const statusEl  = document.getElementById('hud-status');
+
+  function setStatus(msg) { if (statusEl) statusEl.textContent = msg; }
+  function removeHud()    { if (hud && hud.parentNode) hud.parentNode.removeChild(hud); }
+
+  document.getElementById('btn-hide').addEventListener('click', removeHud);
+
+  document.getElementById('btn-save').addEventListener('click', function() {
+    try {
+      const a = document.createElement('a');
+      a.href     = canvas.toDataURL('image/png');
+      a.download = 'sierpinski-gasket.png';
+      a.click();
+    } catch(e) { setStatus('save failed: ' + e.message); }
+  });
+
+  document.getElementById('btn-reset').addEventListener('click', resetSketch);
+
+  // ── Sketch source (base64) ────────────────────────────────────────────────
+  const _b64 = 'aWYgKCFjYW52YXMuX193ZWlyZEdhc2tldCkgewogICAgY29uc3QgbnVtQWdlbnRzID0gMzUwMDA7CiAgICBjb25zdCBhZ2VudHMgPSBuZXcgRmxvYXQzMkFycmF5KG51bUFnZW50cyAqIDQpOyAvLyB4LCB5LCBjb2xvckluZGV4LCBzaXplCiAgICBmb3IgKGxldCBpID0gMDsgaSA8IG51bUFnZW50czsgaSsrKSB7CiAgICAgICAgYWdlbnRzW2kgKiA0ICsgMF0gPSBNYXRoLnJhbmRvbSgpICogZ3JpZC53aWR0aDsKICAgICAgICBhZ2VudHNbaSAqIDQgKyAxXSA9IE1hdGgucmFuZG9tKCkgKiBncmlkLmhlaWdodDsKICAgICAgICBhZ2VudHNbaSAqIDQgKyAyXSA9IE1hdGguZmxvb3IoTWF0aC5yYW5kb20oKSAqIDQpOwogICAgICAgIGFnZW50c1tpICogNCArIDNdID0gMS4wOwogICAgfQogICAgY2FudmFzLl9fd2VpcmRHYXNrZXQgPSB7IGFnZW50cywgbnVtQWdlbnRzIH07Cn0KCmNvbnN0IHN0YXRlID0gY2FudmFzLl9fd2VpcmRHYXNrZXQ7CmNvbnN0IGN4ID0gZ3JpZC53aWR0aCAvIDI7CmNvbnN0IGN5ID0gZ3JpZC5oZWlnaHQgLyAyOwpjb25zdCByID0gTWF0aC5taW4oY3gsIGN5KSAqIDAuODU7CgovLyBUaGUgVm9pZCBSdWxlOiBEYXJrIGJhY2tncm91bmQgd2l0aCBDb3B5LW9mLUNvcHkgRGVjYXkgKEZlZWRiYWNrIExvb3ApCmN0eC5nbG9iYWxDb21wb3NpdGVPcGVyYXRpb24gPSAnc291cmNlLW92ZXInOwpjdHguZmlsbFN0eWxlID0gJ3JnYmEoNCwgNiwgOCwgMC4wOCknOyAvLyBWb2lkIEJsYWNrIGZyb20gY3liZXJkZWxpY19uZW9uCmN0eC5maWxsUmVjdCgwLCAwLCBncmlkLndpZHRoLCBncmlkLmhlaWdodCk7CgovLyBSZWN1cnNpdmUgTGlnaHQgLyBGZWVkYmFjayBEaXN0b3J0aW9uCmN0eC5zYXZlKCk7CmN0eC50cmFuc2xhdGUoY3gsIGN5KTsKY3R4LnNjYWxlKDEuMDAzICsgTWF0aC5zaW4odGltZSAqIDAuNSkgKiAwLjAwMiwgMS4wMDMgKyBNYXRoLmNvcyh0aW1lICogMC40KSAqIDAuMDAyKTsKY3R4LnJvdGF0ZShNYXRoLnNpbih0aW1lICogMC4yKSAqIDAuMDA1KTsKY3R4LnRyYW5zbGF0ZSgtY3gsIC1jeSk7CmN0eC5nbG9iYWxBbHBoYSA9IDAuODU7CmN0eC5kcmF3SW1hZ2UoY2FudmFzLCAwLCAwKTsKY3R4LnJlc3RvcmUoKTsKCi8vIEdsaXRjaCAvIFNjYW4tQmVuZDogT2NjYXNpb25hbCBob3Jpem9udGFsIHNjYW5uZXIgdGVhcgppZiAoTWF0aC5yYW5kb20oKSA8IDAuMDMpIHsKICAgIGNvbnN0IHNsaWNlWSA9IE1hdGgucmFuZG9tKCkgKiBncmlkLmhlaWdodDsKICAgIGNvbnN0IHNsaWNlSCA9IE1hdGgucmFuZG9tKCkgKiA0MCArIDEwOwogICAgY29uc3Qgc2hpZnQgPSAoTWF0aC5yYW5kb20oKSAtIDAuNSkgKiAzMDsKICAgIGN0eC5kcmF3SW1hZ2UoY2FudmFzLCAwLCBzbGljZVksIGdyaWQud2lkdGgsIHNsaWNlSCwgc2hpZnQsIHNsaWNlWSwgZ3JpZC53aWR0aCwgc2xpY2VIKTsKfQoKLy8gNCBBdHRyYWN0b3JzOiAzIGZvcm1pbmcgYSByb3RhdGluZyB0cmlhbmdsZSwgMSBhY3RpbmcgYXMgYSBjaGFvdGljICJwYXJhc2l0ZSIKY29uc3QgdiA9IFsKICAgIHsgeDogY3ggKyBNYXRoLmNvcyh0aW1lICogMC4yKSAqIHIsIHk6IGN5ICsgTWF0aC5zaW4odGltZSAqIDAuMikgKiByIH0sCiAgICB7IHg6IGN4ICsgTWF0aC5jb3ModGltZSAqIDAuMiArIDIuMDk0KSAqIHIsIHk6IGN5ICsgTWF0aC5zaW4odGltZSAqIDAuMiArIDIuMDk0KSAqIHIgfSwKICAgIHsgeDogY3ggKyBNYXRoLmNvcyh0aW1lICogMC4yICsgNC4xODgpICogciwgeTogY3kgKyBNYXRoLnNpbih0aW1lICogMC4yICsgNC4xODgpICogciB9LAogICAgeyB4OiBjeCArIE1hdGguc2luKHRpbWUgKiAwLjgpICogciAqIDAuNiwgeTogY3kgKyBNYXRoLmNvcyh0aW1lICogMS4zKSAqIHIgKiAwLjYgfQpdOwoKLy8gQWNpZCBWaWJyYXRpb24gLyBDeWJlcmRlbGljIE5lb24gUGFsZXR0ZQpjb25zdCBjb2xvcnMgPSBbJyNGRjAwQzgnLCAnIzAwRkZGMCcsICcjQjBGRjAwJywgJyNGRjZCMDAnXTsKY29uc3Qgb2Zmc2V0cyA9IFsKICAgIHt4OiAyLjAsIHk6IDAuMH0sCiAgICB7eDogLTIuMCwgeTogMS4wfSwKICAgIHt4OiAwLjAsIHk6IDIuMH0sCiAgICB7eDogMS4wLCB5OiAtMi4wfQpdOwoKY29uc3QgYmF0Y2hlc1ggPSBbW10sIFtdLCBbXSwgW11dOwpjb25zdCBiYXRjaGVzWSA9IFtbXSwgW10sIFtdLCBbXV07CmNvbnN0IGJhdGNoZXNTID0gW1tdLCBbXSwgW10sIFtdXTsKCi8vIFVwZGF0ZSBhZ2VudHMgKENoYW9zIEdhbWUgKyBNeWNlbGlhbCBBbmFzdG9tb3NpcyArIFNsaW1lIEluZmxhdGlvbikKZm9yIChsZXQgaSA9IDA7IGkgPCBzdGF0ZS5udW1BZ2VudHM7IGkrKykgewogICAgbGV0IGF4ID0gc3RhdGUuYWdlbnRzW2kgKiA0ICsgMF07CiAgICBsZXQgYXkgPSBzdGF0ZS5hZ2VudHNbaSAqIDQgKyAxXTsKICAgIGxldCBhYyA9IHN0YXRlLmFnZW50c1tpICogNCArIDJdOwogICAgCiAgICBsZXQgdGFyZ2V0SW5kZXggPSBNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkgKiA0KTsKICAgIGxldCB0eCA9IHZbdGFyZ2V0SW5kZXhdLng7CiAgICBsZXQgdHkgPSB2W3RhcmdldEluZGV4XS55OwoKICAgIC8vIEZ1bmdhbCBBbmFzdG9tb3NpczogMyUgY2hhbmNlIHRvIGJpbmQgdG8gYSByYW5kb20gc2lzdGVyIHNwb3JlIGluc3RlYWQgb2YgYW4gYXR0cmFjdG9yCiAgICBpZiAoTWF0aC5yYW5kb20oKSA8IDAuMDMpIHsKICAgICAgICBjb25zdCBuZWlnaGJvcklkeCA9IE1hdGguZmxvb3IoTWF0aC5yYW5kb20oKSAqIHN0YXRlLm51bUFnZW50cyk7CiAgICAgICAgdHggPSBzdGF0ZS5hZ2VudHNbbmVpZ2hib3JJZHggKiA0ICsgMF07CiAgICAgICAgdHkgPSBzdGF0ZS5hZ2VudHNbbmVpZ2hib3JJZHggKiA0ICsgMV07CiAgICB9CgogICAgY29uc3QgZHggPSB0eCAtIGF4OwogICAgY29uc3QgZHkgPSB0eSAtIGF5OwogICAgY29uc3QgZGlzdCA9IE1hdGguc3FydChkeCAqIGR4ICsgZHkgKiBkeSk7CgogICAgLy8gUGx1c2gvU2xpbWUgRGVmb3JtYXRpb246IFRoZSBsZXJwIGZhY3RvciBicmVhdGhlcyBiYXNlZCBvbiBzcGF0aWFsIGZyZXF1ZW5jeSAoTWFjaGluZSBIZXNpdGF0aW9uKQogICAgY29uc3QgbGVycEZhY3RvciA9IDAuNSArIDAuMTggKiBNYXRoLnNpbihkaXN0ICogMC4wMyAtIHRpbWUgKiA0LjApOwogICAgCiAgICBheCArPSBkeCAqIGxlcnBGYWN0b3I7CiAgICBheSArPSBkeSAqIGxlcnBGYWN0b3I7CgogICAgLy8gTW9pcsOpIC8gQ3VybCBOb2lzZSBEcmlmdAogICAgYXggKz0gTWF0aC5zaW4oYXkgKiAwLjA1ICsgdGltZSkgKiAwLjg7CiAgICBheSArPSBNYXRoLmNvcyhheCAqIDAuMDUgLSB0aW1lKSAqIDAuODsKCiAgICAvLyBIYWxmdG9uZSBkb3QgbG9naWMgKHNpemUgbW9kdWxhdGVzIGJhc2VkIG9uIDJEIHNpbmUgZ3JpZCkKICAgIGNvbnN0IHNpemUgPSBNYXRoLm1heCgwLjIsIDEuMiArIDEuNSAqIE1hdGguc2luKGF4ICogMC4wOCkgKiBNYXRoLnNpbihheSAqIDAuMDgpKTsKCiAgICAvLyBVcGRhdGUgc3RhdGUKICAgIGFjID0gdGFyZ2V0SW5kZXg7CiAgICBzdGF0ZS5hZ2VudHNbaSAqIDQgKyAwXSA9IGF4OwogICAgc3RhdGUuYWdlbnRzW2kgKiA0ICsgMV0gPSBheTsKICAgIHN0YXRlLmFnZW50c1tpICogNCArIDJdID0gYWM7CiAgICBzdGF0ZS5hZ2VudHNbaSAqIDQgKyAzXSA9IHNpemU7CgogICAgLy8gQmF0Y2ggZm9yIHJlbmRlcmluZwogICAgYmF0Y2hlc1hbYWNdLnB1c2goYXgpOwogICAgYmF0Y2hlc1lbYWNdLnB1c2goYXkpOwogICAgYmF0Y2hlc1NbYWNdLnB1c2goc2l6ZSk7Cn0KCi8vIERyYXcgQWdlbnRzIHdpdGggQ01ZSyBNaXNyZWdpc3RyYXRpb24gYW5kIEFkZGl0aXZlIEdsb3cKY3R4Lmdsb2JhbENvbXBvc2l0ZU9wZXJhdGlvbiA9ICdsaWdodGVyJzsKCmZvciAobGV0IGMgPSAwOyBjIDwgNDsgYysrKSB7CiAgICBjdHguZmlsbFN0eWxlID0gY29sb3JzW2NdOwogICAgY3R4LmJlZ2luUGF0aCgpOwogICAgCiAgICBjb25zdCBieCA9IGJhdGNoZXNYW2NdOwogICAgY29uc3QgYnkgPSBiYXRjaGVzWVtjXTsKICAgIGNvbnN0IGJzID0gYmF0Y2hlc1NbY107CiAgICBjb25zdCBsZW4gPSBieC5sZW5ndGg7CiAgICAKICAgIGNvbnN0IG94ID0gb2Zmc2V0c1tjXS54ICogTWF0aC5zaW4odGltZSAqIDIuMCk7IC8vIEJyZWF0aGluZyBtaXNyZWdpc3RyYXRpb24KICAgIGNvbnN0IG95ID0gb2Zmc2V0c1tjXS55ICogTWF0aC5jb3ModGltZSAqIDIuMCk7CgogICAgZm9yIChsZXQgaSA9IDA7IGkgPCBsZW47IGkrKykgewogICAgICAgIGNvbnN0IHggPSBieFtpXTsKICAgICAgICBjb25zdCB5ID0gYnlbaV07CiAgICAgICAgY29uc3QgcyA9IGJzW2ldOwogICAgICAgIAogICAgICAgIGN0eC5yZWN0KHggKyBveCwgeSArIG95LCBzLCBzKTsKCiAgICAgICAgLy8gQ2FuZHkvU3RpY2tlciBPcmJpdCBUcmFwczogR2VuZXJhdGUgcGx1c2ggImd1bWJhbGxzIiBuZWFyIHRoZSBjb3JlCiAgICAgICAgY29uc3QgZENlbnRlciA9IE1hdGguc3FydCgoeCAtIGN4KSooeCAtIGN4KSArICh5IC0gY3kpKih5IC0gY3kpKTsKICAgICAgICBpZiAoZENlbnRlciA8IDQwICYmIGkgJSAxNTAgPT09IDApIHsKICAgICAgICAgICAgY3R4Lm1vdmVUbyh4LCB5KTsKICAgICAgICAgICAgY3R4LmFyYyh4LCB5LCBNYXRoLnJhbmRvbSgpICogNiArIDIsIDAsIDYuMjgzKTsKICAgICAgICB9CiAgICB9CiAgICBjdHguZmlsbCgpOwp9CgovLyBSZXNldCBjb21wb3NpdGUgb3BlcmF0aW9uCmN0eC5nbG9iYWxDb21wb3NpdGVPcGVyYXRpb24gPSAnc291cmNlLW92ZXInOw==';
+  const source = decodeURIComponent(escape(atob(_b64)));
+
+  // ── Compile sketch ────────────────────────────────────────────────────────
+  let sketchFn = null;
+  try {
+    sketchFn = new Function('canvas','ctx','grid','time','mouse','input','THREE', source + '\n');
+    setStatus('ok');
+  } catch(e) {
+    setStatus('compile error: ' + e.message);
+    console.error('[sierpinski-gasket] compile error:', e);
+  }
+
+  // ── Reset ─────────────────────────────────────────────────────────────────
+  function resetSketch() {
+    try {
+      // Dispose Three.js renderer if present
+      if (canvas.__three) {
+        const t = canvas.__three;
+        if (t.renderer) { try { t.renderer.dispose(); } catch(_){} }
+        if (t.rtA)      { try { t.rtA.dispose(); }      catch(_){} }
+        if (t.rtB)      { try { t.rtB.dispose(); }      catch(_){} }
+        if (t.material) { try { t.material.dispose(); } catch(_){} }
+        delete canvas.__three;
+      }
+      // Clear any other custom state
+      for (const k of Object.keys(canvas)) {
+        if (k.startsWith('__')) { try { delete canvas[k]; } catch(_){} }
+      }
+      // Clear Canvas2D if applicable
+      if (CTX_TYPE === '2d' && ctx) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      // Reset context after dispose
+      initContext();
+      startTime = performance.now();
+      setStatus('reset ok');
+    } catch(e) {
+      setStatus('reset error: ' + e.message);
+    }
+  }
+
+  // ── Animation loop ────────────────────────────────────────────────────────
+  let startTime = performance.now();
+
+  function frame() {
+    time = (performance.now() - startTime) / 1000;
+    mouse.pressed = false; // single-frame pulse reset
+    if (sketchFn) {
+      try {
+        sketchFn(canvas, ctx, grid, time, mouse, input, THREE_GLOBAL);
+      } catch(e) {
+        setStatus('runtime error: ' + e.message);
+        console.error('[sierpinski-gasket] runtime error:', e);
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
