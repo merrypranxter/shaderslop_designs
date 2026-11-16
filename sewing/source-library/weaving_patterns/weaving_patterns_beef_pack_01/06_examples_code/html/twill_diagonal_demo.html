@@ -1,0 +1,4 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Twill Diagonal Demo</title><style>body{margin:0;background:#111;color:white;font-family:monospace}canvas{display:block}</style><script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script></head><body><script>
+function setup(){createCanvas(900,900); noLoop(); pixelDensity(1)}
+function draw(){background(20); let n=96; let s=width/n; noStroke(); for(let y=0;y<n;y++){for(let x=0;x<n;x++){let m=((x+y)%4)<2; fill(m?230:40); rect(x*s,y*s,s,s)}}}
+</script></body></html>

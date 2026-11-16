@@ -1,0 +1,477 @@
+{
+  "collection": "sewing",
+  "curated_on": "2026-11-15",
+  "originals_preserved": true,
+  "sketch_count": 24,
+  "glsl_snippet_count": 16,
+  "designs": [
+    {
+      "name": "lenia-lace",
+      "group": "lace-and-crochet",
+      "html": "lace-and-crochet/lenia-lace.html",
+      "js": "lace-and-crochet/lenia-lace.js",
+      "thumbnail": "_thumbs/03_lenia-lace.jpg",
+      "original_html": "by_math/03_cellular_automata_lenia_sandpiles/lenia-lace.html",
+      "original_js": "by_math/03_cellular_automata_lenia_sandpiles/lenia-lace.js",
+      "about": "1. SEED SHADER: Generates the initial Quasicrystal / Tessellation brocade · p6m Quasicrystal Fold · Interference patterns",
+      "sources": [
+        "repo_script_js5_code/lenia-lace.js"
+      ]
+    },
+    {
+      "name": "rd-lace-sampler",
+      "group": "lace-and-crochet",
+      "html": "lace-and-crochet/rd-lace-sampler.html",
+      "js": "lace-and-crochet/rd-lace-sampler.js",
+      "thumbnail": "_thumbs/02_rd-lace-sampler.jpg",
+      "original_html": "by_math/02_reaction_diffusion_turing_patterns/rd-lace-sampler.html",
+      "original_js": "by_math/02_reaction_diffusion_turing_patterns/rd-lace-sampler.js",
+      "about": "Clean up previous instances if resizing · INIT SHADER: Seeds the initial RD state · Radial seeds for lace medallions",
+      "sources": [
+        "repo_script_js5_code/rd-lace-sampler.js"
+      ]
+    },
+    {
+      "name": "fractal_crochet",
+      "group": "lace-and-crochet",
+      "html": "lace-and-crochet/fractal_crochet.html",
+      "js": "lace-and-crochet/fractal_crochet.js",
+      "thumbnail": "_thumbs/11_fractal_crochet.jpg",
+      "original_html": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/fractal_crochet.html",
+      "original_js": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/fractal_crochet.js",
+      "about": "2D Rotation Matrix · Psychedelic Neon Acid / Oklab inspired Cosine Palette · Mathematical Crochet & Fractal Lace SDF",
+      "sources": [
+        "repo_script_js5_code/fractal_crochet.js"
+      ]
+    },
+    {
+      "name": "colorful_fungi_20260617_094948",
+      "group": "lace-and-crochet",
+      "html": "lace-and-crochet/colorful_fungi_20260617_094948.html",
+      "js": "lace-and-crochet/colorful_fungi_20260617_094948.js",
+      "thumbnail": "_thumbs/04_colorful_fungi_20260617_094948.jpg",
+      "original_html": "by_math/04_agent_systems_slime_mycelium_flocking/colorful_fungi_20260617_094948.html",
+      "original_js": "by_math/04_agent_systems_slime_mycelium_flocking/colorful_fungi_20260617_094948.js",
+      "about": "Fungal Math & Constants · 137.5 degrees in radians · Slow enzymatic decay (white rot lace effect)",
+      "sources": [
+        "shader_files_2/colorful_fungi_20260617_094948.js"
+      ]
+    },
+    {
+      "name": "acid-textile",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/acid-textile.html",
+      "js": "weaving-and-jacquard/acid-textile.js",
+      "thumbnail": "_thumbs/06_acid-textile.jpg",
+      "original_html": "by_math/06_tilings_voronoi_weaving/acid-textile.html",
+      "original_js": "by_math/06_tilings_voronoi_weaving/acid-textile.js",
+      "about": "Kleinian / Hyperbolic Math · Procedural Noise · Lisa Frank / Neon Acid Palette",
+      "sources": [
+        "repo_script_js5_code/acid-textile.js"
+      ]
+    },
+    {
+      "name": "acid-weave",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/acid-weave.html",
+      "js": "weaving-and-jacquard/acid-weave.js",
+      "thumbnail": "_thumbs/06_acid-weave.jpg",
+      "original_html": "by_math/06_tilings_voronoi_weaving/acid-weave.html",
+      "original_js": "by_math/06_tilings_voronoi_weaving/acid-weave.js",
+      "about": "Complex math for Kleinian/Mobius folds · Hash and Noise for Batik Crackle and Ikat Bleed · Neon Acid Palette (from color_fields/cosine_palette)",
+      "sources": [
+        "repo_script_js5_code/acid-weave.js"
+      ]
+    },
+    {
+      "name": "acidic-textile",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/acidic-textile.html",
+      "js": "weaving-and-jacquard/acidic-textile.js",
+      "thumbnail": "_thumbs/06_acidic-textile.jpg",
+      "original_html": "by_math/06_tilings_voronoi_weaving/acidic-textile.html",
+      "original_js": "by_math/06_tilings_voronoi_weaving/acidic-textile.js",
+      "about": "Mathematical & Feral Noise · Acidic Toxic Palettes · Autophagic Weave Topology",
+      "sources": [
+        "repo_script_js5_code/acidic-textile.js"
+      ]
+    },
+    {
+      "name": "acidic-warp",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/acidic-warp.html",
+      "js": "weaving-and-jacquard/acidic-warp.js",
+      "thumbnail": "_thumbs/06_acidic-warp.jpg",
+      "original_html": "by_math/06_tilings_voronoi_weaving/acidic-warp.html",
+      "original_js": "by_math/06_tilings_voronoi_weaving/acidic-warp.js",
+      "about": "The Feral Jacquard Loom: A mathematically corrupted, highly acidic textile engine. · Combines domain warping, bitwise XOR fractals, anisotropic thread shading, · and structural lace burnout.",
+      "sources": [
+        "repo_script_js5_code/acidic-warp.js",
+        "repo_script_js5_code/acidic-weave.js"
+      ]
+    },
+    {
+      "name": "living-fabric",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/living-fabric.html",
+      "js": "weaving-and-jacquard/living-fabric.js",
+      "thumbnail": "_thumbs/06_living-fabric.jpg",
+      "original_html": "by_math/06_tilings_voronoi_weaving/living-fabric.html",
+      "original_js": "by_math/06_tilings_voronoi_weaving/living-fabric.js",
+      "about": "CORE MATH & NOISE (THE WET ENGINE) · 5-octave FBM for the living fabric domain warp · MOIRE / HALFTONE DOT FUNCTION",
+      "sources": [
+        "repo_script_js5_code/living-fabric.js"
+      ]
+    },
+    {
+      "name": "math-textile",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/math-textile.html",
+      "js": "weaving-and-jacquard/math-textile.js",
+      "thumbnail": "_thumbs/06_math-textile.jpg",
+      "original_html": "by_math/06_tilings_voronoi_weaving/math-textile.html",
+      "original_js": "by_math/06_tilings_voronoi_weaving/math-textile.js",
+      "about": "[GLITCH PROPHET] Deterministic hardware confusion · Noise for resist dye diffusion · [STRUCTURAL COLOR] Physics-based spectral interference mapping",
+      "sources": [
+        "repo_script_js5_code/math-textile.js"
+      ]
+    },
+    {
+      "name": "math-weave",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/math-weave.html",
+      "js": "weaving-and-jacquard/math-weave.js",
+      "thumbnail": "_thumbs/06_math-weave.jpg",
+      "original_html": "by_math/06_tilings_voronoi_weaving/math-weave.html",
+      "original_js": "by_math/06_tilings_voronoi_weaving/math-weave.js",
+      "about": "Hash & FBM for Fiber Microstructure & Hyperbolic Warp · Oklch to sRGB (Perceptual Color Space from color_systems repo) · Black Body Radiation (from color_fields repo)",
+      "sources": [
+        "repo_script_js5_code/math-weave.js"
+      ]
+    },
+    {
+      "name": "math_weave",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/math_weave.html",
+      "js": "weaving-and-jacquard/math_weave.js",
+      "thumbnail": "_thumbs/06_math_weave.jpg",
+      "original_html": "by_math/06_tilings_voronoi_weaving/math_weave.html",
+      "original_js": "by_math/06_tilings_voronoi_weaving/math_weave.js",
+      "about": "FERAL HYBRID MECHANISM: · We are building a \"Julia Jacquard Loom\". · It weaves a physical fabric (warp & weft cylinders) where the interlacing",
+      "sources": [
+        "repo_script_js5_code/math_weave.js"
+      ]
+    },
+    {
+      "name": "ca-tartan",
+      "group": "tartan-and-plaid",
+      "html": "tartan-and-plaid/ca-tartan.html",
+      "js": "tartan-and-plaid/ca-tartan.js",
+      "thumbnail": "_thumbs/03_ca-tartan.jpg",
+      "original_html": "by_math/03_cellular_automata_lenia_sandpiles/ca-tartan.html",
+      "original_js": "by_math/03_cellular_automata_lenia_sandpiles/ca-tartan.js",
+      "about": "Number of threads in the weave · CA State Arrays · Hash function for fibers",
+      "sources": [
+        "repo_script_js5_code/ca-tartan.js"
+      ]
+    },
+    {
+      "name": "ca_tartan",
+      "group": "tartan-and-plaid",
+      "html": "tartan-and-plaid/ca_tartan.html",
+      "js": "tartan-and-plaid/ca_tartan.js",
+      "thumbnail": "_thumbs/03_ca_tartan.jpg",
+      "original_html": "by_math/03_cellular_automata_lenia_sandpiles/ca_tartan.html",
+      "original_js": "by_math/03_cellular_automata_lenia_sandpiles/ca_tartan.js",
+      "about": "",
+      "sources": [
+        "repo_script_js5_code/ca_tartan.js"
+      ]
+    },
+    {
+      "name": "quasicrystal-brocade",
+      "group": "brocade-damask-embroidery",
+      "html": "brocade-damask-embroidery/quasicrystal-brocade.html",
+      "js": "brocade-damask-embroidery/quasicrystal-brocade.js",
+      "thumbnail": "_thumbs/07_quasicrystal-brocade.jpg",
+      "original_html": "by_math/07_quasicrystals_aperiodic_order/quasicrystal-brocade.html",
+      "original_js": "by_math/07_quasicrystals_aperiodic_order/quasicrystal-brocade.js",
+      "about": "Generates the quasicrystal heightfield, thread structure, and embroidery mask · 12-fold Quasicrystal mathematical loom · Gentle phase drift to make the pattern alive",
+      "sources": [
+        "repo_script_js5_code/quasicrystal-brocade.js"
+      ]
+    },
+    {
+      "name": "quasicrystal_brocade",
+      "group": "brocade-damask-embroidery",
+      "html": "brocade-damask-embroidery/quasicrystal_brocade.html",
+      "js": "brocade-damask-embroidery/quasicrystal_brocade.js",
+      "thumbnail": "_thumbs/07_quasicrystal_brocade.jpg",
+      "original_html": "by_math/07_quasicrystals_aperiodic_order/quasicrystal_brocade.html",
+      "original_js": "by_math/07_quasicrystals_aperiodic_order/quasicrystal_brocade.js",
+      "about": "7-Fold Quasicrystal Wave Summation · Structural Color / Thin-film Palette · Procedural height map for the brocade loom",
+      "sources": [
+        "repo_script_js5_code/quasicrystal_brocade.js"
+      ]
+    },
+    {
+      "name": "lenia-velvet-damask",
+      "group": "brocade-damask-embroidery",
+      "html": "brocade-damask-embroidery/lenia-velvet-damask.html",
+      "js": "brocade-damask-embroidery/lenia-velvet-damask.js",
+      "thumbnail": "_thumbs/03_lenia-velvet-damask.jpg",
+      "original_html": "by_math/03_cellular_automata_lenia_sandpiles/lenia-velvet-damask.html",
+      "original_js": "by_math/03_cellular_automata_lenia_sandpiles/lenia-velvet-damask.js",
+      "about": "Generates the Lenia-style cellular damask pattern · Slowly unroll the fabric · Damask mirrored folding (p4m wallpaper group symmetry)",
+      "sources": [
+        "repo_script_js5_code/lenia-velvet-damask.js"
+      ]
+    },
+    {
+      "name": "lenia_velvet_damask",
+      "group": "brocade-damask-embroidery",
+      "html": "brocade-damask-embroidery/lenia_velvet_damask.html",
+      "js": "brocade-damask-embroidery/lenia_velvet_damask.js",
+      "thumbnail": "_thumbs/03_lenia_velvet_damask.jpg",
+      "original_html": "by_math/03_cellular_automata_lenia_sandpiles/lenia_velvet_damask.html",
+      "original_js": "by_math/03_cellular_automata_lenia_sandpiles/lenia_velvet_damask.js",
+      "about": "Initialization · 9-tap Laplacian for smoother, Lenia-like organic curves · Gray-Scott parameters tuned for intricate Damask mazes",
+      "sources": [
+        "repo_script_js5_code/lenia_velvet_damask.js"
+      ]
+    },
+    {
+      "name": "fabric-damage",
+      "group": "fabric-and-moire",
+      "html": "fabric-and-moire/fabric-damage.html",
+      "js": "fabric-and-moire/fabric-damage.js",
+      "thumbnail": "_thumbs/11_fabric-damage.jpg",
+      "original_html": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/fabric-damage.html",
+      "original_js": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/fabric-damage.js",
+      "about": "{5,4} Tiling Constants · Center of inversion circle: c = cos(PI/4) / sin(PI/5) = 0.707106 / 0.587785 = 1.20299 · Radius: r = sqrt(c^2 - 1) = 0.66874",
+      "sources": [
+        "repo_script_js5_code/fabric-damage.js"
+      ]
+    },
+    {
+      "name": "magenta-glitch-tape",
+      "group": "fabric-and-moire",
+      "html": "fabric-and-moire/magenta-glitch-tape.html",
+      "js": "fabric-and-moire/magenta-glitch-tape.js",
+      "thumbnail": "_thumbs/15_magenta-glitch-tape.jpg",
+      "original_html": "by_math/15_signal_processing_vhs_crt_glitch/magenta-glitch-tape.html",
+      "original_js": "by_math/15_signal_processing_vhs_crt_glitch/magenta-glitch-tape.js",
+      "about": "Crossing lines for a woven textile / screen door effect · Tracking Glitch (Tearing & Bands) from the Damage Taxonomy · Head-switching noise at bottom of the frame",
+      "sources": [
+        "repo_script_js5_code/magenta-glitch-tape.js"
+      ]
+    },
+    {
+      "name": "magenta-tape-glitch",
+      "group": "fabric-and-moire",
+      "html": "fabric-and-moire/magenta-tape-glitch.html",
+      "js": "fabric-and-moire/magenta-tape-glitch.js",
+      "thumbnail": "_thumbs/15_magenta-tape-glitch.jpg",
+      "original_html": "by_math/15_signal_processing_vhs_crt_glitch/magenta-tape-glitch.html",
+      "original_js": "by_math/15_signal_processing_vhs_crt_glitch/magenta-tape-glitch.js",
+      "about": "Hash for noise · Continuous sinusoidal grid for soft interference · Woven moire pattern from two diagonal grids",
+      "sources": [
+        "repo_script_js5_code/magenta-tape-glitch.js"
+      ]
+    },
+    {
+      "name": "repo-shader-flux",
+      "group": "lace-inspired-geometry",
+      "html": "lace-inspired-geometry/repo-shader-flux.html",
+      "js": "lace-inspired-geometry/repo-shader-flux.js",
+      "thumbnail": "_thumbs/10_repo-shader-flux.jpg",
+      "original_html": "by_math/10_raymarched_3d_sdf_gyroids/repo-shader-flux.html",
+      "original_js": "by_math/10_raymarched_3d_sdf_gyroids/repo-shader-flux.js",
+      "about": "BASE PASS: RAYMARCHED CYMATIC GYROID · COLOR SYSTEMS: OKLCh to sRGB conversion for perceptually uniform neon colors · THE-LISTS & CYMATICS & LACE: Spatial mapping",
+      "sources": [
+        "repo_script_js5_code/repo-shader-flux.js"
+      ]
+    },
+    {
+      "name": "vivid-repo-shader",
+      "group": "lace-inspired-geometry",
+      "html": "lace-inspired-geometry/vivid-repo-shader.html",
+      "js": "lace-inspired-geometry/vivid-repo-shader.js",
+      "thumbnail": "_thumbs/08_vivid-repo-shader.jpg",
+      "original_html": "by_math/08_waves_interference_moire_cymatics/vivid-repo-shader.html",
+      "original_js": "by_math/08_waves_interference_moire_cymatics/vivid-repo-shader.js",
+      "about": "Setup Scene & Camera · THE ALCHEMICAL SHADER · A chimera of Cymatics (Bessel functions), Moiré interference, Lace topology,",
+      "sources": [
+        "repo_script_js5_code/vivid-repo-shader.js",
+        "shader_files_2/neon-flow-shader_20260611_154809.js"
+      ]
+    },
+    {
+      "name": "acidic-weave",
+      "group": "weaving-and-jacquard",
+      "html": "weaving-and-jacquard/acidic-weave.html",
+      "js": "weaving-and-jacquard/acidic-weave.js",
+      "thumbnail": null,
+      "original_html": "repo_script_js5_code/acidic-weave.html",
+      "original_js": "repo_script_js5_code/acidic-weave.js",
+      "about": "Alternate HTML wrapper for acidic-warp (shares JS shader)",
+      "sources": [
+        "repo_script_js5_code/acidic-weave.js"
+      ]
+    }
+  ],
+  "source_library": [
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/glsl/chain_stitch_loop_field.glsl",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/glsl/chain_stitch_loop_field.glsl"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/glsl/cross_stitch_cell.glsl",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/glsl/cross_stitch_cell.glsl"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/glsl/fabric_grain_noise.glsl",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/glsl/fabric_grain_noise.glsl"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/glsl/french_knot_bump.glsl",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/glsl/french_knot_bump.glsl"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/glsl/stitch_capsule_sdf.glsl",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/glsl/stitch_capsule_sdf.glsl"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/glsl/thread_anisotropic_highlight.glsl",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/glsl/thread_anisotropic_highlight.glsl"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/html_p5/blackwork_fill_demo.html",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/html_p5/blackwork_fill_demo.html"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/html_p5/chain_stitch_spiral_demo.html",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/html_p5/chain_stitch_spiral_demo.html"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/html_p5/cross_stitch_grid_demo.html",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/html_p5/cross_stitch_grid_demo.html"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/html_p5/french_knot_field_demo.html",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/html_p5/french_knot_field_demo.html"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/html_p5/running_stitch_orbits_demo.html",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/html_p5/running_stitch_orbits_demo.html"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/js/palette_thread_keys.js",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/js/palette_thread_keys.js"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/js/stitch_grid_utils.js",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/js/stitch_grid_utils.js"
+    },
+    {
+      "repo": "embroidery_and_stitch_patterns",
+      "path": "code/js/stitch_path_generator.js",
+      "dest": "sewing/source-library/embroidery_and_stitch_patterns/code/js/stitch_path_generator.js"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/05_shader_templates/glsl/anisotropic_thread_light.glsl",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/05_shader_templates/glsl/anisotropic_thread_light.glsl"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/05_shader_templates/glsl/draft_matrix_lookup.glsl",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/05_shader_templates/glsl/draft_matrix_lookup.glsl"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/05_shader_templates/glsl/fiber_fuzz_noise.glsl",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/05_shader_templates/glsl/fiber_fuzz_noise.glsl"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/05_shader_templates/glsl/float_shadow_occlusion.glsl",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/05_shader_templates/glsl/float_shadow_occlusion.glsl"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/05_shader_templates/glsl/herringbone_weave.glsl",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/05_shader_templates/glsl/herringbone_weave.glsl"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/05_shader_templates/glsl/plain_weave.glsl",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/05_shader_templates/glsl/plain_weave.glsl"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/05_shader_templates/glsl/tartan_color_logic.glsl",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/05_shader_templates/glsl/tartan_color_logic.glsl"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/05_shader_templates/glsl/twill_weave.glsl",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/05_shader_templates/glsl/twill_weave.glsl"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/06_examples_code/html/plain_weave_drawdown.html",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/06_examples_code/html/plain_weave_drawdown.html"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/06_examples_code/html/tartan_thread_color_demo.html",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/06_examples_code/html/tartan_thread_color_demo.html"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/06_examples_code/html/twill_diagonal_demo.html",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/06_examples_code/html/twill_diagonal_demo.html"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/06_examples_code/js/draft_utils.js",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/06_examples_code/js/draft_utils.js"
+    },
+    {
+      "repo": "weaving_patterns",
+      "path": "weaving_patterns_beef_pack_01/06_examples_code/js/svg_drawdown_renderer.js",
+      "dest": "sewing/source-library/weaving_patterns/weaving_patterns_beef_pack_01/06_examples_code/js/svg_drawdown_renderer.js"
+    },
+    {
+      "repo": "textile_pattern_systems",
+      "path": "06_shader_translation/knit_shader.glsl",
+      "dest": "sewing/source-library/textile_pattern_systems/06_shader_translation/knit_shader.glsl"
+    },
+    {
+      "repo": "textile_pattern_systems",
+      "path": "06_shader_translation/weave_shader.glsl",
+      "dest": "sewing/source-library/textile_pattern_systems/06_shader_translation/weave_shader.glsl"
+    }
+  ],
+  "original_exports": [
+    "fabric-damage.html",
+    "lenia-lace.html",
+    "lenia-velvet-damask.html",
+    "living-fabric.html",
+    "rd-lace-sampler.html"
+  ]
+}

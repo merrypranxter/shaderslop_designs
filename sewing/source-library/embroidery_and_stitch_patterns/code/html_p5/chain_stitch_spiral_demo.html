@@ -1,0 +1,4 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Chain Stitch Spiral</title><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script></head><body><script>
+function setup(){createCanvas(900,900); noLoop();}
+function draw(){background('#130d1c'); translate(width/2,height/2); noFill(); strokeWeight(3); for(let i=0;i<260;i++){let a=i*.28, r=10+i*1.45; let x=cos(a)*r, y=sin(a)*r; stroke(180+70*sin(i*.1),80+120*sin(i*.07),240); ellipse(x,y,18,28);}} 
+</script></body></html>

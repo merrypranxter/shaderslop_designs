@@ -1,0 +1,4 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Blackwork Fill Demo</title><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script></head><body><script>
+function setup(){createCanvas(900,900); noLoop();}
+function draw(){background('#f5ecd8'); stroke('#111'); strokeWeight(1.5); let s=24; for(let y=0;y<height;y+=s){for(let x=0;x<width;x+=s){let inside=dist(x,y,width/2,height/2)<330; if(inside){line(x,y,x+s,y+s); if((x+y)/s%2==0) line(x+s,y,x,y+s);}}} }
+</script></body></html>

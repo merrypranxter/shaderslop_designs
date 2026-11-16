@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Tartan Thread Color Demo</title><style>body{margin:0;background:#111;color:white;font-family:monospace}canvas{display:block}</style><script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script></head><body><script>
+let pal=['#10203f','#b91522','#f4e5a1','#0e5c35'];
+function band(i){let seq=[0,0,1,2,1,0,3,3,0,1,2,1]; return pal[seq[i%seq.length]]}
+function setup(){createCanvas(900,900); noLoop(); pixelDensity(1)}
+function draw(){let n=96,s=width/n; noStroke(); for(let y=0;y<n;y++){for(let x=0;x<n;x++){let warp=((x+y)%2); let c=warp?band(x):band(y); fill(c); rect(x*s,y*s,s,s)}}}
+</script></body></html>

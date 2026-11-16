@@ -1,0 +1,5 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Running Stitch Orbits</title><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script></head><body><script>
+function setup(){createCanvas(900,900); noLoop();}
+function draw(){background('#101018'); translate(width/2,height/2); stroke('#f7f1d8'); strokeWeight(3); noFill(); for(let r=80;r<420;r+=38){let steps=floor(TWO_PI*r/22); for(let i=0;i<steps;i+=2){let a1=i*TWO_PI/steps, a2=(i+1)*TWO_PI/steps; line(cos(a1)*r,sin(a1)*r,cos(a2)*r,sin(a2)*r);}} }
+function mousePressed(){redraw();}
+</script></body></html>

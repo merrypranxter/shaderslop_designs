@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><title>French Knot Field</title><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script></head><body><script>
+let colors=['#ff4fb8','#ffe66d','#70ffcf','#7aa7ff','#ffffff'];
+function setup(){createCanvas(900,900); noLoop();}
+function draw(){background('#221b26'); noStroke(); for(let i=0;i<1200;i++){let x=random(width), y=random(height); let m=noise(x*.006,y*.006); if(m>.35){fill(random(colors)); circle(x,y,random(2,8)); fill(255,80); circle(x-1,y-1,1.5);}} }
+function mousePressed(){redraw();}
+</script></body></html>

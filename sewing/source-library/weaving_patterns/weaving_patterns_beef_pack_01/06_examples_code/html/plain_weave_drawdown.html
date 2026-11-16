@@ -1,0 +1,4 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Plain Weave Drawdown</title><style>body{margin:0;background:#111;color:white;font-family:monospace}canvas{display:block}</style><script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script></head><body><script>
+function setup(){createCanvas(900,900); noLoop(); pixelDensity(1)}
+function draw(){background(245); let n=72; let s=width/n; noStroke(); for(let y=0;y<n;y++){for(let x=0;x<n;x++){let warp=(x+y)%2; fill(warp?30:220); rect(x*s,y*s,s,s); if(warp){fill(255,80); rect(x*s,y*s+s*.38,s,s*.24)}else{fill(0,35); rect(x*s+s*.38,y*s,s*.24,s)}}}}
+</script></body></html>
