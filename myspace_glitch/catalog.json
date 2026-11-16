@@ -1862,5 +1862,294 @@
       "repo": "merrypranxter/glitchGL",
       "role": "WebGL glitch distortion library and examples"
     }
+  ],
+  "added_archive_pairs": 24,
+  "added_reference_documents": 17,
+  "added_source_files": 6,
+  "archive_variants": [
+    {
+      "name": "myspace-glitchscape",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "archive-variants/repo_script_js5_code/myspace-glitchscape.html",
+      "js": "archive-variants/repo_script_js5_code/myspace-glitchscape.js"
+    },
+    {
+      "name": "neon-subpixel-pulse",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "archive-variants/repo_script_js5_code/neon-subpixel-pulse.html",
+      "js": "archive-variants/repo_script_js5_code/neon-subpixel-pulse.js"
+    },
+    {
+      "name": "repo-ascii",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "archive-variants/repo_script_js5_code/repo-ascii.html",
+      "js": "archive-variants/repo_script_js5_code/repo-ascii.js"
+    },
+    {
+      "name": "vivid_glitch",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "archive-variants/repo_script_js5_code/vivid_glitch.html",
+      "js": "archive-variants/repo_script_js5_code/vivid_glitch.js"
+    },
+    {
+      "name": "vivid_glitch_lenia",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "archive-variants/repo_script_js5_code/vivid_glitch_lenia.html",
+      "js": "archive-variants/repo_script_js5_code/vivid_glitch_lenia.js"
+    },
+    {
+      "name": "vivid_glitchcore",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "archive-variants/repo_script_js5_code/vivid_glitchcore.html",
+      "js": "archive-variants/repo_script_js5_code/vivid_glitchcore.js"
+    },
+    {
+      "name": "vivid_signal_decay",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "archive-variants/repo_script_js5_code/vivid_signal_decay.html",
+      "js": "archive-variants/repo_script_js5_code/vivid_signal_decay.js"
+    },
+    {
+      "name": "amazinglyglitchy_20260611_150640",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/amazinglyglitchy_20260611_150640.html",
+      "js": "archive-variants/shader_files_2/amazinglyglitchy_20260611_150640.js"
+    },
+    {
+      "name": "glitchscape_20260611_142934",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/glitchscape_20260611_142934.html",
+      "js": "archive-variants/shader_files_2/glitchscape_20260611_142934.js"
+    },
+    {
+      "name": "glitchscape_20260611_143650",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/glitchscape_20260611_143650.html",
+      "js": "archive-variants/shader_files_2/glitchscape_20260611_143650.js"
+    },
+    {
+      "name": "glitchscape_20260611_153228",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/glitchscape_20260611_153228.html",
+      "js": "archive-variants/shader_files_2/glitchscape_20260611_153228.js"
+    },
+    {
+      "name": "glitchscape_20260611_160049",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/glitchscape_20260611_160049.html",
+      "js": "archive-variants/shader_files_2/glitchscape_20260611_160049.js"
+    },
+    {
+      "name": "myspace-glitch_20260611_154144",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/myspace-glitch_20260611_154144.html",
+      "js": "archive-variants/shader_files_2/myspace-glitch_20260611_154144.js"
+    },
+    {
+      "name": "myspace-glitchscape_20260611_152933",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/myspace-glitchscape_20260611_152933.html",
+      "js": "archive-variants/shader_files_2/myspace-glitchscape_20260611_152933.js"
+    },
+    {
+      "name": "myspace-glitchscape_20260612_004519",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/myspace-glitchscape_20260612_004519.html",
+      "js": "archive-variants/shader_files_2/myspace-glitchscape_20260612_004519.js"
+    },
+    {
+      "name": "myspace_glitchscape_20260611_154350",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/myspace_glitchscape_20260611_154350.html",
+      "js": "archive-variants/shader_files_2/myspace_glitchscape_20260611_154350.js"
+    },
+    {
+      "name": "ooooooooo_glitchy_20260611_145314",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/ooooooooo_glitchy_20260611_145314.html",
+      "js": "archive-variants/shader_files_2/ooooooooo_glitchy_20260611_145314.js"
+    },
+    {
+      "name": "chroma_codec_shrine_20260618_192141",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/chroma_codec_shrine_20260618_192141.html",
+      "js": "archive-variants/shader_files_2/chroma_codec_shrine_20260618_192141.js"
+    },
+    {
+      "name": "chromatophore_codec_shrine_20260618_184028",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184028.html",
+      "js": "archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184028.js"
+    },
+    {
+      "name": "chromatophore_codec_shrine_20260618_184555",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184555.html",
+      "js": "archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184555.js"
+    },
+    {
+      "name": "myspace-glitchscape_20260612_004546",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/myspace-glitchscape_20260612_004546.html",
+      "js": "archive-variants/shader_files_2/myspace-glitchscape_20260612_004546.js"
+    },
+    {
+      "name": "glitchscape_20260611_142951",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "archive-variants/shader_files_2/glitchscape_20260611_142951.html",
+      "js": "archive-variants/shader_files_2/glitchscape_20260611_142951.js"
+    },
+    {
+      "name": "geocities_cathedral_20260709_213502",
+      "source_repo": "merrypranxter/shaderfiles3",
+      "html": "archive-variants/shaderfiles3/geocities_cathedral_20260709_213502.html",
+      "js": "archive-variants/shaderfiles3/geocities_cathedral_20260709_213502.js"
+    },
+    {
+      "name": "geocities_cathedral_20260709_213510",
+      "source_repo": "merrypranxter/shaderfiles3",
+      "html": "archive-variants/shaderfiles3/geocities_cathedral_20260709_213510.html",
+      "js": "archive-variants/shaderfiles3/geocities_cathedral_20260709_213510.js"
+    }
+  ],
+  "source_library": [
+    {
+      "source_repo": "merrypranxter/myspace_aesthetic",
+      "original_path": "myspace_angelfire_graphics_style/03_palette_and_effects/glitter_logic.md",
+      "local_path": "source-library/myspace_aesthetic/myspace_angelfire_graphics_style/03_palette_and_effects/glitter_logic.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/myspace_aesthetic",
+      "original_path": "myspace_angelfire_graphics_style/03_palette_and_effects/hot_pink_glitter_palettes.md",
+      "local_path": "source-library/myspace_aesthetic/myspace_angelfire_graphics_style/03_palette_and_effects/hot_pink_glitter_palettes.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/myspace_aesthetic",
+      "original_path": "myspace_angelfire_graphics_style/05_substyles/myspace_profile_bling.md",
+      "local_path": "source-library/myspace_aesthetic/myspace_angelfire_graphics_style/05_substyles/myspace_profile_bling.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/myspace_aesthetic",
+      "original_path": "myspace_angelfire_graphics_style/09_shader_and_genart_translation/shader_behavior_overview.md",
+      "local_path": "source-library/myspace_aesthetic/myspace_angelfire_graphics_style/09_shader_and_genart_translation/shader_behavior_overview.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/myspace_aesthetic",
+      "original_path": "myspace_angelfire_graphics_style/09_shader_and_genart_translation/glitter_field_simulation.md",
+      "local_path": "source-library/myspace_aesthetic/myspace_angelfire_graphics_style/09_shader_and_genart_translation/glitter_field_simulation.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/myspace_aesthetic",
+      "original_path": "myspace_angelfire_graphics_style/07_webpage_logic/tiled_background_logic.md",
+      "local_path": "source-library/myspace_aesthetic/myspace_angelfire_graphics_style/07_webpage_logic/tiled_background_logic.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/early_internet_aesthetic",
+      "original_path": "15_theme_and_code_packs/myspace_profile_css_pack.md",
+      "local_path": "source-library/early_internet_aesthetic/15_theme_and_code_packs/myspace_profile_css_pack.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/early_internet_aesthetic",
+      "original_path": "15_theme_and_code_packs/css_glitter_hackery.md",
+      "local_path": "source-library/early_internet_aesthetic/15_theme_and_code_packs/css_glitter_hackery.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/early_internet_aesthetic",
+      "original_path": "13_site_specific_objects/blinkies_and_glitter_bars.md",
+      "local_path": "source-library/early_internet_aesthetic/13_site_specific_objects/blinkies_and_glitter_bars.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/early_internet_aesthetic",
+      "original_path": "03_visual_elements/browser_and_desktop_fragments.md",
+      "local_path": "source-library/early_internet_aesthetic/03_visual_elements/browser_and_desktop_fragments.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/early_internet_aesthetic",
+      "original_path": "05_motifs_and_objects/popups_spam_and_404s.md",
+      "local_path": "source-library/early_internet_aesthetic/05_motifs_and_objects/popups_spam_and_404s.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/damage_aesthetics",
+      "original_path": "02_media_formats/analog_video/vhs_damage.md",
+      "local_path": "source-library/damage_aesthetics/02_media_formats/analog_video/vhs_damage.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/damage_aesthetics",
+      "original_path": "02_media_formats/crt_display/crt_scanlines_and_raster.md",
+      "local_path": "source-library/damage_aesthetics/02_media_formats/crt_display/crt_scanlines_and_raster.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/damage_aesthetics",
+      "original_path": "02_media_formats/digital_video/datamosh_family.md",
+      "local_path": "source-library/damage_aesthetics/02_media_formats/digital_video/datamosh_family.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/damage_aesthetics",
+      "original_path": "09_shader_and_fx/shader_translation_guide.md",
+      "local_path": "source-library/damage_aesthetics/09_shader_and_fx/shader_translation_guide.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/glitchcore_style",
+      "original_path": "technical/shader-preset-bundles.md",
+      "local_path": "source-library/glitchcore_style/technical/shader-preset-bundles.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/glitchcore_style",
+      "original_path": "core/palette-energy-system.md",
+      "local_path": "source-library/glitchcore_style/core/palette-energy-system.md",
+      "kind": "reference"
+    },
+    {
+      "source_repo": "merrypranxter/glitch_art_engine",
+      "original_path": "renderer.js",
+      "local_path": "source-library/glitch_art_engine/renderer.js",
+      "kind": "source code"
+    },
+    {
+      "source_repo": "merrypranxter/glitch_art_engine",
+      "original_path": "chroma-post.js",
+      "local_path": "source-library/glitch_art_engine/chroma-post.js",
+      "kind": "source code"
+    },
+    {
+      "source_repo": "merrypranxter/glitch_art_engine",
+      "original_path": "loop-timing.js",
+      "local_path": "source-library/glitch_art_engine/loop-timing.js",
+      "kind": "source code"
+    },
+    {
+      "source_repo": "merrypranxter/glitch_art_engine",
+      "original_path": "gif-export.js",
+      "local_path": "source-library/glitch_art_engine/gif-export.js",
+      "kind": "source code"
+    },
+    {
+      "source_repo": "merrypranxter/glitchGL",
+      "original_path": "scripts/glitchGL.js",
+      "local_path": "source-library/glitchGL/scripts/glitchGL.js",
+      "kind": "source code"
+    },
+    {
+      "source_repo": "merrypranxter/glitchGL",
+      "original_path": "LICENCE.md",
+      "local_path": "source-library/glitchGL/LICENCE.md",
+      "kind": "source code"
+    }
   ]
 }

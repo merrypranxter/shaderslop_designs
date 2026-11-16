@@ -189,3 +189,89 @@ These older root-level exports have independent filenames or may differ from the
 
 - [`catalog.json`](./catalog.json) — machine-readable inventory, categories, original paths, source repos and notes.
 - The original [`by_math` catalog](../by_math/catalog.json) holds the broader taxonomy of all classified sketches.
+
+---
+
+## Archive-only variants and early sketch experiments
+
+Added 24 **additional pairs of older HTML/JavaScript versions**, copied out of the original Repo Scripter, Shader Files 2 and Shader Files 3 archives. These are kept separate from the 121 core catalog designs; some are alternate versions of one engine, not necessarily 1:1 unique mechanisms.
+
+### repo_script_js5_code
+
+- **myspace-glitchscape** — [HTML](./archive-variants/repo_script_js5_code/myspace-glitchscape.html) · [JS](./archive-variants/repo_script_js5_code/myspace-glitchscape.js) · [original repo](https://github.com/merrypranxter/repo_script_js5_code)
+- **neon-subpixel-pulse** — [HTML](./archive-variants/repo_script_js5_code/neon-subpixel-pulse.html) · [JS](./archive-variants/repo_script_js5_code/neon-subpixel-pulse.js) · [original repo](https://github.com/merrypranxter/repo_script_js5_code)
+- **repo-ascii** — [HTML](./archive-variants/repo_script_js5_code/repo-ascii.html) · [JS](./archive-variants/repo_script_js5_code/repo-ascii.js) · [original repo](https://github.com/merrypranxter/repo_script_js5_code)
+- **vivid_glitch** — [HTML](./archive-variants/repo_script_js5_code/vivid_glitch.html) · [JS](./archive-variants/repo_script_js5_code/vivid_glitch.js) · [original repo](https://github.com/merrypranxter/repo_script_js5_code)
+- **vivid_glitch_lenia** — [HTML](./archive-variants/repo_script_js5_code/vivid_glitch_lenia.html) · [JS](./archive-variants/repo_script_js5_code/vivid_glitch_lenia.js) · [original repo](https://github.com/merrypranxter/repo_script_js5_code)
+- **vivid_glitchcore** — [HTML](./archive-variants/repo_script_js5_code/vivid_glitchcore.html) · [JS](./archive-variants/repo_script_js5_code/vivid_glitchcore.js) · [original repo](https://github.com/merrypranxter/repo_script_js5_code)
+- **vivid_signal_decay** — [HTML](./archive-variants/repo_script_js5_code/vivid_signal_decay.html) · [JS](./archive-variants/repo_script_js5_code/vivid_signal_decay.js) · [original repo](https://github.com/merrypranxter/repo_script_js5_code)
+
+### shader_files_2
+
+- **amazinglyglitchy_20260611_150640** — [HTML](./archive-variants/shader_files_2/amazinglyglitchy_20260611_150640.html) · [JS](./archive-variants/shader_files_2/amazinglyglitchy_20260611_150640.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **glitchscape_20260611_142934** — [HTML](./archive-variants/shader_files_2/glitchscape_20260611_142934.html) · [JS](./archive-variants/shader_files_2/glitchscape_20260611_142934.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **glitchscape_20260611_143650** — [HTML](./archive-variants/shader_files_2/glitchscape_20260611_143650.html) · [JS](./archive-variants/shader_files_2/glitchscape_20260611_143650.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **glitchscape_20260611_153228** — [HTML](./archive-variants/shader_files_2/glitchscape_20260611_153228.html) · [JS](./archive-variants/shader_files_2/glitchscape_20260611_153228.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **glitchscape_20260611_160049** — [HTML](./archive-variants/shader_files_2/glitchscape_20260611_160049.html) · [JS](./archive-variants/shader_files_2/glitchscape_20260611_160049.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **myspace-glitch_20260611_154144** — [HTML](./archive-variants/shader_files_2/myspace-glitch_20260611_154144.html) · [JS](./archive-variants/shader_files_2/myspace-glitch_20260611_154144.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **myspace-glitchscape_20260611_152933** — [HTML](./archive-variants/shader_files_2/myspace-glitchscape_20260611_152933.html) · [JS](./archive-variants/shader_files_2/myspace-glitchscape_20260611_152933.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **myspace-glitchscape_20260612_004519** — [HTML](./archive-variants/shader_files_2/myspace-glitchscape_20260612_004519.html) · [JS](./archive-variants/shader_files_2/myspace-glitchscape_20260612_004519.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **myspace_glitchscape_20260611_154350** — [HTML](./archive-variants/shader_files_2/myspace_glitchscape_20260611_154350.html) · [JS](./archive-variants/shader_files_2/myspace_glitchscape_20260611_154350.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **ooooooooo_glitchy_20260611_145314** — [HTML](./archive-variants/shader_files_2/ooooooooo_glitchy_20260611_145314.html) · [JS](./archive-variants/shader_files_2/ooooooooo_glitchy_20260611_145314.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **chroma_codec_shrine_20260618_192141** — [HTML](./archive-variants/shader_files_2/chroma_codec_shrine_20260618_192141.html) · [JS](./archive-variants/shader_files_2/chroma_codec_shrine_20260618_192141.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **chromatophore_codec_shrine_20260618_184028** — [HTML](./archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184028.html) · [JS](./archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184028.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **chromatophore_codec_shrine_20260618_184555** — [HTML](./archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184555.html) · [JS](./archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184555.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **myspace-glitchscape_20260612_004546** — [HTML](./archive-variants/shader_files_2/myspace-glitchscape_20260612_004546.html) · [JS](./archive-variants/shader_files_2/myspace-glitchscape_20260612_004546.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+- **glitchscape_20260611_142951** — [HTML](./archive-variants/shader_files_2/glitchscape_20260611_142951.html) · [JS](./archive-variants/shader_files_2/glitchscape_20260611_142951.js) · [original repo](https://github.com/merrypranxter/shader_files_2)
+
+### shaderfiles3
+
+- **geocities_cathedral_20260709_213502** — [HTML](./archive-variants/shaderfiles3/geocities_cathedral_20260709_213502.html) · [JS](./archive-variants/shaderfiles3/geocities_cathedral_20260709_213502.js) · [original repo](https://github.com/merrypranxter/shaderfiles3)
+- **geocities_cathedral_20260709_213510** — [HTML](./archive-variants/shaderfiles3/geocities_cathedral_20260709_213510.html) · [JS](./archive-variants/shaderfiles3/geocities_cathedral_20260709_213510.js) · [original repo](https://github.com/merrypranxter/shaderfiles3)
+
+## Old-web and glitch source ingredients (copied)
+
+Added 17 curated reference documents, plus 6 code/related license files. These are **original source ingredients**, not independently runnable visual sketches.
+
+### myspace_aesthetic — reference techniques
+
+- [glitter_logic.md](./source-library/myspace_aesthetic/myspace_angelfire_graphics_style/03_palette_and_effects/glitter_logic.md) — [original](https://github.com/merrypranxter/myspace_aesthetic/blob/main/myspace_angelfire_graphics_style/03_palette_and_effects/glitter_logic.md)
+- [hot_pink_glitter_palettes.md](./source-library/myspace_aesthetic/myspace_angelfire_graphics_style/03_palette_and_effects/hot_pink_glitter_palettes.md) — [original](https://github.com/merrypranxter/myspace_aesthetic/blob/main/myspace_angelfire_graphics_style/03_palette_and_effects/hot_pink_glitter_palettes.md)
+- [myspace_profile_bling.md](./source-library/myspace_aesthetic/myspace_angelfire_graphics_style/05_substyles/myspace_profile_bling.md) — [original](https://github.com/merrypranxter/myspace_aesthetic/blob/main/myspace_angelfire_graphics_style/05_substyles/myspace_profile_bling.md)
+- [shader_behavior_overview.md](./source-library/myspace_aesthetic/myspace_angelfire_graphics_style/09_shader_and_genart_translation/shader_behavior_overview.md) — [original](https://github.com/merrypranxter/myspace_aesthetic/blob/main/myspace_angelfire_graphics_style/09_shader_and_genart_translation/shader_behavior_overview.md)
+- [glitter_field_simulation.md](./source-library/myspace_aesthetic/myspace_angelfire_graphics_style/09_shader_and_genart_translation/glitter_field_simulation.md) — [original](https://github.com/merrypranxter/myspace_aesthetic/blob/main/myspace_angelfire_graphics_style/09_shader_and_genart_translation/glitter_field_simulation.md)
+- [tiled_background_logic.md](./source-library/myspace_aesthetic/myspace_angelfire_graphics_style/07_webpage_logic/tiled_background_logic.md) — [original](https://github.com/merrypranxter/myspace_aesthetic/blob/main/myspace_angelfire_graphics_style/07_webpage_logic/tiled_background_logic.md)
+
+### early_internet_aesthetic — reference techniques
+
+- [myspace_profile_css_pack.md](./source-library/early_internet_aesthetic/15_theme_and_code_packs/myspace_profile_css_pack.md) — [original](https://github.com/merrypranxter/early_internet_aesthetic/blob/main/15_theme_and_code_packs/myspace_profile_css_pack.md)
+- [css_glitter_hackery.md](./source-library/early_internet_aesthetic/15_theme_and_code_packs/css_glitter_hackery.md) — [original](https://github.com/merrypranxter/early_internet_aesthetic/blob/main/15_theme_and_code_packs/css_glitter_hackery.md)
+- [blinkies_and_glitter_bars.md](./source-library/early_internet_aesthetic/13_site_specific_objects/blinkies_and_glitter_bars.md) — [original](https://github.com/merrypranxter/early_internet_aesthetic/blob/main/13_site_specific_objects/blinkies_and_glitter_bars.md)
+- [browser_and_desktop_fragments.md](./source-library/early_internet_aesthetic/03_visual_elements/browser_and_desktop_fragments.md) — [original](https://github.com/merrypranxter/early_internet_aesthetic/blob/main/03_visual_elements/browser_and_desktop_fragments.md)
+- [popups_spam_and_404s.md](./source-library/early_internet_aesthetic/05_motifs_and_objects/popups_spam_and_404s.md) — [original](https://github.com/merrypranxter/early_internet_aesthetic/blob/main/05_motifs_and_objects/popups_spam_and_404s.md)
+
+### damage_aesthetics — reference techniques
+
+- [vhs_damage.md](./source-library/damage_aesthetics/02_media_formats/analog_video/vhs_damage.md) — [original](https://github.com/merrypranxter/damage_aesthetics/blob/main/02_media_formats/analog_video/vhs_damage.md)
+- [crt_scanlines_and_raster.md](./source-library/damage_aesthetics/02_media_formats/crt_display/crt_scanlines_and_raster.md) — [original](https://github.com/merrypranxter/damage_aesthetics/blob/main/02_media_formats/crt_display/crt_scanlines_and_raster.md)
+- [datamosh_family.md](./source-library/damage_aesthetics/02_media_formats/digital_video/datamosh_family.md) — [original](https://github.com/merrypranxter/damage_aesthetics/blob/main/02_media_formats/digital_video/datamosh_family.md)
+- [shader_translation_guide.md](./source-library/damage_aesthetics/09_shader_and_fx/shader_translation_guide.md) — [original](https://github.com/merrypranxter/damage_aesthetics/blob/main/09_shader_and_fx/shader_translation_guide.md)
+
+### glitchcore_style — reference techniques
+
+- [shader-preset-bundles.md](./source-library/glitchcore_style/technical/shader-preset-bundles.md) — [original](https://github.com/merrypranxter/glitchcore_style/blob/main/technical/shader-preset-bundles.md)
+- [palette-energy-system.md](./source-library/glitchcore_style/core/palette-energy-system.md) — [original](https://github.com/merrypranxter/glitchcore_style/blob/main/core/palette-energy-system.md)
+
+### glitch_art_engine — renderer source
+
+- [renderer.js](./source-library/glitch_art_engine/renderer.js) — [original](https://github.com/merrypranxter/glitch_art_engine/blob/main/renderer.js)
+- [chroma-post.js](./source-library/glitch_art_engine/chroma-post.js) — [original](https://github.com/merrypranxter/glitch_art_engine/blob/main/chroma-post.js)
+- [loop-timing.js](./source-library/glitch_art_engine/loop-timing.js) — [original](https://github.com/merrypranxter/glitch_art_engine/blob/main/loop-timing.js)
+- [gif-export.js](./source-library/glitch_art_engine/gif-export.js) — [original](https://github.com/merrypranxter/glitch_art_engine/blob/main/gif-export.js)
+
+### glitchGL — renderer source
+
+- [glitchGL.js](./source-library/glitchGL/scripts/glitchGL.js) — [original](https://github.com/merrypranxter/glitchGL/blob/main/scripts/glitchGL.js)
+- [LICENCE.md](./source-library/glitchGL/LICENCE.md) — [original](https://github.com/merrypranxter/glitchGL/blob/main/LICENCE.md)
+
+**Note:** Copied utility libraries may require other files, app frameworks or build contexts. The original repositories remain the authoritative places to run those apps. We did not modify your existing art apps or initiate a deployment.
