@@ -1,0 +1,245 @@
+try {
+  // Initialize Three.js environment if it doesn't exist
+  if (!canvas.__three) {
+    if (!ctx) throw new Error("WebGL 2 context not available");
+
+    // 1. Generate the "ASTRAL TRASH" decorative text mask via Canvas 2D
+    const textCanvas = document.createElement('canvas');
+    textCanvas.width = 2048;
+    textCanvas.height = 2048;
+    const tCtx = textCanvas.getContext('2d');
+
+    // Void black background
+    tCtx.fillStyle = '#000000';
+    tCtx.fillRect(0, 0, 2048, 2048);
+
+    // Decorative Sacred Geometry / Cyber-Brutalist Frame
+    tCtx.strokeStyle = '#FFFFFF';
+    tCtx.lineWidth = 8;
+    
+    // Outer border
+    tCtx.strokeRect(100, 100, 1848, 1848);
+    tCtx.strokeRect(120, 120, 1808, 1808);
+
+    // Diagonal corner cuts
+    tCtx.beginPath();
+    tCtx.moveTo(100, 300); tCtx.lineTo(300, 100);
+    tCtx.moveTo(1948, 300); tCtx.lineTo(1748, 100);
+    tCtx.moveTo(100, 1748); tCtx.lineTo(300, 1948);
+    tCtx.moveTo(1948, 1748); tCtx.lineTo(1748, 1948);
+    tCtx.stroke();
+
+    // Central circles (Sacred Geometry hint)
+    tCtx.beginPath();
+    tCtx.arc(1024, 1024, 800, 0, Math.PI * 2);
+    tCtx.stroke();
+    tCtx.setLineDash([20, 40]);
+    tCtx.beginPath();
+    tCtx.arc(1024, 1024, 750, 0, Math.PI * 2);
+    tCtx.stroke();
+    tCtx.setLineDash([]);
+
+    // Typography: Large, centered, structural
+    tCtx.fillStyle = '#FFFFFF';
+    tCtx.textAlign = 'center';
+    tCtx.textBaseline = 'middle';
+    
+    // Use an aggressive, heavy system font 
+    tCtx.font = '900 280px "Impact", "Arial Black", sans-serif';
+    
+    // Render text with some manual tracking/spacing adjustments
+    tCtx.fillText("ASTRAL", 1024, 850);
+    tCtx.fillText("TRASH", 1024, 1200);
+
+    // Crosshairs & Data marks
+    tCtx.font = '400 40px monospace';
+    tCtx.fillText("+", 1024, 300);
+    tCtx.fillText("+", 1024, 1748);
+    tCtx.fillText("+", 300, 1024);
+    tCtx.fillText("+", 1748, 1024);
+    
+    tCtx.textAlign = 'left';
+    tCtx.fillText("SYS.ERR.0x99", 150, 180);
+    tCtx.textAlign = 'right';
+    tCtx.fillText("VOLUMETRIC_DECAY", 1898, 180);
+
+    const textTexture = new THREE.CanvasTexture(textCanvas);
+    textTexture.minFilter = THREE.LinearFilter;
+    textTexture.magFilter = THREE.LinearFilter;
+    textTexture.needsUpdate = true;
+
+    // 2. Setup WebGL Renderer & Scene
+    const renderer = new THREE.WebGLRenderer({ canvas, context: ctx, alpha: true, antialias: false });
+    const scene = new THREE.Scene();
+    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10);
+    camera.position.z = 1;
+
+    // 3. Procedural Material Shader (The Core Logic)
+    const vertexShader = `
+      out vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+      }
+    `;
+
+    const fragmentShader = `
+      in vec2 vUv;
+      out vec4 fragColor;
+
+      uniform float u_time;
+      uniform vec2 u_resolution;
+      uniform sampler2D u_textMap;
+
+      // CMY Neon Palette
+      const vec3 C_CYAN = vec3(0.0, 1.0, 1.0);
+      const vec3 C_MAGENTA = vec3(1.0, 0.0, 1.0);
+      const vec3 C_YELLOW = vec3(1.0, 1.0, 0.0);
+      const vec3 C_VOID = vec3(0.02, 0.02, 0.03); // Deep void black
+
+      // Hash & Noise Functions
+      float hash(vec2 p) {
+        p = fract(p * vec2(123.34, 456.21));
+        p += dot(p, p + 45.32);
+        return fract(p.x * p.y);
+      }
+
+      float noise(vec2 p) {
+        vec2 i = floor(p);
+        vec2 f = fract(p);
+        f = f * f * (3.0 - 2.0 * f);
+        float a = hash(i);
+        float b = hash(i + vec2(1.0, 0.0));
+        float c = hash(i + vec2(0.0, 1.0));
+        float d = hash(i + vec2(1.0, 1.0));
+        return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+      }
+
+      // Fractional Brownian Motion for structural depth
+      float fbm(vec2 p) {
+        float v = 0.0;
+        float a = 0.5;
+        mat2 rot = mat2(cos(0.5), sin(0.5), -sin(0.5), cos(0.5));
+        for (int i = 0; i < 6; i++) {
+          v += a * noise(p);
+          p = rot * p * 2.0 + vec2(100.0);
+          a *= 0.5;
+        }
+        return v;
+      }
+
+      void main() {
+        // Aspect-corrected UV
+        vec2 uv = vUv;
+        vec2 st = (uv - 0.5) * vec2(u_resolution.x / u_resolution.y, 1.0) + 0.5;
+
+        // --- THREE TIME SCALES ---
+        float t_slow = u_time * 0.1;    // Global drift, fluid evolution
+        float t_med  = u_time * 0.8;    // Structural motion, tearing, bands
+        float t_fast = u_time * 25.0;   // Detail shimmer, grain, static
+
+        // --- 1. DOMAIN WARPING (Slow Drift) ---
+        // Creates the physical substance feeling, like a flowing fluid or thick gas
+        vec2 warpParams = vec2(fbm(st * 3.0 + t_slow), fbm(st * 3.0 - t_slow + 12.34));
+        vec2 uv_warped = st + (warpParams - 0.5) * 0.15;
+
+        // --- 2. STRUCTURAL STRATA (Medium Motion) ---
+        // Topographic contour lines generated by slicing the FBM field
+        float structure = fbm(uv_warped * 8.0 + t_med * 0.2);
+        
+        // Isolate specific contour bands and assign CMY colors
+        vec3 materialColor = C_VOID;
+        
+        // Cyan strata
+        float c_band = smoothstep(0.40, 0.42, structure) - smoothstep(0.42, 0.44, structure);
+        materialColor = mix(materialColor, C_CYAN, c_band * 0.8);
+        
+        // Magenta strata
+        float m_band = smoothstep(0.55, 0.57, structure) - smoothstep(0.57, 0.59, structure);
+        materialColor = mix(materialColor, C_MAGENTA, m_band * 0.8);
+        
+        // Yellow strata
+        float y_band = smoothstep(0.70, 0.72, structure) - smoothstep(0.72, 0.74, structure);
+        materialColor = mix(materialColor, C_YELLOW, y_band * 0.8);
+
+        // --- 3. DAMAGE & TEARING (Medium Motion) ---
+        // Horizontal sync tearing (Analog video / Glitch artifact)
+        float tear = step(0.95, hash(vec2(floor(vUv.y * 40.0), floor(t_med * 4.0))));
+        float tearOffset = (hash(vec2(t_med, vUv.y)) - 0.5) * 0.1 * tear;
+        vec2 textUv = vUv;
+        textUv.x += tearOffset;
+        
+        // Base coordinate drift for the text to embed it in the fluid
+        textUv += (warpParams - 0.5) * 0.03;
+
+        // --- 4. TEXT INTEGRATION (Chroma Bleed & Alignment) ---
+        // Sample the Canvas2D texture with RGB channel separation (chromatic aberration)
+        float bleedDist = 0.008 + tear * 0.02; // Bleed increases during a tear
+        float txtR = texture(u_textMap, textUv + vec2(bleedDist, 0.0)).r;
+        float txtG = texture(u_textMap, textUv).g;
+        float txtB = texture(u_textMap, textUv - vec2(bleedDist, 0.0)).b;
+
+        // Remap the white text mask directly into the CMY neon palette
+        // Red channel -> Magenta, Green channel -> Yellow, Blue channel -> Cyan
+        vec3 textNeon = txtR * C_MAGENTA + txtG * C_YELLOW + txtB * C_CYAN;
+        float textMask = max(txtR, max(txtG, txtB));
+
+        // When text is present, it overwrites the background but inherits its structural destruction
+        materialColor = mix(materialColor, textNeon, textMask);
+
+        // --- 5. FAST DETAIL SHIMMER (Fast Motion) ---
+        // Film grain / Sensor noise calculated per-pixel
+        float grain = hash(vUv * u_resolution + t_fast);
+        
+        // Additive shimmer on bright areas (text & strata), subtractive on the void
+        float luma = dot(materialColor, vec3(0.299, 0.587, 0.114));
+        materialColor += grain * 0.25 * materialColor; // Shimmer
+        materialColor -= grain * 0.08;                 // Base grit
+
+        // CRT Scanline emulation
+        float scanline = sin(vUv.y * u_resolution.y * 1.5) * 0.04;
+        materialColor -= scanline;
+
+        // Vignette to emphasize the void
+        float vignette = length(vUv - 0.5);
+        materialColor *= smoothstep(0.8, 0.3, vignette);
+
+        // Final clamp
+        fragColor = vec4(clamp(materialColor, 0.0, 1.0), 1.0);
+      }
+    `;
+
+    const material = new THREE.ShaderMaterial({
+      glslVersion: THREE.GLSL3,
+      uniforms: {
+        u_time: { value: 0 },
+        u_resolution: { value: new THREE.Vector2(grid.width, grid.height) },
+        u_textMap: { value: textTexture }
+      },
+      vertexShader,
+      fragmentShader,
+      depthWrite: false,
+      depthTest: false
+    });
+
+    const plane = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), material);
+    scene.add(plane);
+
+    canvas.__three = { renderer, scene, camera, material, textTexture };
+  }
+
+  const { renderer, scene, camera, material } = canvas.__three;
+
+  // Update uniforms
+  if (material && material.uniforms) {
+    material.uniforms.u_time.value = time;
+    material.uniforms.u_resolution.value.set(grid.width, grid.height);
+  }
+
+  // Handle resize gracefully
+  renderer.setSize(grid.width, grid.height, false);
+  renderer.render(scene, camera);
+
+} catch (e) {
+  console.error("WebGL Initialization or Render Failed:", e);
+}

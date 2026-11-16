@@ -1,0 +1,211 @@
+# GLITCHY — MERRY'S GLITCH ART REFERENCE VAULT
+
+The folder for saying **'make it look like THIS'** and pointing an AI to an exact visual plus source code.
+
+**160 catalogued animated shader pairs**; **24 recovered pairs from the MySpace glitch archive**; **46 root-level legacy HTML exports**; extra variants may be alternate versions of a shared rendering engine.
+
+### HOW TO USE
+
+1. Open [THE VISUAL GALLERY](./index.html) if your browser supports local HTML or the repository is served with a static host. The gallery is a standalone HTML page, no build or dependencies.
+2. Choose a thumbnail. Open its HTML artwork to see the animation; click its JS link to supply the source alongside your screenshot.
+3. Paste the AI brief or share the exact visual. Tell the next AI whether you mean the color, the geometry, the glitch mechanism, the visual density, or all of it.
+4. The files are **copies**, so the original `by_math/`, `myspace_glitch/`, and archive files have not been moved or changed.
+
+### CATEGORY INDEX
+
+#### MySpace, GeoCities & webcore
+
+- **astral_trash**: [view animation](./01-webcore-myspace/astral_trash.html) · [source](./01-webcore-myspace/astral_trash.js) · [thumbnail](./_thumbs/01-webcore-myspace/astral_trash.jpg)
+- **astral-trash**: [view animation](./01-webcore-myspace/astral-trash.html) · [source](./01-webcore-myspace/astral-trash.js) · [thumbnail](./_thumbs/01-webcore-myspace/astral-trash.jpg)
+- **bold-repo-art**: [view animation](./01-webcore-myspace/bold-repo-art.html) · [source](./01-webcore-myspace/bold-repo-art.js) · [thumbnail](./_thumbs/01-webcore-myspace/bold-repo-art.jpg)
+- **deco-bg**: [view animation](./01-webcore-myspace/deco-bg.html) · [source](./01-webcore-myspace/deco-bg.js) · [thumbnail](./_thumbs/01-webcore-myspace/deco-bg.jpg)
+- **derek_sux_texture**: [view animation](./01-webcore-myspace/derek_sux_texture.html) · [source](./01-webcore-myspace/derek_sux_texture.js) · [thumbnail](./_thumbs/01-webcore-myspace/derek_sux_texture.jpg)
+- **derek-sux-material**: [view animation](./01-webcore-myspace/derek-sux-material.html) · [source](./01-webcore-myspace/derek-sux-material.js) · [thumbnail](./_thumbs/01-webcore-myspace/derek-sux-material.jpg)
+- **geocities_cathedral_20260709_213125**: [view animation](./01-webcore-myspace/geocities_cathedral_20260709_213125.html) · [source](./01-webcore-myspace/geocities_cathedral_20260709_213125.js) · [thumbnail](./_thumbs/01-webcore-myspace/geocities_cathedral_20260709_213125.jpg)
+- **geocities_cathedral_20260713_125256**: [view animation](./01-webcore-myspace/geocities_cathedral_20260713_125256.html) · [source](./01-webcore-myspace/geocities_cathedral_20260713_125256.js) · [thumbnail](./_thumbs/01-webcore-myspace/geocities_cathedral_20260713_125256.jpg)
+- **glitchscape**: [view animation](./01-webcore-myspace/glitchscape.html) · [source](./01-webcore-myspace/glitchscape.js) · [thumbnail](./_thumbs/01-webcore-myspace/glitchscape.jpg)
+- **glitchscape_20260611_141952**: [view animation](./01-webcore-myspace/glitchscape_20260611_141952.html) · [source](./01-webcore-myspace/glitchscape_20260611_141952.js) · [thumbnail](./_thumbs/01-webcore-myspace/glitchscape_20260611_141952.jpg)
+- **glitchscape_20260611_145149**: [view animation](./01-webcore-myspace/glitchscape_20260611_145149.html) · [source](./01-webcore-myspace/glitchscape_20260611_145149.js) · [thumbnail](./_thumbs/01-webcore-myspace/glitchscape_20260611_145149.jpg)
+- **glitchscape_20260611_152823**: [view animation](./01-webcore-myspace/glitchscape_20260611_152823.html) · [source](./01-webcore-myspace/glitchscape_20260611_152823.js) · [thumbnail](./_thumbs/01-webcore-myspace/glitchscape_20260611_152823.jpg)
+- **glitchscape_20260611_152952**: [view animation](./01-webcore-myspace/glitchscape_20260611_152952.html) · [source](./01-webcore-myspace/glitchscape_20260611_152952.js) · [thumbnail](./_thumbs/01-webcore-myspace/glitchscape_20260611_152952.jpg)
+- **glitchspace**: [view animation](./01-webcore-myspace/glitchspace.html) · [source](./01-webcore-myspace/glitchspace.js) · [thumbnail](./_thumbs/01-webcore-myspace/glitchspace.jpg)
+- **haunted_monitor**: [view animation](./01-webcore-myspace/haunted_monitor.html) · [source](./01-webcore-myspace/haunted_monitor.js) · [thumbnail](./_thumbs/01-webcore-myspace/haunted_monitor.jpg)
+- **myspace_glitch**: [view animation](./01-webcore-myspace/myspace_glitch.html) · [source](./01-webcore-myspace/myspace_glitch.js) · [thumbnail](./_thumbs/01-webcore-myspace/myspace_glitch.jpg)
+- **myspace-glitch**: [view animation](./01-webcore-myspace/myspace-glitch.html) · [source](./01-webcore-myspace/myspace-glitch.js) · [thumbnail](./_thumbs/01-webcore-myspace/myspace-glitch.jpg)
+- **myspace-glitch_20260611_153108**: [view animation](./01-webcore-myspace/myspace-glitch_20260611_153108.html) · [source](./01-webcore-myspace/myspace-glitch_20260611_153108.js) · [thumbnail](./_thumbs/01-webcore-myspace/myspace-glitch_20260611_153108.jpg)
+- **myspace-glitchscape_20260611_153739**: [view animation](./01-webcore-myspace/myspace-glitchscape_20260611_153739.html) · [source](./01-webcore-myspace/myspace-glitchscape_20260611_153739.js) · [thumbnail](./_thumbs/01-webcore-myspace/myspace-glitchscape_20260611_153739.jpg)
+- **myspace-glitchscape_20260612_004503**: [view animation](./01-webcore-myspace/myspace-glitchscape_20260612_004503.html) · [source](./01-webcore-myspace/myspace-glitchscape_20260612_004503.js) · [thumbnail](./_thumbs/01-webcore-myspace/myspace-glitchscape_20260612_004503.jpg)
+- **myspace-glitchscape_20260612_005400**: [view animation](./01-webcore-myspace/myspace-glitchscape_20260612_005400.html) · [source](./01-webcore-myspace/myspace-glitchscape_20260612_005400.js) · [thumbnail](./_thumbs/01-webcore-myspace/myspace-glitchscape_20260612_005400.jpg)
+- **myspace-glitchscape_20260612_005651**: [view animation](./01-webcore-myspace/myspace-glitchscape_20260612_005651.html) · [source](./01-webcore-myspace/myspace-glitchscape_20260612_005651.js) · [thumbnail](./_thumbs/01-webcore-myspace/myspace-glitchscape_20260612_005651.jpg)
+- **neon-cute-texture**: [view animation](./01-webcore-myspace/neon-cute-texture.html) · [source](./01-webcore-myspace/neon-cute-texture.js) · [thumbnail](./_thumbs/01-webcore-myspace/neon-cute-texture.jpg)
+- **urcute_texture**: [view animation](./01-webcore-myspace/urcute_texture.html) · [source](./01-webcore-myspace/urcute_texture.js) · [thumbnail](./_thumbs/01-webcore-myspace/urcute_texture.jpg)
+
+#### VHS, CRT & analog failure
+
+- **acidic-analog-glitch**: [view animation](./02-vhs-crt-analog/acidic-analog-glitch.html) · [source](./02-vhs-crt-analog/acidic-analog-glitch.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/acidic-analog-glitch.jpg)
+- **acidic-vhs-decay**: [view animation](./02-vhs-crt-analog/acidic-vhs-decay.html) · [source](./02-vhs-crt-analog/acidic-vhs-decay.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/acidic-vhs-decay.jpg)
+- **acidic-vhs-rot**: [view animation](./02-vhs-crt-analog/acidic-vhs-rot.html) · [source](./02-vhs-crt-analog/acidic-vhs-rot.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/acidic-vhs-rot.jpg)
+- **amber_ripple**: [view animation](./02-vhs-crt-analog/amber_ripple.html) · [source](./02-vhs-crt-analog/amber_ripple.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/amber_ripple.jpg)
+- **amber-phosphor**: [view animation](./02-vhs-crt-analog/amber-phosphor.html) · [source](./02-vhs-crt-analog/amber-phosphor.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/amber-phosphor.jpg)
+- **analog_decay**: [view animation](./02-vhs-crt-analog/analog_decay.html) · [source](./02-vhs-crt-analog/analog_decay.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/analog_decay.jpg)
+- **analog-decay**: [view animation](./02-vhs-crt-analog/analog-decay.html) · [source](./02-vhs-crt-analog/analog-decay.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/analog-decay.jpg)
+- **astral-vhs**: [view animation](./02-vhs-crt-analog/astral-vhs.html) · [source](./02-vhs-crt-analog/astral-vhs.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/astral-vhs.jpg)
+- **cobalt_scan**: [view animation](./02-vhs-crt-analog/cobalt_scan.html) · [source](./02-vhs-crt-analog/cobalt_scan.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/cobalt_scan.jpg)
+- **cobalt-scanline**: [view animation](./02-vhs-crt-analog/cobalt-scanline.html) · [source](./02-vhs-crt-analog/cobalt-scanline.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/cobalt-scanline.jpg)
+- **crt-poincare**: [view animation](./02-vhs-crt-analog/crt-poincare.html) · [source](./02-vhs-crt-analog/crt-poincare.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/crt-poincare.jpg)
+- **haunted_crt**: [view animation](./02-vhs-crt-analog/haunted_crt.html) · [source](./02-vhs-crt-analog/haunted_crt.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/haunted_crt.jpg)
+- **hyperbolic-subpixel**: [view animation](./02-vhs-crt-analog/hyperbolic-subpixel.html) · [source](./02-vhs-crt-analog/hyperbolic-subpixel.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/hyperbolic-subpixel.jpg)
+- **led-moire**: [view animation](./02-vhs-crt-analog/led-moire.html) · [source](./02-vhs-crt-analog/led-moire.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/led-moire.jpg)
+- **led-pulse**: [view animation](./02-vhs-crt-analog/led-pulse.html) · [source](./02-vhs-crt-analog/led-pulse.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/led-pulse.jpg)
+- **phosphor_signal_reef_engine_20260621_131609**: [view animation](./02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_131609.html) · [source](./02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_131609.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_131609.jpg)
+- **phosphor_signal_reef_engine_20260621_173949**: [view animation](./02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_173949.html) · [source](./02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_173949.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_173949.jpg)
+- **red_cctv**: [view animation](./02-vhs-crt-analog/red_cctv.html) · [source](./02-vhs-crt-analog/red_cctv.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/red_cctv.jpg)
+- **rgb_subpixels**: [view animation](./02-vhs-crt-analog/rgb_subpixels.html) · [source](./02-vhs-crt-analog/rgb_subpixels.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/rgb_subpixels.jpg)
+- **screendoor**: [view animation](./02-vhs-crt-analog/screendoor.html) · [source](./02-vhs-crt-analog/screendoor.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/screendoor.jpg)
+- **subpixel_grid**: [view animation](./02-vhs-crt-analog/subpixel_grid.html) · [source](./02-vhs-crt-analog/subpixel_grid.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/subpixel_grid.jpg)
+- **subpixel-grid**: [view animation](./02-vhs-crt-analog/subpixel-grid.html) · [source](./02-vhs-crt-analog/subpixel-grid.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/subpixel-grid.jpg)
+- **subpixel-moire**: [view animation](./02-vhs-crt-analog/subpixel-moire.html) · [source](./02-vhs-crt-analog/subpixel-moire.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/subpixel-moire.jpg)
+- **vhs_crt_glitch**: [view animation](./02-vhs-crt-analog/vhs_crt_glitch.html) · [source](./02-vhs-crt-analog/vhs_crt_glitch.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/vhs_crt_glitch.jpg)
+- **vhs_glitch**: [view animation](./02-vhs-crt-analog/vhs_glitch.html) · [source](./02-vhs-crt-analog/vhs_glitch.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/vhs_glitch.jpg)
+- **vhs_pause**: [view animation](./02-vhs-crt-analog/vhs_pause.html) · [source](./02-vhs-crt-analog/vhs_pause.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/vhs_pause.jpg)
+- **vhs-pause**: [view animation](./02-vhs-crt-analog/vhs-pause.html) · [source](./02-vhs-crt-analog/vhs-pause.js) · [thumbnail](./_thumbs/02-vhs-crt-analog/vhs-pause.jpg)
+
+#### Datamosh, corruption & digital rot
+
+- **acid-bloom**: [view animation](./03-datamosh-digital-rot/acid-bloom.html) · [source](./03-datamosh-digital-rot/acid-bloom.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/acid-bloom.jpg)
+- **acid-matrix-glitch**: [view animation](./03-datamosh-digital-rot/acid-matrix-glitch.html) · [source](./03-datamosh-digital-rot/acid-matrix-glitch.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/acid-matrix-glitch.jpg)
+- **candy-glitch-mandelbrot**: [view animation](./03-datamosh-digital-rot/candy-glitch-mandelbrot.html) · [source](./03-datamosh-digital-rot/candy-glitch-mandelbrot.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/candy-glitch-mandelbrot.jpg)
+- **chromatophore_codec_shrine_20260618_185338**: [view animation](./03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_185338.html) · [source](./03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_185338.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_185338.jpg)
+- **chromatophore_codec_shrine_20260618_190133**: [view animation](./03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_190133.html) · [source](./03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_190133.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_190133.jpg)
+- **degraded-signal**: [view animation](./03-datamosh-digital-rot/degraded-signal.html) · [source](./03-datamosh-digital-rot/degraded-signal.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/degraded-signal.jpg)
+- **fractal-friday-mandelbrot_20260626_155624**: [view animation](./03-datamosh-digital-rot/fractal-friday-mandelbrot_20260626_155624.html) · [source](./03-datamosh-digital-rot/fractal-friday-mandelbrot_20260626_155624.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/fractal-friday-mandelbrot_20260626_155624.jpg)
+- **glitchiness1_20260611_151242**: [view animation](./03-datamosh-digital-rot/glitchiness1_20260611_151242.html) · [source](./03-datamosh-digital-rot/glitchiness1_20260611_151242.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/glitchiness1_20260611_151242.jpg)
+- **glitchiness3_20260611_151801**: [view animation](./03-datamosh-digital-rot/glitchiness3_20260611_151801.html) · [source](./03-datamosh-digital-rot/glitchiness3_20260611_151801.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/glitchiness3_20260611_151801.jpg)
+- **magenta-glitch-tape**: [view animation](./03-datamosh-digital-rot/magenta-glitch-tape.html) · [source](./03-datamosh-digital-rot/magenta-glitch-tape.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/magenta-glitch-tape.jpg)
+- **magenta-tape-glitch**: [view animation](./03-datamosh-digital-rot/magenta-tape-glitch.html) · [source](./03-datamosh-digital-rot/magenta-tape-glitch.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/magenta-tape-glitch.jpg)
+- **mandelbrot-candy-glitch**: [view animation](./03-datamosh-digital-rot/mandelbrot-candy-glitch.html) · [source](./03-datamosh-digital-rot/mandelbrot-candy-glitch.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/mandelbrot-candy-glitch.jpg)
+- **neon_glitch_decay**: [view animation](./03-datamosh-digital-rot/neon_glitch_decay.html) · [source](./03-datamosh-digital-rot/neon_glitch_decay.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/neon_glitch_decay.jpg)
+- **neon-glitch-decay**: [view animation](./03-datamosh-digital-rot/neon-glitch-decay.html) · [source](./03-datamosh-digital-rot/neon-glitch-decay.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/neon-glitch-decay.jpg)
+- **repo-chroma-soup_20260704_064802**: [view animation](./03-datamosh-digital-rot/repo-chroma-soup_20260704_064802.html) · [source](./03-datamosh-digital-rot/repo-chroma-soup_20260704_064802.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/repo-chroma-soup_20260704_064802.jpg)
+- **rotting_signal**: [view animation](./03-datamosh-digital-rot/rotting_signal.html) · [source](./03-datamosh-digital-rot/rotting_signal.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/rotting_signal.jpg)
+- **signal_decay**: [view animation](./03-datamosh-digital-rot/signal_decay.html) · [source](./03-datamosh-digital-rot/signal_decay.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/signal_decay.jpg)
+- **spectral-mandelbrot-portal_20260626_155150**: [view animation](./03-datamosh-digital-rot/spectral-mandelbrot-portal_20260626_155150.html) · [source](./03-datamosh-digital-rot/spectral-mandelbrot-portal_20260626_155150.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/spectral-mandelbrot-portal_20260626_155150.jpg)
+- **vivid_glitch_decay**: [view animation](./03-datamosh-digital-rot/vivid_glitch_decay.html) · [source](./03-datamosh-digital-rot/vivid_glitch_decay.js) · [thumbnail](./_thumbs/03-datamosh-digital-rot/vivid_glitch_decay.jpg)
+
+#### Pixel, dither & print artifacts
+
+- **bright-automata**: [view animation](./04-dither-pixel-breakage/bright-automata.html) · [source](./04-dither-pixel-breakage/bright-automata.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/bright-automata.jpg)
+- **cmy-grain**: [view animation](./04-dither-pixel-breakage/cmy-grain.html) · [source](./04-dither-pixel-breakage/cmy-grain.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/cmy-grain.jpg)
+- **cmy-substance_20260709_104234**: [view animation](./04-dither-pixel-breakage/cmy-substance_20260709_104234.html) · [source](./04-dither-pixel-breakage/cmy-substance_20260709_104234.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/cmy-substance_20260709_104234.jpg)
+- **cyan_matrix**: [view animation](./04-dither-pixel-breakage/cyan_matrix.html) · [source](./04-dither-pixel-breakage/cyan_matrix.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/cyan_matrix.jpg)
+- **dynamic-git-art**: [view animation](./04-dither-pixel-breakage/dynamic-git-art.html) · [source](./04-dither-pixel-breakage/dynamic-git-art.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/dynamic-git-art.jpg)
+- **git-art**: [view animation](./04-dither-pixel-breakage/git-art.html) · [source](./04-dither-pixel-breakage/git-art.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/git-art.jpg)
+- **klein-dither**: [view animation](./04-dither-pixel-breakage/klein-dither.html) · [source](./04-dither-pixel-breakage/klein-dither.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/klein-dither.jpg)
+- **neon-matter**: [view animation](./04-dither-pixel-breakage/neon-matter.html) · [source](./04-dither-pixel-breakage/neon-matter.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/neon-matter.jpg)
+- **rainblow-ditherscape**: [view animation](./04-dither-pixel-breakage/rainblow-ditherscape.html) · [source](./04-dither-pixel-breakage/rainblow-ditherscape.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/rainblow-ditherscape.jpg)
+- **rainbow-kleinian**: [view animation](./04-dither-pixel-breakage/rainbow-kleinian.html) · [source](./04-dither-pixel-breakage/rainbow-kleinian.js) · [thumbnail](./_thumbs/04-dither-pixel-breakage/rainbow-kleinian.jpg)
+
+#### Psychedelic glitches & hybrids
+
+- **acidic-fractal**: [view animation](./05-psychedelic-glitch-art/acidic-fractal.html) · [source](./05-psychedelic-glitch-art/acidic-fractal.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/acidic-fractal.jpg)
+- **acidic-palette**: [view animation](./05-psychedelic-glitch-art/acidic-palette.html) · [source](./05-psychedelic-glitch-art/acidic-palette.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/acidic-palette.jpg)
+- **acidic-warp**: [view animation](./05-psychedelic-glitch-art/acidic-warp.html) · [source](./05-psychedelic-glitch-art/acidic-warp.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/acidic-warp.jpg)
+- **birefringent-stereogram_20260622_105430**: [view animation](./05-psychedelic-glitch-art/birefringent-stereogram_20260622_105430.html) · [source](./05-psychedelic-glitch-art/birefringent-stereogram_20260622_105430.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/birefringent-stereogram_20260622_105430.jpg)
+- **cheaper_20260620_204616**: [view animation](./05-psychedelic-glitch-art/cheaper_20260620_204616.html) · [source](./05-psychedelic-glitch-art/cheaper_20260620_204616.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/cheaper_20260620_204616.jpg)
+- **colorful-moire**: [view animation](./05-psychedelic-glitch-art/colorful-moire.html) · [source](./05-psychedelic-glitch-art/colorful-moire.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/colorful-moire.jpg)
+- **dynamic-art**: [view animation](./05-psychedelic-glitch-art/dynamic-art.html) · [source](./05-psychedelic-glitch-art/dynamic-art.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/dynamic-art.jpg)
+- **dynamic-design**: [view animation](./05-psychedelic-glitch-art/dynamic-design.html) · [source](./05-psychedelic-glitch-art/dynamic-design.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/dynamic-design.jpg)
+- **dynamic-interactive**: [view animation](./05-psychedelic-glitch-art/dynamic-interactive.html) · [source](./05-psychedelic-glitch-art/dynamic-interactive.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/dynamic-interactive.jpg)
+- **fractal-friday_20260626_154045**: [view animation](./05-psychedelic-glitch-art/fractal-friday_20260626_154045.html) · [source](./05-psychedelic-glitch-art/fractal-friday_20260626_154045.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/fractal-friday_20260626_154045.jpg)
+- **git-blend**: [view animation](./05-psychedelic-glitch-art/git-blend.html) · [source](./05-psychedelic-glitch-art/git-blend.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/git-blend.jpg)
+- **git-flora_20260614_114641**: [view animation](./05-psychedelic-glitch-art/git-flora_20260614_114641.html) · [source](./05-psychedelic-glitch-art/git-flora_20260614_114641.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/git-flora_20260614_114641.jpg)
+- **git-flow**: [view animation](./05-psychedelic-glitch-art/git-flow.html) · [source](./05-psychedelic-glitch-art/git-flow.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/git-flow.jpg)
+- **hyperbolic-led**: [view animation](./05-psychedelic-glitch-art/hyperbolic-led.html) · [source](./05-psychedelic-glitch-art/hyperbolic-led.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/hyperbolic-led.jpg)
+- **math-textile**: [view animation](./05-psychedelic-glitch-art/math-textile.html) · [source](./05-psychedelic-glitch-art/math-textile.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/math-textile.jpg)
+- **maximalist_weird**: [view animation](./05-psychedelic-glitch-art/maximalist_weird.html) · [source](./05-psychedelic-glitch-art/maximalist_weird.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/maximalist_weird.jpg)
+- **moire-dna**: [view animation](./05-psychedelic-glitch-art/moire-dna.html) · [source](./05-psychedelic-glitch-art/moire-dna.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/moire-dna.jpg)
+- **moire-interference**: [view animation](./05-psychedelic-glitch-art/moire-interference.html) · [source](./05-psychedelic-glitch-art/moire-interference.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/moire-interference.jpg)
+- **monday_20260615_114132**: [view animation](./05-psychedelic-glitch-art/monday_20260615_114132.html) · [source](./05-psychedelic-glitch-art/monday_20260615_114132.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/monday_20260615_114132.jpg)
+- **neon-acid-fractal**: [view animation](./05-psychedelic-glitch-art/neon-acid-fractal.html) · [source](./05-psychedelic-glitch-art/neon-acid-fractal.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/neon-acid-fractal.jpg)
+- **neon-heartbeat**: [view animation](./05-psychedelic-glitch-art/neon-heartbeat.html) · [source](./05-psychedelic-glitch-art/neon-heartbeat.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/neon-heartbeat.jpg)
+- **neon-topology**: [view animation](./05-psychedelic-glitch-art/neon-topology.html) · [source](./05-psychedelic-glitch-art/neon-topology.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/neon-topology.jpg)
+- **neon-void-substance**: [view animation](./05-psychedelic-glitch-art/neon-void-substance.html) · [source](./05-psychedelic-glitch-art/neon-void-substance.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/neon-void-substance.jpg)
+- **NeonBurningShip**: [view animation](./05-psychedelic-glitch-art/NeonBurningShip.html) · [source](./05-psychedelic-glitch-art/NeonBurningShip.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/NeonBurningShip.jpg)
+- **prismatic-mycelium_20260623_132723**: [view animation](./05-psychedelic-glitch-art/prismatic-mycelium_20260623_132723.html) · [source](./05-psychedelic-glitch-art/prismatic-mycelium_20260623_132723.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/prismatic-mycelium_20260623_132723.jpg)
+- **prismatic-sigil-glass_20260624_011012**: [view animation](./05-psychedelic-glitch-art/prismatic-sigil-glass_20260624_011012.html) · [source](./05-psychedelic-glitch-art/prismatic-sigil-glass_20260624_011012.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/prismatic-sigil-glass_20260624_011012.jpg)
+- **repo-dynamic**: [view animation](./05-psychedelic-glitch-art/repo-dynamic.html) · [source](./05-psychedelic-glitch-art/repo-dynamic.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/repo-dynamic.jpg)
+- **repo-visual**: [view animation](./05-psychedelic-glitch-art/repo-visual.html) · [source](./05-psychedelic-glitch-art/repo-visual.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/repo-visual.jpg)
+- **RepoFlow**: [view animation](./05-psychedelic-glitch-art/RepoFlow.html) · [source](./05-psychedelic-glitch-art/RepoFlow.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/RepoFlow.jpg)
+- **stereo-wiggle_20260622_181341**: [view animation](./05-psychedelic-glitch-art/stereo-wiggle_20260622_181341.html) · [source](./05-psychedelic-glitch-art/stereo-wiggle_20260622_181341.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/stereo-wiggle_20260622_181341.jpg)
+- **structural-moire**: [view animation](./05-psychedelic-glitch-art/structural-moire.html) · [source](./05-psychedelic-glitch-art/structural-moire.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/structural-moire.jpg)
+- **synergy**: [view animation](./05-psychedelic-glitch-art/synergy.html) · [source](./05-psychedelic-glitch-art/synergy.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/synergy.jpg)
+- **tibetan-nebula_20260617_091030**: [view animation](./05-psychedelic-glitch-art/tibetan-nebula_20260617_091030.html) · [source](./05-psychedelic-glitch-art/tibetan-nebula_20260617_091030.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/tibetan-nebula_20260617_091030.jpg)
+- **wowwwwww_20260630_194327**: [view animation](./05-psychedelic-glitch-art/wowwwwww_20260630_194327.html) · [source](./05-psychedelic-glitch-art/wowwwwww_20260630_194327.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/wowwwwww_20260630_194327.jpg)
+- **wowwwwww_20260630_195539**: [view animation](./05-psychedelic-glitch-art/wowwwwww_20260630_195539.html) · [source](./05-psychedelic-glitch-art/wowwwwww_20260630_195539.js) · [thumbnail](./_thumbs/05-psychedelic-glitch-art/wowwwwww_20260630_195539.jpg)
+
+#### Mutant glitch machines
+
+- **chroma_codec_shrine_20260618_191140**: [view animation](./06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_191140.html) · [source](./06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_191140.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_191140.jpg)
+- **chroma_codec_shrine_20260618_192031**: [view animation](./06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_192031.html) · [source](./06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_192031.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_192031.jpg)
+- **chromacodec_shrine_20260618_184444**: [view animation](./06-mutant-glitch-hybrids/chromacodec_shrine_20260618_184444.html) · [source](./06-mutant-glitch-hybrids/chromacodec_shrine_20260618_184444.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/chromacodec_shrine_20260618_184444.jpg)
+- **chromasoup_20260701_223543**: [view animation](./06-mutant-glitch-hybrids/chromasoup_20260701_223543.html) · [source](./06-mutant-glitch-hybrids/chromasoup_20260701_223543.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/chromasoup_20260701_223543.jpg)
+- **hypercolor_damage_carnival_engine_20260619_111904**: [view animation](./06-mutant-glitch-hybrids/hypercolor_damage_carnival_engine_20260619_111904.html) · [source](./06-mutant-glitch-hybrids/hypercolor_damage_carnival_engine_20260619_111904.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/hypercolor_damage_carnival_engine_20260619_111904.jpg)
+- **neon_media_rot**: [view animation](./06-mutant-glitch-hybrids/neon_media_rot.html) · [source](./06-mutant-glitch-hybrids/neon_media_rot.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon_media_rot.jpg)
+- **neon_trash_oracle_20260709_132828**: [view animation](./06-mutant-glitch-hybrids/neon_trash_oracle_20260709_132828.html) · [source](./06-mutant-glitch-hybrids/neon_trash_oracle_20260709_132828.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon_trash_oracle_20260709_132828.jpg)
+- **neon_trash_oracle_20260709_133206**: [view animation](./06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133206.html) · [source](./06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133206.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133206.jpg)
+- **neon_trash_oracle_20260709_133509**: [view animation](./06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133509.html) · [source](./06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133509.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133509.jpg)
+- **neon_trash_oracle_20260725_233040**: [view animation](./06-mutant-glitch-hybrids/neon_trash_oracle_20260725_233040.html) · [source](./06-mutant-glitch-hybrids/neon_trash_oracle_20260725_233040.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon_trash_oracle_20260725_233040.jpg)
+- **neon-trash-oracle_20260709_112945**: [view animation](./06-mutant-glitch-hybrids/neon-trash-oracle_20260709_112945.html) · [source](./06-mutant-glitch-hybrids/neon-trash-oracle_20260709_112945.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon-trash-oracle_20260709_112945.jpg)
+- **neon-trash-oracle_20260709_114201**: [view animation](./06-mutant-glitch-hybrids/neon-trash-oracle_20260709_114201.html) · [source](./06-mutant-glitch-hybrids/neon-trash-oracle_20260709_114201.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon-trash-oracle_20260709_114201.jpg)
+- **neon-trash-oracle_20260725_235816**: [view animation](./06-mutant-glitch-hybrids/neon-trash-oracle_20260725_235816.html) · [source](./06-mutant-glitch-hybrids/neon-trash-oracle_20260725_235816.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon-trash-oracle_20260725_235816.jpg)
+- **neon-wiggle-stereo_20260622_182025**: [view animation](./06-mutant-glitch-hybrids/neon-wiggle-stereo_20260622_182025.html) · [source](./06-mutant-glitch-hybrids/neon-wiggle-stereo_20260622_182025.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/neon-wiggle-stereo_20260622_182025.jpg)
+- **phosphor_reef_engine_20260620_151508**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_151508.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_151508.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_151508.jpg)
+- **phosphor_reef_engine_20260620_180411**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_180411.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_180411.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_180411.jpg)
+- **phosphor_reef_engine_20260620_181827**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_181827.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_181827.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_181827.jpg)
+- **phosphor_reef_engine_20260620_183416**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_183416.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_183416.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_183416.jpg)
+- **phosphor_reef_engine_20260620_184844**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_184844.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_184844.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_184844.jpg)
+- **phosphor_reef_engine_20260620_203835**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_203835.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_203835.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_203835.jpg)
+- **phosphor_reef_engine_20260620_210004**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210004.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210004.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210004.jpg)
+- **phosphor_reef_engine_20260620_210938**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210938.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210938.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210938.jpg)
+- **phosphor_reef_engine_20260620_212759**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_212759.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_212759.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_212759.jpg)
+- **phosphor_reef_engine_20260620_213714**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_213714.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_213714.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_213714.jpg)
+- **phosphor_reef_engine_20260620_230957**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_230957.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_230957.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_230957.jpg)
+- **phosphor_reef_engine_20260620_233924**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_233924.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_233924.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_233924.jpg)
+- **phosphor_reef_engine_20260620_235032**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_235032.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_235032.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_235032.jpg)
+- **phosphor_reef_engine_20260621_125033**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125033.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125033.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125033.jpg)
+- **phosphor_reef_engine_20260621_125544**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125544.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125544.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125544.jpg)
+- **phosphor_reef_engine_20260621_130242**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_130242.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_130242.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_130242.jpg)
+- **phosphor_reef_engine_20260621_173257**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_173257.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_173257.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_173257.jpg)
+- **phosphor_reef_engine_20260621_183223**: [view animation](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_183223.html) · [source](./06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_183223.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_183223.jpg)
+- **prismatic_tape_oracle_20260618_194154**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_194154.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_194154.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_194154.jpg)
+- **prismatic_tape_oracle_20260618_195123**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_195123.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_195123.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_195123.jpg)
+- **prismatic_tape_oracle_20260618_202021**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_202021.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_202021.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_202021.jpg)
+- **prismatic_tape_oracle_20260619_205541**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_205541.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_205541.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_205541.jpg)
+- **prismatic_tape_oracle_20260619_211142**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_211142.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_211142.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_211142.jpg)
+- **prismatic_tape_oracle_20260619_212904**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_212904.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_212904.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_212904.jpg)
+- **prismatic_tape_oracle_20260619_214625**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_214625.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_214625.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_214625.jpg)
+- **prismatic_tape_oracle_20260619_221345**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_221345.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_221345.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_221345.jpg)
+- **prismatic_tape_oracle_20260625_161140**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161140.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161140.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161140.jpg)
+- **prismatic_tape_oracle_20260625_161657**: [view animation](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161657.html) · [source](./06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161657.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161657.jpg)
+- **radshit_20260619_112936**: [view animation](./06-mutant-glitch-hybrids/radshit_20260619_112936.html) · [source](./06-mutant-glitch-hybrids/radshit_20260619_112936.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/radshit_20260619_112936.jpg)
+- **radshit_20260619_114812**: [view animation](./06-mutant-glitch-hybrids/radshit_20260619_114812.html) · [source](./06-mutant-glitch-hybrids/radshit_20260619_114812.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/radshit_20260619_114812.jpg)
+- **vhs-coral**: [view animation](./06-mutant-glitch-hybrids/vhs-coral.html) · [source](./06-mutant-glitch-hybrids/vhs-coral.js) · [thumbnail](./_thumbs/06-mutant-glitch-hybrids/vhs-coral.jpg)
+
+### RECOVERED PREVIOUS GLITCH ARCHIVE
+
+- [Recovered HTML+JS variant pairs](./recovered-from-myspace/archive-variants/) — old experiments with original names and source-repo structure.
+- [Recovered old HTML exports](./recovered-from-myspace/legacy-html-exports/) — more previously curated exports.
+- [Root-level legacy shader HTML](./legacy-root-html/) — examples that were exported before/aside from the organized math catalog.
+
+### SOURCE / PROVENANCE
+
+See [catalog.json](./catalog.json) for original paths and source-repository names. The `source_js` file is useful when giving a coding AI a specific algorithm to reuse.
+
+Technique references: [MySpace Glitch vault](../myspace_glitch/), [Glitch Art Engine](https://github.com/merrypranxter/glitch_art_engine), [Damage Aesthetics](https://github.com/merrypranxter/damage_aesthetics), [Glitchcore Style](https://github.com/merrypranxter/glitchcore_style), [GlitchGL](https://github.com/merrypranxter/glitchGL), [Early Internet Aesthetic](https://github.com/merrypranxter/early_internet_aesthetic).
+
+### CAVEATS
+
+- File/code classification, **not** a claim that every visual has been manually rendered on iPhone.
+- Some gallery sketches load third-party libraries, e.g. Three.js, and require network access on first view.
+- GitHub's code viewer shows the HTML source; to **run** HTML use a local browser preview or a static host such as GitHub Pages if already configured. No hosting change or Netlify deployment has been made.
+- Some recovered versions are historically interesting variants, not distinct rendering algorithms. Duplicates are intentionally retained.

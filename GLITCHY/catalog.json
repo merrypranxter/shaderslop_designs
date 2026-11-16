@@ -1,0 +1,2938 @@
+{
+  "title": "GLITCHY — artwork reference collection",
+  "generated": "2026-11-16",
+  "source_repo": "merrypranxter/shaderslop_designs",
+  "preserve_originals": true,
+  "selection": "All category 15, 16, 17 entries + other by_math entries with documented glitch, damage, pixel, VHS, codec, datamosh, retro web or related characteristics; plus entire prior MySpace Glitch selection, legacy root HTML, archived variants.",
+  "core_count": 160,
+  "legacy_root_html_count": 46,
+  "previous_archive_variants_count": 24,
+  "categories": {
+    "01-webcore-myspace": "MySpace, GeoCities & webcore",
+    "02-vhs-crt-analog": "VHS, CRT & analog failure",
+    "03-datamosh-digital-rot": "Datamosh, corruption & digital rot",
+    "04-dither-pixel-breakage": "Pixel, dither & print artifacts",
+    "05-psychedelic-glitch-art": "Psychedelic glitches & hybrids",
+    "06-mutant-glitch-hybrids": "Mutant glitch machines"
+  },
+  "artworks": [
+    {
+      "name": "acid-bloom",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/acid-bloom.html",
+      "js": "03-datamosh-digital-rot/acid-bloom.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/acid-bloom.jpg",
+      "description": "Feral hash for tracking noise · 1. THE DAMAGE: TRACKING GLITCH & TEARING · Group UVs into horizontal bands for VHS-style head-switching/tracking tears",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/acid-bloom.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/acid-bloom.js",
+      "source_repositories": [
+        "repo_script_js5_code/acid-bloom.js"
+      ]
+    },
+    {
+      "name": "acid-matrix-glitch",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/acid-matrix-glitch.html",
+      "js": "03-datamosh-digital-rot/acid-matrix-glitch.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/acid-matrix-glitch.jpg",
+      "description": "Sinusoidal grating for soft interference (Moire Repo: Technique 04) · V-Sync Slip (Damage Repo: Tearing / Sync Instability) · Tracking Glitch & Head Switching (Damage Repo: VHS Damage)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/acid-matrix-glitch.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/acid-matrix-glitch.js",
+      "source_repositories": [
+        "repo_script_js5_code/acid-matrix-glitch.js"
+      ]
+    },
+    {
+      "name": "acidic-analog-glitch",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/acidic-analog-glitch.html",
+      "js": "02-vhs-crt-analog/acidic-analog-glitch.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/acidic-analog-glitch.jpg",
+      "description": "DAMAGE CONTROL CONSTANTS (TWEAK THESE) · UTILITY / NOISE FUNCTIONS · LAYER 1: VHS TAPE MECHANICS & TRACKING TEAR",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/acidic-analog-glitch.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/acidic-analog-glitch.js",
+      "source_repositories": [
+        "repo_script_js5_code/acidic-analog-glitch.js"
+      ]
+    },
+    {
+      "name": "acidic-fractal",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/acidic-fractal.html",
+      "js": "05-psychedelic-glitch-art/acidic-fractal.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/acidic-fractal.jpg",
+      "description": "[THE-LISTS] Domain 8: Digital Folklore & Glitch Methodologies · [color_fields] Neon Acid Cosine Palette · [structural_color] Thin-Film Interference (Chitin / Mycelial Wall)",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/acidic-fractal.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/acidic-fractal.js",
+      "source_repositories": [
+        "repo_script_js5_code/acidic-fractal.js"
+      ]
+    },
+    {
+      "name": "acidic-palette",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/acidic-palette.html",
+      "js": "05-psychedelic-glitch-art/acidic-palette.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/acidic-palette.jpg",
+      "description": "FERAL SHADER: Multi-scale Turing Morphogenesis + Acid Vibration Palette + CMYK Misregistration + Kaleidoscope · 2D Rotation Matrix · Gyroid function for organic structural noise",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/acidic-palette.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/acidic-palette.js",
+      "source_repositories": [
+        "repo_script_js5_code/acidic-palette.js"
+      ]
+    },
+    {
+      "name": "acidic-vhs-decay",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/acidic-vhs-decay.html",
+      "js": "02-vhs-crt-analog/acidic-vhs-decay.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/acidic-vhs-decay.jpg",
+      "description": "DIGITAL BLOCK DAMAGE · Simulate datamosh / macroblock sticking · Temporal freeze simulation (borrows UVs from nearby blocks)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/acidic-vhs-decay.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/acidic-vhs-decay.js",
+      "source_repositories": [
+        "repo_script_js5_code/acidic-vhs-decay.js"
+      ]
+    },
+    {
+      "name": "acidic-vhs-rot",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/acidic-vhs-rot.html",
+      "js": "02-vhs-crt-analog/acidic-vhs-rot.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/acidic-vhs-rot.jpg",
+      "description": "OP-ART SIGNAL DECAY · TWEAKABLE CONSTANTS · Digital / Block",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/acidic-vhs-rot.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/acidic-vhs-rot.js",
+      "source_repositories": [
+        "repo_script_js5_code/acidic-vhs-rot.js"
+      ]
+    },
+    {
+      "name": "acidic-warp",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/acidic-warp.html",
+      "js": "05-psychedelic-glitch-art/acidic-warp.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/acidic-warp.jpg",
+      "description": "The Feral Jacquard Loom: A mathematically corrupted, highly acidic textile engine. · Combines domain warping, bitwise XOR fractals, anisotropic thread shading, · and structural lace burnout.",
+      "source_category": "06_tilings_voronoi_weaving",
+      "source_html": "by_math/06_tilings_voronoi_weaving/acidic-warp.html",
+      "source_js": "by_math/06_tilings_voronoi_weaving/acidic-warp.js",
+      "source_repositories": [
+        "repo_script_js5_code/acidic-warp.js",
+        "repo_script_js5_code/acidic-weave.js"
+      ]
+    },
+    {
+      "name": "amber_ripple",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/amber_ripple.html",
+      "js": "02-vhs-crt-analog/amber_ripple.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/amber_ripple.jpg",
+      "description": "Horizontal tearing (Broadcast Signal Failure / Sync Instability) · Refresh wave (CRT scanline over-excitation) · Wave / Sinusoidal Moiré (Soft Interference)",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/amber_ripple.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/amber_ripple.js",
+      "source_repositories": [
+        "repo_script_js5_code/amber_ripple.js"
+      ]
+    },
+    {
+      "name": "amber-phosphor",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/amber-phosphor.html",
+      "js": "02-vhs-crt-analog/amber-phosphor.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/amber-phosphor.jpg",
+      "description": "Vertical roll artifact every 10s · Wavy scanline distortion · Two offset scanline grids producing horizontal moiré drift",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/amber-phosphor.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/amber-phosphor.js",
+      "source_repositories": [
+        "repo_script_js5_code/amber-phosphor.js"
+      ]
+    },
+    {
+      "name": "analog_decay",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/analog_decay.html",
+      "js": "02-vhs-crt-analog/analog_decay.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/analog_decay.jpg",
+      "description": "TWEAKABLE DAMAGE CONTROLS · UTILITIES & NOISE · 6. MOIRÉ / OP-ART INTERFERENCE LAYER",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/analog_decay.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/analog_decay.js",
+      "source_repositories": [
+        "repo_script_js5_code/analog_decay.js"
+      ]
+    },
+    {
+      "name": "analog-decay",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/analog-decay.html",
+      "js": "02-vhs-crt-analog/analog-decay.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/analog-decay.jpg",
+      "description": "DIGITAL BLOCK CORRUPTION · Datamosh smear: hold previous UV or displace · Occasional full-row displacement",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/analog-decay.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/analog-decay.js",
+      "source_repositories": [
+        "repo_script_js5_code/analog-decay.js"
+      ]
+    },
+    {
+      "name": "astral_trash",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/astral_trash.html",
+      "js": "01-webcore-myspace/astral_trash.js",
+      "thumb": "_thumbs/01-webcore-myspace/astral_trash.jpg",
+      "description": "Void black background · Decorative Sacred Geometry / Cyber-Brutalist Frame · Diagonal corner cuts",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/astral_trash.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/astral_trash.js",
+      "source_repositories": [
+        "repo_script_js5_code/astral_trash.js"
+      ]
+    },
+    {
+      "name": "astral-trash",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/astral-trash.html",
+      "js": "01-webcore-myspace/astral-trash.js",
+      "thumb": "_thumbs/01-webcore-myspace/astral-trash.jpg",
+      "description": "",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/astral-trash.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/astral-trash.js",
+      "source_repositories": [
+        "repo_script_js5_code/astral-trash.js"
+      ]
+    },
+    {
+      "name": "astral-vhs",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/astral-vhs.html",
+      "js": "02-vhs-crt-analog/astral-vhs.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/astral-vhs.jpg",
+      "description": "Core background - crushed blacks of an old tape · Non-linear wrapping tracking tear · The Strange Mechanism: The geometry itself is routed through a failing analog head.",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/astral-vhs.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/astral-vhs.js",
+      "source_repositories": [
+        "repo_script_js5_code/astral-vhs.js"
+      ]
+    },
+    {
+      "name": "birefringent-stereogram_20260622_105430",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/birefringent-stereogram_20260622_105430.html",
+      "js": "05-psychedelic-glitch-art/birefringent-stereogram_20260622_105430.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/birefringent-stereogram_20260622_105430.jpg",
+      "description": "PASS 1: THE ABYSSAL DEPTH MAP (Lithogenesis + Gyroid Labyrinths) · Descent into the machine · Machine hesitation / Glitch Prophet",
+      "source_category": "14_visual_perception_stereograms_phosphenes",
+      "source_html": "by_math/14_visual_perception_stereograms_phosphenes/birefringent-stereogram_20260622_105430.html",
+      "source_js": "by_math/14_visual_perception_stereograms_phosphenes/birefringent-stereogram_20260622_105430.js",
+      "source_repositories": [
+        "shader_files_2/birefringent-stereogram_20260622_105430.js"
+      ]
+    },
+    {
+      "name": "bold-repo-art",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/bold-repo-art.html",
+      "js": "01-webcore-myspace/bold-repo-art.js",
+      "thumb": "_thumbs/01-webcore-myspace/bold-repo-art.jpg",
+      "description": "",
+      "source_category": "17_typography_text_glyph_systems",
+      "source_html": "by_math/17_typography_text_glyph_systems/bold-repo-art.html",
+      "source_js": "by_math/17_typography_text_glyph_systems/bold-repo-art.js",
+      "source_repositories": [
+        "repo_script_js5_code/bold-repo-art.js"
+      ]
+    },
+    {
+      "name": "bright-automata",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/bright-automata.html",
+      "js": "04-dither-pixel-breakage/bright-automata.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/bright-automata.jpg",
+      "description": "THE GREEDY MESHING AUTOMATON: A Quantized Reaction-Diffusion System · A continuous, organic Gray-Scott Reaction-Diffusion system is forcibly · \"pixel-locked\" and passed through a retro-shader pipeline every frame.",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/bright-automata.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/bright-automata.js",
+      "source_repositories": [
+        "repo_script_js5_code/bright-automata.js"
+      ]
+    },
+    {
+      "name": "candy-glitch-mandelbrot",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/candy-glitch-mandelbrot.html",
+      "js": "03-datamosh-digital-rot/candy-glitch-mandelbrot.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/candy-glitch-mandelbrot.jpg",
+      "description": "1. Defend and Initialize State · Time management for pause functionality · Neon Acid / Y2K Gloss Palette (Autophagic Memory Splicing)",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/candy-glitch-mandelbrot.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/candy-glitch-mandelbrot.js",
+      "source_repositories": [
+        "repo_script_js5_code/candy-glitch-mandelbrot.js"
+      ]
+    },
+    {
+      "name": "cheaper_20260620_204616",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/cheaper_20260620_204616.html",
+      "js": "05-psychedelic-glitch-art/cheaper_20260620_204616.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/cheaper_20260620_204616.jpg",
+      "description": "Noise & Math Utilities · Perceptual Color Palette · Core Procedural Scene Generator",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/cheaper_20260620_204616.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/cheaper_20260620_204616.js",
+      "source_repositories": [
+        "shader_files_2/cheaper_20260620_204616.js"
+      ]
+    },
+    {
+      "name": "chroma_codec_shrine_20260618_191140",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_191140.html",
+      "js": "06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_191140.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_191140.jpg",
+      "description": "Ping-Pong FBOs for Morphogenesis and Datamosh History · R: U (Activator), G: V (Inhibitor), B: Datamosh History, A: Unused · WET ENGINE: PING-PONG SHADER (Reaction-Diffusion + Datamosh Advection)",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/chroma_codec_shrine_20260618_191140.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/chroma_codec_shrine_20260618_191140.js",
+      "source_repositories": [
+        "shader_files_2/chroma_codec_shrine_20260618_191140.js",
+        "shader_files_2/chromatophore_codec_shrine_20260618_191623.js"
+      ]
+    },
+    {
+      "name": "chroma_codec_shrine_20260618_192031",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_192031.html",
+      "js": "06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_192031.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/chroma_codec_shrine_20260618_192031.jpg",
+      "description": "\"CHROMATOPHORE CODEC SHRINE\" · Blends Turing morphogenesis, cuttlefish chromatophores, op-art, · early internet UI debris, datamoshing, and cross-processed damage.",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/chroma_codec_shrine_20260618_192031.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/chroma_codec_shrine_20260618_192031.js",
+      "source_repositories": [
+        "shader_files_2/chroma_codec_shrine_20260618_192031.js",
+        "shader_files_2/chroma_codec_shrine_20260618_192141.js",
+        "shader_files_2/chromatophore_codec_shrine_20260618_192653.js"
+      ]
+    },
+    {
+      "name": "chromacodec_shrine_20260618_184444",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/chromacodec_shrine_20260618_184444.html",
+      "js": "06-mutant-glitch-hybrids/chromacodec_shrine_20260618_184444.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/chromacodec_shrine_20260618_184444.jpg",
+      "description": "FBO Setup for Ping-Pong (Reaction-Diffusion & Datamosh History) · Required for Reaction-Diffusion precision · SIMULATION SHADER (Morphogenesis + Datamosh Advection)",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/chromacodec_shrine_20260618_184444.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/chromacodec_shrine_20260618_184444.js",
+      "source_repositories": [
+        "shader_files_2/chromacodec_shrine_20260618_184444.js",
+        "shader_files_2/chromatophore_codec_shrine_20260618_184555.js"
+      ]
+    },
+    {
+      "name": "chromasoup_20260701_223543",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/chromasoup_20260701_223543.html",
+      "js": "06-mutant-glitch-hybrids/chromasoup_20260701_223543.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/chromasoup_20260701_223543.jpg",
+      "description": "Maximalist Candy-Acid Hyperpop Palette Sequence · White-hot highlights (Glitchcore spark) · 1. Glitchcore / Damage Aesthetics: Macroblock tearing",
+      "source_category": "13_optics_spectral_color_science",
+      "source_html": "by_math/13_optics_spectral_color_science/chromasoup_20260701_223543.html",
+      "source_js": "by_math/13_optics_spectral_color_science/chromasoup_20260701_223543.js",
+      "source_repositories": [
+        "shader_files_2/chromasoup_20260701_223543.js"
+      ]
+    },
+    {
+      "name": "chromatophore_codec_shrine_20260618_185338",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_185338.html",
+      "js": "03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_185338.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_185338.jpg",
+      "description": "PASS 1: Morphogenesis (Reaction-Diffusion) · Anisotropic diffusion (Op-Art zebra waves) · Spatially varying Feed and Kill (Central Portal)",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/chromatophore_codec_shrine_20260618_185338.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/chromatophore_codec_shrine_20260618_185338.js",
+      "source_repositories": [
+        "shader_files_2/chromatophore_codec_shrine_20260618_185338.js"
+      ]
+    },
+    {
+      "name": "chromatophore_codec_shrine_20260618_190133",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_190133.html",
+      "js": "03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_190133.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/chromatophore_codec_shrine_20260618_190133.jpg",
+      "description": "",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/chromatophore_codec_shrine_20260618_190133.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/chromatophore_codec_shrine_20260618_190133.js",
+      "source_repositories": [
+        "shader_files_2/chromatophore_codec_shrine_20260618_190133.js",
+        "shader_files_2/chromatophore_codec_shrine_20260618_190717.js"
+      ]
+    },
+    {
+      "name": "cmy-grain",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/cmy-grain.html",
+      "js": "04-dither-pixel-breakage/cmy-grain.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/cmy-grain.jpg",
+      "description": "Mathematical Foundation: 3D Hash & Noise · Medium Scale: Fractal Brownian Motion · The Topology: Mycelial Gyroid Math",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/cmy-grain.html",
+      "source_js": "by_math/16_dithering_halftone_print/cmy-grain.js",
+      "source_repositories": [
+        "repo_script_js5_code/cmy-grain.js"
+      ]
+    },
+    {
+      "name": "cmy-substance_20260709_104234",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/cmy-substance_20260709_104234.html",
+      "js": "04-dither-pixel-breakage/cmy-substance_20260709_104234.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/cmy-substance_20260709_104234.jpg",
+      "description": "Hash function for deterministic chaos · Metric Competition: Morphing distance manifold (L0.5 to L2.5) · Guard against pow(0)",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/cmy-substance_20260709_104234.html",
+      "source_js": "by_math/16_dithering_halftone_print/cmy-substance_20260709_104234.js",
+      "source_repositories": [
+        "shaderfiles3/cmy-substance_20260709_104234.js",
+        "shaderfiles3/neon-substance_20260709_104248.js"
+      ]
+    },
+    {
+      "name": "cobalt_scan",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/cobalt_scan.html",
+      "js": "02-vhs-crt-analog/cobalt_scan.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/cobalt_scan.jpg",
+      "description": "Disabled to preserve pristine pixel-level interference · 1. Pristine Cold Geometry (Subtle CRT Barrel Distortion) · Screen bounds mask",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/cobalt_scan.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/cobalt_scan.js",
+      "source_repositories": [
+        "repo_script_js5_code/cobalt_scan.js"
+      ]
+    },
+    {
+      "name": "cobalt-scanline",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/cobalt-scanline.html",
+      "js": "02-vhs-crt-analog/cobalt-scanline.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/cobalt-scanline.jpg",
+      "description": "Pristine CRT curve · Square lattice moiré · Crisp, sub-pixel smooth lines",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/cobalt-scanline.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/cobalt-scanline.js",
+      "source_repositories": [
+        "repo_script_js5_code/cobalt-scanline.js"
+      ]
+    },
+    {
+      "name": "colorful-moire",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/colorful-moire.html",
+      "js": "05-psychedelic-glitch-art/colorful-moire.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/colorful-moire.jpg",
+      "description": "The Glitch Prophet: Hash noise · Moire as Point: Archimedean Phantom Spiral · The interference creates radial spokes that appear to spin independently",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/colorful-moire.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/colorful-moire.js",
+      "source_repositories": [
+        "repo_script_js5_code/colorful-moire.js"
+      ]
+    },
+    {
+      "name": "crt-poincare",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/crt-poincare.html",
+      "js": "02-vhs-crt-analog/crt-poincare.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/crt-poincare.jpg",
+      "description": "Complex Arithmetic · Möbius Transform (Translate p to origin) · Hyperbolic Distance (safe atanh)",
+      "source_category": "11_hyperbolic_non_euclidean_higher_dimensions",
+      "source_html": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/crt-poincare.html",
+      "source_js": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/crt-poincare.js",
+      "source_repositories": [
+        "repo_script_js5_code/crt-poincare.js"
+      ]
+    },
+    {
+      "name": "cyan_matrix",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/cyan_matrix.html",
+      "js": "04-dither-pixel-breakage/cyan_matrix.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/cyan_matrix.jpg",
+      "description": "Hyperbolic manifold projection · XOR-Ghost Manifold: addressable trauma in the matrix · Fluid turbulence",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/cyan_matrix.html",
+      "source_js": "by_math/16_dithering_halftone_print/cyan_matrix.js",
+      "source_repositories": [
+        "repo_script_js5_code/cyan_matrix.js"
+      ]
+    },
+    {
+      "name": "deco-bg",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/deco-bg.html",
+      "js": "01-webcore-myspace/deco-bg.js",
+      "thumb": "_thumbs/01-webcore-myspace/deco-bg.jpg",
+      "description": "",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/deco-bg.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/deco-bg.js",
+      "source_repositories": [
+        "repo_script_js5_code/deco-bg.js"
+      ]
+    },
+    {
+      "name": "degraded-signal",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/degraded-signal.html",
+      "js": "03-datamosh-digital-rot/degraded-signal.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/degraded-signal.jpg",
+      "description": "THE HAUNTED SIGNAL: A Feral Moiré / Damage Aesthetic Texture System · EXPLANATION OF LAYERS: · 1. crtCurve: Warps the UV space to simulate the physical bulge of a CRT tube.",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/degraded-signal.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/degraded-signal.js",
+      "source_repositories": [
+        "repo_script_js5_code/degraded-signal.js"
+      ]
+    },
+    {
+      "name": "derek_sux_texture",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/derek_sux_texture.html",
+      "js": "01-webcore-myspace/derek_sux_texture.js",
+      "thumb": "_thumbs/01-webcore-myspace/derek_sux_texture.jpg",
+      "description": "Feral Setup: Cache check to prevent re-initialization · KINETIC TYPE STORM: Physics State Initialization · ALCHEMICAL MATH: Hash & Noise",
+      "source_category": "17_typography_text_glyph_systems",
+      "source_html": "by_math/17_typography_text_glyph_systems/derek_sux_texture.html",
+      "source_js": "by_math/17_typography_text_glyph_systems/derek_sux_texture.js",
+      "source_repositories": [
+        "repo_script_js5_code/derek_sux_texture.js",
+        "repo_script_js5_code/neon-void-derek-sux.js"
+      ]
+    },
+    {
+      "name": "derek-sux-material",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/derek-sux-material.html",
+      "js": "01-webcore-myspace/derek-sux-material.js",
+      "thumb": "_thumbs/01-webcore-myspace/derek-sux-material.jpg",
+      "description": "2. Initialize Kinetic Typography Physics · Clear offscreen to black initially · The Three Simultaneous Time Scales",
+      "source_category": "17_typography_text_glyph_systems",
+      "source_html": "by_math/17_typography_text_glyph_systems/derek-sux-material.html",
+      "source_js": "by_math/17_typography_text_glyph_systems/derek-sux-material.js",
+      "source_repositories": [
+        "repo_script_js5_code/derek-sux-material.js"
+      ]
+    },
+    {
+      "name": "dynamic-art",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/dynamic-art.html",
+      "js": "05-psychedelic-glitch-art/dynamic-art.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/dynamic-art.jpg",
+      "description": "Bayer 4x4 Dither Matrix (pixel_voxel repo) · Wavelength to RGB Conversion (structural_color repo) · Thin-Film Interference calculation",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/dynamic-art.html",
+      "source_js": "by_math/16_dithering_halftone_print/dynamic-art.js",
+      "source_repositories": [
+        "repo_script_js5_code/dynamic-art.js"
+      ]
+    },
+    {
+      "name": "dynamic-design",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/dynamic-design.html",
+      "js": "05-psychedelic-glitch-art/dynamic-design.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/dynamic-design.jpg",
+      "description": "Flat array for data locality & performance: [x, y, vx, vy, life, maxLife, ... ] · [REPO GENOME: pixel_voxel] · Generate an offline Bayer 4x4 dither pattern for the \"Ditherpunk\" overlay",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/dynamic-design.html",
+      "source_js": "by_math/16_dithering_halftone_print/dynamic-design.js",
+      "source_repositories": [
+        "repo_script_js5_code/dynamic-design.js"
+      ]
+    },
+    {
+      "name": "dynamic-git-art",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/dynamic-git-art.html",
+      "js": "04-dither-pixel-breakage/dynamic-git-art.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/dynamic-git-art.jpg",
+      "description": "INITIALIZATION · Psychedelic Collage Halftone/Riso Pattern · MATH & PHYSICS",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/dynamic-git-art.html",
+      "source_js": "by_math/16_dithering_halftone_print/dynamic-git-art.js",
+      "source_repositories": [
+        "repo_script_js5_code/dynamic-git-art.js"
+      ]
+    },
+    {
+      "name": "dynamic-interactive",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/dynamic-interactive.html",
+      "js": "05-psychedelic-glitch-art/dynamic-interactive.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/dynamic-interactive.jpg",
+      "description": "Psychedelic Collage: Displacement Warp (Simplex Noise) · Psychedelic Collage: Kaleidoscope Pattern · Rotational drift",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/dynamic-interactive.html",
+      "source_js": "by_math/16_dithering_halftone_print/dynamic-interactive.js",
+      "source_repositories": [
+        "repo_script_js5_code/dynamic-interactive.js"
+      ]
+    },
+    {
+      "name": "fractal-friday_20260626_154045",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/fractal-friday_20260626_154045.html",
+      "js": "05-psychedelic-glitch-art/fractal-friday_20260626_154045.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/fractal-friday_20260626_154045.jpg",
+      "description": "Render targets for ping-pong feedback (Afterimage & Datamosh) · Prevents banding in afterimage trails · Complex math helpers",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/fractal-friday_20260626_154045.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/fractal-friday_20260626_154045.js",
+      "source_repositories": [
+        "shader_files_2/fractal-friday_20260626_154045.js",
+        "shader_files_2/neon-mandelbrot-portals_20260626_153453.js"
+      ]
+    },
+    {
+      "name": "fractal-friday-mandelbrot_20260626_155624",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/fractal-friday-mandelbrot_20260626_155624.html",
+      "js": "03-datamosh-digital-rot/fractal-friday-mandelbrot_20260626_155624.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/fractal-friday-mandelbrot_20260626_155624.jpg",
+      "description": "Simple hash and noise for low-power glitch effects · Candy Neon Spectral Palette · Subordinate mesh gradient background",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/fractal-friday-mandelbrot_20260626_155624.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/fractal-friday-mandelbrot_20260626_155624.js",
+      "source_repositories": [
+        "shader_files_2/fractal-friday-mandelbrot_20260626_155624.js"
+      ]
+    },
+    {
+      "name": "geocities_cathedral_20260709_213125",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/geocities_cathedral_20260709_213125.html",
+      "js": "01-webcore-myspace/geocities_cathedral_20260709_213125.js",
+      "thumb": "_thumbs/01-webcore-myspace/geocities_cathedral_20260709_213125.jpg",
+      "description": "ALCHEMICAL MATH & NOISE ENGINES · [Interaction] Mouse as Magnetic Lens · [Poincaré Hyperbolic Parasite Warp]",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/geocities_cathedral_20260709_213125.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/geocities_cathedral_20260709_213125.js",
+      "source_repositories": [
+        "shaderfiles3/geocities_cathedral_20260709_213125.js"
+      ]
+    },
+    {
+      "name": "geocities_cathedral_20260713_125256",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/geocities_cathedral_20260713_125256.html",
+      "js": "01-webcore-myspace/geocities_cathedral_20260713_125256.js",
+      "thumb": "_thumbs/01-webcore-myspace/geocities_cathedral_20260713_125256.jpg",
+      "description": "We need FloatType for exact continuous logic (Lenia) and integer accumulation (Sandpile) · Sandpile grains · PASS 1: LIVING MATH ENGINE (Lenia + Sandpile + Reaction Diffusion)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/geocities_cathedral_20260713_125256.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/geocities_cathedral_20260713_125256.js",
+      "source_repositories": [
+        "shaderfiles3/geocities_cathedral_20260713_125256.js"
+      ]
+    },
+    {
+      "name": "git-art",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/git-art.html",
+      "js": "04-dither-pixel-breakage/git-art.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/git-art.jpg",
+      "description": "pxv.technique.bayer_4x4.v1 · Lisa Frank x Voxel Palette · pxv.shader.palette_map_nearest.v1",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/git-art.html",
+      "source_js": "by_math/16_dithering_halftone_print/git-art.js",
+      "source_repositories": [
+        "repo_script_js5_code/git-art.js"
+      ]
+    },
+    {
+      "name": "git-blend",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/git-blend.html",
+      "js": "05-psychedelic-glitch-art/git-blend.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/git-blend.jpg",
+      "description": "[FERAL DESIGN-BRAIN: ENGAGED] · [MECHANISM]: Iterative Dither-Collapse. · A chaotic 2.5D strange attractor (Clifford variant) is forced into a rigid,",
+      "source_category": "12_chaos_attractors_time_dynamics",
+      "source_html": "by_math/12_chaos_attractors_time_dynamics/git-blend.html",
+      "source_js": "by_math/12_chaos_attractors_time_dynamics/git-blend.js",
+      "source_repositories": [
+        "repo_script_js5_code/git-blend.js"
+      ]
+    },
+    {
+      "name": "git-flora_20260614_114641",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/git-flora_20260614_114641.html",
+      "js": "05-psychedelic-glitch-art/git-flora_20260614_114641.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/git-flora_20260614_114641.jpg",
+      "description": "STATE INITIALIZATION (Wet Engine / Morphogenesis Protocol) · 12-fold Haeckel radial symmetry · 1. PHOSPHOR TRAIL / VOID BLOOM BACKGROUND",
+      "source_category": "18_biomimicry_living_systems",
+      "source_html": "by_math/18_biomimicry_living_systems/git-flora_20260614_114641.html",
+      "source_js": "by_math/18_biomimicry_living_systems/git-flora_20260614_114641.js",
+      "source_repositories": [
+        "shader_files_2/git-flora_20260614_114641.js"
+      ]
+    },
+    {
+      "name": "git-flow",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/git-flow.html",
+      "js": "05-psychedelic-glitch-art/git-flow.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/git-flow.jpg",
+      "description": "FERAL DESIGN MECHANISM: \"Aperiodic Ditherpunk Diffraction Bloom\" · Fuses the rigorous 5-fold wave interference of quasicrystals (quasicrystals repo) · with brutalist pixel-locked screen-space dithering (pixel_voxel repo)",
+      "source_category": "07_quasicrystals_aperiodic_order",
+      "source_html": "by_math/07_quasicrystals_aperiodic_order/git-flow.html",
+      "source_js": "by_math/07_quasicrystals_aperiodic_order/git-flow.js",
+      "source_repositories": [
+        "repo_script_js5_code/git-flow.js"
+      ]
+    },
+    {
+      "name": "glitchiness1_20260611_151242",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/glitchiness1_20260611_151242.html",
+      "js": "03-datamosh-digital-rot/glitchiness1_20260611_151242.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/glitchiness1_20260611_151242.jpg",
+      "description": "1. Datamosh / Block corruption (Glitch Cookbook) · 2. Space transform for Op Art (Retinal Surrealism) · 3. Gematria Resonance Fields (Values: 26, 86, 373)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/glitchiness1_20260611_151242.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/glitchiness1_20260611_151242.js",
+      "source_repositories": [
+        "shader_files_2/glitchiness1_20260611_151242.js"
+      ]
+    },
+    {
+      "name": "glitchiness3_20260611_151801",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/glitchiness3_20260611_151801.html",
+      "js": "03-datamosh-digital-rot/glitchiness3_20260611_151801.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/glitchiness3_20260611_151801.jpg",
+      "description": "1. Feedback Loop (Temporal Echo & Datamosh) · Darken slightly to prevent blown out white accumulation · 2. Moiré Interference Pattern (Optical Illusion Core)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/glitchiness3_20260611_151801.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/glitchiness3_20260611_151801.js",
+      "source_repositories": [
+        "shader_files_2/glitchiness3_20260611_151801.js"
+      ]
+    },
+    {
+      "name": "glitchscape",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/glitchscape.html",
+      "js": "01-webcore-myspace/glitchscape.js",
+      "thumb": "_thumbs/01-webcore-myspace/glitchscape.jpg",
+      "description": "Math & Noise (Gematria & Glitchcore Foundation) · SDFs (Myspace Bling & Early Internet UI) · Color Palettes (Acid Vibration & Hyperpop)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape.js",
+      "source_repositories": [
+        "repo_script_js5_code/glitchscape.js",
+        "shader_files_2/amazinglyglitchy_20260611_150640.js",
+        "shader_files_2/glitchscape_20260611_160049.js"
+      ]
+    },
+    {
+      "name": "glitchscape_20260611_141952",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/glitchscape_20260611_141952.html",
+      "js": "01-webcore-myspace/glitchscape_20260611_141952.js",
+      "thumb": "_thumbs/01-webcore-myspace/glitchscape_20260611_141952.jpg",
+      "description": "Noise & Hash Functions · Early Internet Window Cascade Logic · Body repeats (tiled background logic)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape_20260611_141952.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape_20260611_141952.js",
+      "source_repositories": [
+        "repo_script_js5_code/glitchscape_20260611_141952.js",
+        "shader_files_2/glitchscape_20260611_142934.js",
+        "shader_files_2/glitchscape_20260611_142951.js",
+        "shader_files_2/glitchscape_20260611_143650.js"
+      ]
+    },
+    {
+      "name": "glitchscape_20260611_145149",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/glitchscape_20260611_145149.html",
+      "js": "01-webcore-myspace/glitchscape_20260611_145149.js",
+      "thumb": "_thumbs/01-webcore-myspace/glitchscape_20260611_145149.jpg",
+      "description": "Halftone Screen (Psychedelic Collage / Riso) · Gematria Resonance Warp (Logos 373 / Ichthys 1224) · Op Art Checker Funnel",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape_20260611_145149.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape_20260611_145149.js",
+      "source_repositories": [
+        "shader_files_2/glitchscape_20260611_145149.js",
+        "shader_files_2/ooooooooo_glitchy_20260611_145314.js"
+      ]
+    },
+    {
+      "name": "glitchscape_20260611_152823",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/glitchscape_20260611_152823.html",
+      "js": "01-webcore-myspace/glitchscape_20260611_152823.js",
+      "thumb": "_thumbs/01-webcore-myspace/glitchscape_20260611_152823.jpg",
+      "description": "",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape_20260611_152823.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape_20260611_152823.js",
+      "source_repositories": [
+        "shader_files_2/glitchscape_20260611_152823.js"
+      ]
+    },
+    {
+      "name": "glitchscape_20260611_152952",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/glitchscape_20260611_152952.html",
+      "js": "01-webcore-myspace/glitchscape_20260611_152952.js",
+      "thumb": "_thumbs/01-webcore-myspace/glitchscape_20260611_152952.jpg",
+      "description": "DATABENDING & COMPRESSION MACROBLOCKING · VHS TRACKING TEAR · CLASSIC B&W RETINAL OP-ART TUNNEL",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape_20260611_152952.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/glitchscape_20260611_152952.js",
+      "source_repositories": [
+        "shader_files_2/glitchscape_20260611_152952.js",
+        "shader_files_2/myspace-glitchscape_20260611_152933.js",
+        "shader_files_2/myspace_glitchscape_20260611_154350.js"
+      ]
+    },
+    {
+      "name": "glitchspace",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/glitchspace.html",
+      "js": "01-webcore-myspace/glitchspace.js",
+      "thumb": "_thumbs/01-webcore-myspace/glitchspace.jpg",
+      "description": "Preserve crusty pixelation · Hash and Noise · Op Art Zeno Tunnel Pattern",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/glitchspace.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/glitchspace.js",
+      "source_repositories": [
+        "repo_script_js5_code/glitchspace.js"
+      ]
+    },
+    {
+      "name": "haunted_crt",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/haunted_crt.html",
+      "js": "02-vhs-crt-analog/haunted_crt.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/haunted_crt.jpg",
+      "description": "2D Value Noise for organic static · Perfect looping noise by sampling a 2D circle in noise space · VHS Tracking Tear: horizontal displacement bands drifting upward",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/haunted_crt.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/haunted_crt.js",
+      "source_repositories": [
+        "repo_script_js5_code/haunted_crt.js"
+      ]
+    },
+    {
+      "name": "haunted_monitor",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/haunted_monitor.html",
+      "js": "01-webcore-myspace/haunted_monitor.js",
+      "thumb": "_thumbs/01-webcore-myspace/haunted_monitor.jpg",
+      "description": "",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/haunted_monitor.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/haunted_monitor.js",
+      "source_repositories": [
+        "repo_script_js5_code/haunted_monitor.js"
+      ]
+    },
+    {
+      "name": "hyperbolic-led",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/hyperbolic-led.html",
+      "js": "05-psychedelic-glitch-art/hyperbolic-led.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/hyperbolic-led.jpg",
+      "description": "{7,3} Hyperbolic Tiling Constants (Poincare Disk) · Subtle CRT Barrel Distortion · Map to Poincare disk space",
+      "source_category": "11_hyperbolic_non_euclidean_higher_dimensions",
+      "source_html": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/hyperbolic-led.html",
+      "source_js": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/hyperbolic-led.js",
+      "source_repositories": [
+        "repo_script_js5_code/hyperbolic-led.js"
+      ]
+    },
+    {
+      "name": "hyperbolic-subpixel",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/hyperbolic-subpixel.html",
+      "js": "02-vhs-crt-analog/hyperbolic-subpixel.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/hyperbolic-subpixel.jpg",
+      "description": "Complex math for Möbius transformations · CRT Geometry Distortion · Schottky Group Inversion Fractal for Hyperbolic Tessellation",
+      "source_category": "11_hyperbolic_non_euclidean_higher_dimensions",
+      "source_html": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/hyperbolic-subpixel.html",
+      "source_js": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/hyperbolic-subpixel.js",
+      "source_repositories": [
+        "repo_script_js5_code/hyperbolic-subpixel.js"
+      ]
+    },
+    {
+      "name": "hypercolor_damage_carnival_engine_20260619_111904",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/hypercolor_damage_carnival_engine_20260619_111904.html",
+      "js": "06-mutant-glitch-hybrids/hypercolor_damage_carnival_engine_20260619_111904.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/hypercolor_damage_carnival_engine_20260619_111904.jpg",
+      "description": "MATH & NOISE (Fractals, Caustics, Datamosh) · EARLY INTERNET UI SHARDS · STRUCTURAL COLOR (Thin Film / Iridescence)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/hypercolor_damage_carnival_engine_20260619_111904.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/hypercolor_damage_carnival_engine_20260619_111904.js",
+      "source_repositories": [
+        "shader_files_2/hypercolor_damage_carnival_engine_20260619_111904.js",
+        "shader_files_2/hypercolor_damage_carnival_engine_20260619_112131.js"
+      ]
+    },
+    {
+      "name": "klein-dither",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/klein-dither.html",
+      "js": "04-dither-pixel-breakage/klein-dither.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/klein-dither.jpg",
+      "description": "Complex math for Möbius transformations (from kleinian_groups) · 4x4 Bayer Matrix (from dither repo) · IQ Cosine Palette - Neon Acid (from color_fields)",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/klein-dither.html",
+      "source_js": "by_math/16_dithering_halftone_print/klein-dither.js",
+      "source_repositories": [
+        "repo_script_js5_code/klein-dither.js"
+      ]
+    },
+    {
+      "name": "led-moire",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/led-moire.html",
+      "js": "02-vhs-crt-analog/led-moire.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/led-moire.jpg",
+      "description": "Generates a continuous sine-wave based LED triad grid · Spatial phase shift for RGB subpixels (0, 120, 240 degrees) · Y-axis scanline gap",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/led-moire.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/led-moire.js",
+      "source_repositories": [
+        "repo_script_js5_code/led-moire.js"
+      ]
+    },
+    {
+      "name": "led-pulse",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/led-pulse.html",
+      "js": "02-vhs-crt-analog/led-pulse.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/led-pulse.jpg",
+      "description": "The core moiré interference generator · Using a soft dot grid to maximize 2D interference with the subpixel matrix · 1. THE HEARTBEAT (TEMPORAL MECHANISM)",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/led-pulse.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/led-pulse.js",
+      "source_repositories": [
+        "repo_script_js5_code/led-pulse.js",
+        "repo_script_js5_code/neon-subpixel-pulse.js",
+        "repo_script_js5_code/vhs-glitch.js"
+      ]
+    },
+    {
+      "name": "magenta-glitch-tape",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/magenta-glitch-tape.html",
+      "js": "03-datamosh-digital-rot/magenta-glitch-tape.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/magenta-glitch-tape.jpg",
+      "description": "Crossing lines for a woven textile / screen door effect · Tracking Glitch (Tearing & Bands) from the Damage Taxonomy · Head-switching noise at bottom of the frame",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/magenta-glitch-tape.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/magenta-glitch-tape.js",
+      "source_repositories": [
+        "repo_script_js5_code/magenta-glitch-tape.js"
+      ]
+    },
+    {
+      "name": "magenta-tape-glitch",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/magenta-tape-glitch.html",
+      "js": "03-datamosh-digital-rot/magenta-tape-glitch.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/magenta-tape-glitch.jpg",
+      "description": "Hash for noise · Continuous sinusoidal grid for soft interference · Woven moire pattern from two diagonal grids",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/magenta-tape-glitch.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/magenta-tape-glitch.js",
+      "source_repositories": [
+        "repo_script_js5_code/magenta-tape-glitch.js"
+      ]
+    },
+    {
+      "name": "mandelbrot-candy-glitch",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/mandelbrot-candy-glitch.html",
+      "js": "03-datamosh-digital-rot/mandelbrot-candy-glitch.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/mandelbrot-candy-glitch.jpg",
+      "description": "FERAL DESIGN-BRAIN: ENGAGED · PROTOCOL: HOLOGRAPHIC CANDY-PRISM MANDELBROT · REPO GENOMES: fractals (escape-time, DE, orbit traps), color_systems (Oklab/cosine), THE-LISTS (glitchwave_dichrome)",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/mandelbrot-candy-glitch.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/mandelbrot-candy-glitch.js",
+      "source_repositories": [
+        "repo_script_js5_code/mandelbrot-candy-glitch.js"
+      ]
+    },
+    {
+      "name": "math-textile",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/math-textile.html",
+      "js": "05-psychedelic-glitch-art/math-textile.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/math-textile.jpg",
+      "description": "[GLITCH PROPHET] Deterministic hardware confusion · Noise for resist dye diffusion · [STRUCTURAL COLOR] Physics-based spectral interference mapping",
+      "source_category": "06_tilings_voronoi_weaving",
+      "source_html": "by_math/06_tilings_voronoi_weaving/math-textile.html",
+      "source_js": "by_math/06_tilings_voronoi_weaving/math-textile.js",
+      "source_repositories": [
+        "repo_script_js5_code/math-textile.js"
+      ]
+    },
+    {
+      "name": "maximalist_weird",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/maximalist_weird.html",
+      "js": "05-psychedelic-glitch-art/maximalist_weird.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/maximalist_weird.jpg",
+      "description": "Generate Indra's Net nodes · 1. TEMPORAL RECURSION (Smear & Fade) · 2. VEDIC OS / GLITCHCORE TYPOGRAPHY",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/maximalist_weird.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/maximalist_weird.js",
+      "source_repositories": [
+        "repo_script_js5_code/maximalist_weird.js"
+      ]
+    },
+    {
+      "name": "moire-dna",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/moire-dna.html",
+      "js": "05-psychedelic-glitch-art/moire-dna.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/moire-dna.jpg",
+      "description": "Temporal Feedback Moiré (Repo 1: Technique 06) + Cyberdelic Neon (Repo 2) · Void Black with alpha for feedback decay · Mouse interaction drives Anamorphic / Misregistration Moiré (Repo 1: Tech 10 / Repo 2)",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/moire-dna.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/moire-dna.js",
+      "source_repositories": [
+        "repo_script_js5_code/moire-dna.js"
+      ]
+    },
+    {
+      "name": "moire-interference",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/moire-interference.html",
+      "js": "05-psychedelic-glitch-art/moire-interference.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/moire-interference.jpg",
+      "description": "Psychedelic Pop \"Acid Vibration\" Palette · Curvilinear rhythm: Scalloped Flower / Eye shape generator · Halftone screen artifact (from print_artifacts)",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/moire-interference.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/moire-interference.js",
+      "source_repositories": [
+        "repo_script_js5_code/moire-interference.js"
+      ]
+    },
+    {
+      "name": "monday_20260615_114132",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/monday_20260615_114132.html",
+      "js": "05-psychedelic-glitch-art/monday_20260615_114132.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/monday_20260615_114132.jpg",
+      "description": "MATHEMATICAL SUBSTRATE (Domain 16 / Higher Math) · COLOR ALCHEMY (OKLab / Perceptual Space) · FERAL NOISE (Outsider Art / Glitch Prophet)",
+      "source_category": "11_hyperbolic_non_euclidean_higher_dimensions",
+      "source_html": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/monday_20260615_114132.html",
+      "source_js": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/monday_20260615_114132.js",
+      "source_repositories": [
+        "shader_files_2/monday_20260615_114132.js",
+        "shader_files_2/rainblown-rainbow_20260615_113930.js"
+      ]
+    },
+    {
+      "name": "myspace_glitch",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/myspace_glitch.html",
+      "js": "01-webcore-myspace/myspace_glitch.js",
+      "thumb": "_thumbs/01-webcore-myspace/myspace_glitch.jpg",
+      "description": "Feral GLSL Shader: Op-Art meets MySpace Glitchcore · Noise & Hash Functions · Retinal Surrealism: Op-Art Space Warp",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/myspace_glitch.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/myspace_glitch.js",
+      "source_repositories": [
+        "repo_script_js5_code/myspace_glitch.js",
+        "shader_files_2/glitchscape_20260611_153228.js"
+      ]
+    },
+    {
+      "name": "myspace-glitch",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/myspace-glitch.html",
+      "js": "01-webcore-myspace/myspace-glitch.js",
+      "thumb": "_thumbs/01-webcore-myspace/myspace-glitch.jpg",
+      "description": "Op-Art Zeno Tunnel · Infinite descent subdivision · MySpace Motifs",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitch.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitch.js",
+      "source_repositories": [
+        "repo_script_js5_code/myspace-glitch.js",
+        "repo_script_js5_code/myspace-glitchscape.js",
+        "shader_files_2/myspace-glitch_20260611_154144.js"
+      ]
+    },
+    {
+      "name": "myspace-glitch_20260611_153108",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/myspace-glitch_20260611_153108.html",
+      "js": "01-webcore-myspace/myspace-glitch_20260611_153108.js",
+      "thumb": "_thumbs/01-webcore-myspace/myspace-glitch_20260611_153108.jpg",
+      "description": "Alchemical Math: Hash & Noise · OKLab to sRGB (Perceptual Color System) · Early Internet \"Text Debris\" abstraction",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitch_20260611_153108.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitch_20260611_153108.js",
+      "source_repositories": [
+        "shader_files_2/myspace-glitch_20260611_153108.js"
+      ]
+    },
+    {
+      "name": "myspace-glitchscape_20260611_153739",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/myspace-glitchscape_20260611_153739.html",
+      "js": "01-webcore-myspace/myspace-glitchscape_20260611_153739.js",
+      "thumb": "_thumbs/01-webcore-myspace/myspace-glitchscape_20260611_153739.jpg",
+      "description": "1. OP-ART LAYER (Retinal Surrealism / Checker Funnel) · Slow radial hypnosis spin · Continuous perspective warp for infinite tunnel illusion",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitchscape_20260611_153739.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitchscape_20260611_153739.js",
+      "source_repositories": [
+        "shader_files_2/myspace-glitchscape_20260611_153739.js"
+      ]
+    },
+    {
+      "name": "myspace-glitchscape_20260612_004503",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/myspace-glitchscape_20260612_004503.html",
+      "js": "01-webcore-myspace/myspace-glitchscape_20260612_004503.js",
+      "thumb": "_thumbs/01-webcore-myspace/myspace-glitchscape_20260612_004503.jpg",
+      "description": "1. MACROBLOCK COMPRESSION CHEW · 2. HORIZONTAL TEARING · 3. OP-ART TUNNEL (RGB SPLIT)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitchscape_20260612_004503.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitchscape_20260612_004503.js",
+      "source_repositories": [
+        "shader_files_2/myspace-glitchscape_20260612_004503.js",
+        "shader_files_2/myspace-glitchscape_20260612_004519.js",
+        "shader_files_2/myspace-glitchscape_20260612_004546.js"
+      ]
+    },
+    {
+      "name": "myspace-glitchscape_20260612_005400",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/myspace-glitchscape_20260612_005400.html",
+      "js": "01-webcore-myspace/myspace-glitchscape_20260612_005400.js",
+      "thumb": "_thumbs/01-webcore-myspace/myspace-glitchscape_20260612_005400.jpg",
+      "description": "Macroblocking / Candy Crash Compression · Scanline tear / Horizontal tracking error · 1. Moiré / Checkerboard Background (Optical Illusion)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitchscape_20260612_005400.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitchscape_20260612_005400.js",
+      "source_repositories": [
+        "shader_files_2/myspace-glitchscape_20260612_005400.js"
+      ]
+    },
+    {
+      "name": "myspace-glitchscape_20260612_005651",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/myspace-glitchscape_20260612_005651.html",
+      "js": "01-webcore-myspace/myspace-glitchscape_20260612_005651.js",
+      "thumb": "_thumbs/01-webcore-myspace/myspace-glitchscape_20260612_005651.jpg",
+      "description": "KIYOSHI-ABSORBER-V1: HYPERBOLIC MYSPACE GLITCHSCAPE · A synthesis of early-internet UI debris, reaction-diffusion fungal bloom, · kairotempic infinite zoom (feedback chaos), and macroblock corruption.",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitchscape_20260612_005651.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/myspace-glitchscape_20260612_005651.js",
+      "source_repositories": [
+        "shader_files_2/myspace-glitchscape_20260612_005651.js"
+      ]
+    },
+    {
+      "name": "neon_glitch_decay",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/neon_glitch_decay.html",
+      "js": "03-datamosh-digital-rot/neon_glitch_decay.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/neon_glitch_decay.jpg",
+      "description": "CORE NOISE FUNCTIONS · STRICT COLOR PALETTE MAPPING · Forces all color math into the allowed high-saturation glitchcore palette",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon_glitch_decay.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon_glitch_decay.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon_glitch_decay.js",
+        "repo_script_js5_code/vivid_glitchcore.js"
+      ]
+    },
+    {
+      "name": "neon_media_rot",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon_media_rot.html",
+      "js": "06-mutant-glitch-hybrids/neon_media_rot.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon_media_rot.jpg",
+      "description": "PASS 1: LENIA INFECTION ENGINE · A continuous cellular automaton acting as the biological foundation of the glitch. · Multi-kernel sampling ring (simplified for performance)",
+      "source_category": "03_cellular_automata_lenia_sandpiles",
+      "source_html": "by_math/03_cellular_automata_lenia_sandpiles/neon_media_rot.html",
+      "source_js": "by_math/03_cellular_automata_lenia_sandpiles/neon_media_rot.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon_media_rot.js",
+        "repo_script_js5_code/vivid_glitch.js"
+      ]
+    },
+    {
+      "name": "neon_trash_oracle_20260709_132828",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon_trash_oracle_20260709_132828.html",
+      "js": "06-mutant-glitch-hybrids/neon_trash_oracle_20260709_132828.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon_trash_oracle_20260709_132828.jpg",
+      "description": "NEON TRASH ORACLE WEATHER SYSTEM · A feral synthesis of 16 repos: Lenia, Cuttlefish Chromatics, Plateau Foam, · I Ching Fields, Abelian Sandpile, Moiré, Op Art, Glitchcore, Damage Aesthetics,",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon_trash_oracle_20260709_132828.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon_trash_oracle_20260709_132828.js",
+      "source_repositories": [
+        "shaderfiles3/neon_trash_oracle_20260709_132828.js"
+      ]
+    },
+    {
+      "name": "neon_trash_oracle_20260709_133206",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133206.html",
+      "js": "06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133206.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133206.jpg",
+      "description": "glslVersion: THREE.GLSL3 applies implicitly via ShaderMaterial · [color_systems] + [glitchcore_style] Hyperpop Acid Palette · Offsets for Hot Pink, Electric Cyan, Neon Yellow, Ultraviolet",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon_trash_oracle_20260709_133206.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon_trash_oracle_20260709_133206.js",
+      "source_repositories": [
+        "shaderfiles3/neon_trash_oracle_20260709_133206.js",
+        "shaderfiles3/neon_trash_oracle_20260709_133238.js"
+      ]
+    },
+    {
+      "name": "neon_trash_oracle_20260709_133509",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133509.html",
+      "js": "06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133509.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon_trash_oracle_20260709_133509.jpg",
+      "description": "OKLab-inspired candy-acid palette (color_systems, glitchcore_style) · Push saturation to hyperpop neon · Hyperbolic warp (lovecraft_os, dream_physics)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon_trash_oracle_20260709_133509.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon_trash_oracle_20260709_133509.js",
+      "source_repositories": [
+        "shaderfiles3/neon_trash_oracle_20260709_133509.js"
+      ]
+    },
+    {
+      "name": "neon_trash_oracle_20260725_233040",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon_trash_oracle_20260725_233040.html",
+      "js": "06-mutant-glitch-hybrids/neon_trash_oracle_20260725_233040.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon_trash_oracle_20260725_233040.jpg",
+      "description": "Bypass projection/modelview to draw a full-screen quad directly in clip space · NEON TRASH ORACLE WEATHER SYSTEM · temporal_desync & saccadic_masking: Saccadic glitches and temporal time shifts",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon_trash_oracle_20260725_233040.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon_trash_oracle_20260725_233040.js",
+      "source_repositories": [
+        "shaderfiles3/neon_trash_oracle_20260725_233040.js",
+        "shaderfiles3/neon_trash_oracle_20260725_233644.js"
+      ]
+    },
+    {
+      "name": "neon-acid-fractal",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/neon-acid-fractal.html",
+      "js": "05-psychedelic-glitch-art/neon-acid-fractal.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/neon-acid-fractal.jpg",
+      "description": "[THE-LISTS / Domain 8: Digital Folklore] - Glitch & Data Rot · [color_fields / neon_acid] - Psychedelic Pop Candy Groovy Palette · Overclock the saturation for acidic burn",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/neon-acid-fractal.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/neon-acid-fractal.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon-acid-fractal.js"
+      ]
+    },
+    {
+      "name": "neon-cute-texture",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/neon-cute-texture.html",
+      "js": "01-webcore-myspace/neon-cute-texture.js",
+      "thumb": "_thumbs/01-webcore-myspace/neon-cute-texture.jpg",
+      "description": "Alchemical Math: Hashes & Noise · Typographic Physics: SDF Primitives · Morphogenesis smooth min (Fungal growth / Metaballs)",
+      "source_category": "17_typography_text_glyph_systems",
+      "source_html": "by_math/17_typography_text_glyph_systems/neon-cute-texture.html",
+      "source_js": "by_math/17_typography_text_glyph_systems/neon-cute-texture.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon-cute-texture.js"
+      ]
+    },
+    {
+      "name": "neon-glitch-decay",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/neon-glitch-decay.html",
+      "js": "03-datamosh-digital-rot/neon-glitch-decay.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/neon-glitch-decay.jpg",
+      "description": "Electric Yellow · Saturated Purple · VHS Magnetic Warping",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon-glitch-decay.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon-glitch-decay.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon-glitch-decay.js",
+        "repo_script_js5_code/vivid_signal_decay.js"
+      ]
+    },
+    {
+      "name": "neon-heartbeat",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/neon-heartbeat.html",
+      "js": "05-psychedelic-glitch-art/neon-heartbeat.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/neon-heartbeat.jpg",
+      "description": "Noise for feral tearing · Domain warp (Fungus/Liquid logic) · Pixel-perfect coordinates for the LED grid",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/neon-heartbeat.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/neon-heartbeat.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon-heartbeat.js"
+      ]
+    },
+    {
+      "name": "neon-matter",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/neon-matter.html",
+      "js": "04-dither-pixel-breakage/neon-matter.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/neon-matter.jpg",
+      "description": "Antialiasing off to preserve raw dither pixelation · Bypass projection matrices for a direct full-screen quad · 3D Hash & Noise for FBM",
+      "source_category": "05_noise_flow_fluid_fields",
+      "source_html": "by_math/05_noise_flow_fluid_fields/neon-matter.html",
+      "source_js": "by_math/05_noise_flow_fluid_fields/neon-matter.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon-matter.js"
+      ]
+    },
+    {
+      "name": "neon-topology",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/neon-topology.html",
+      "js": "05-psychedelic-glitch-art/neon-topology.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/neon-topology.jpg",
+      "description": "PALETTES (From Merry's Visual Bible & Retrofuturism) · Y2K Techno-Pop Neon · MATH & NOISE UTILS",
+      "source_category": "11_hyperbolic_non_euclidean_higher_dimensions",
+      "source_html": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/neon-topology.html",
+      "source_js": "by_math/11_hyperbolic_non_euclidean_higher_dimensions/neon-topology.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon-topology.js"
+      ]
+    },
+    {
+      "name": "neon-trash-oracle_20260709_112945",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon-trash-oracle_20260709_112945.html",
+      "js": "06-mutant-glitch-hybrids/neon-trash-oracle_20260709_112945.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon-trash-oracle_20260709_112945.jpg",
+      "description": "REPO 11 & 15: Color Systems & Spectral Color · \"Hyperpop Rupture\" palette via cosine interpolation · High energy magenta/cyan/yellow bias",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon-trash-oracle_20260709_112945.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon-trash-oracle_20260709_112945.js",
+      "source_repositories": [
+        "shaderfiles3/neon-trash-oracle_20260709_112945.js"
+      ]
+    },
+    {
+      "name": "neon-trash-oracle_20260709_114201",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon-trash-oracle_20260709_114201.html",
+      "js": "06-mutant-glitch-hybrids/neon-trash-oracle_20260709_114201.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon-trash-oracle_20260709_114201.jpg",
+      "description": "MATH & NOISE (Lenia / Cuttlefish) · COLOR SYSTEMS (OKLab Hyperpop) · PATTERNS & MOIRÉ",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon-trash-oracle_20260709_114201.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon-trash-oracle_20260709_114201.js",
+      "source_repositories": [
+        "shaderfiles3/neon-trash-oracle_20260709_114201.js",
+        "shaderfiles3/neon_trash_oracle_20260709_115441.js"
+      ]
+    },
+    {
+      "name": "neon-trash-oracle_20260725_235816",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon-trash-oracle_20260725_235816.html",
+      "js": "06-mutant-glitch-hybrids/neon-trash-oracle_20260725_235816.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon-trash-oracle_20260725_235816.jpg",
+      "description": "[damage_aesthetics / voronoi_systems] Hash & Noise functions · [color_systems] OKLab perceptual color interpolation · Hyper-saturated candy-acid palette generator",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/neon-trash-oracle_20260725_235816.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/neon-trash-oracle_20260725_235816.js",
+      "source_repositories": [
+        "shaderfiles3/neon-trash-oracle_20260725_235816.js",
+        "shaderfiles3/neon_trash_oracle_20260725_234300.js"
+      ]
+    },
+    {
+      "name": "neon-void-substance",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/neon-void-substance.html",
+      "js": "05-psychedelic-glitch-art/neon-void-substance.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/neon-void-substance.jpg",
+      "description": "Feral Math: Hash & Noise Primitives · Lithogenesis & Morphogenesis: Structural Scalar Field · Machine Hesitation: Horizontal sync glitch logic",
+      "source_category": "05_noise_flow_fluid_fields",
+      "source_html": "by_math/05_noise_flow_fluid_fields/neon-void-substance.html",
+      "source_js": "by_math/05_noise_flow_fluid_fields/neon-void-substance.js",
+      "source_repositories": [
+        "repo_script_js5_code/neon-void-substance.js"
+      ]
+    },
+    {
+      "name": "neon-wiggle-stereo_20260622_182025",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/neon-wiggle-stereo_20260622_182025.html",
+      "js": "06-mutant-glitch-hybrids/neon-wiggle-stereo_20260622_182025.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/neon-wiggle-stereo_20260622_182025.jpg",
+      "description": "WIGGLE STEREOSCOPY X VHS X TPMS X WFC · A maximalist, depth-driven raymarched scene synthesizing multiple repo genomes. · Wiggle stereoscopy is implemented natively in the raymarching camera using an off-axis projection model.",
+      "source_category": "14_visual_perception_stereograms_phosphenes",
+      "source_html": "by_math/14_visual_perception_stereograms_phosphenes/neon-wiggle-stereo_20260622_182025.html",
+      "source_js": "by_math/14_visual_perception_stereograms_phosphenes/neon-wiggle-stereo_20260622_182025.js",
+      "source_repositories": [
+        "shader_files_2/neon-wiggle-stereo_20260622_182025.js",
+        "shader_files_2/prismatic_myco_gyroid_20260622_183411.js",
+        "shader_files_2/wiggle-stereo_20260622_182126.js"
+      ]
+    },
+    {
+      "name": "NeonBurningShip",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/NeonBurningShip.html",
+      "js": "05-psychedelic-glitch-art/NeonBurningShip.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/NeonBurningShip.jpg",
+      "description": "Hashing for noise and glitch · Quasicrystal geometry for the interior \"abyss\" · Core Burning Ship Engine with Orbit Traps and Distance Estimation",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/NeonBurningShip.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/NeonBurningShip.js",
+      "source_repositories": [
+        "repo_script_js5_code/NeonBurningShip.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_151508",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_151508.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_151508.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_151508.jpg",
+      "description": "Cleanup previous instances if they exist · Ping-pong FBO setup for Datamosh / Temporal Echo · SHADER 1: THE PHOSPHOR REEF ENGINE (Feedback, Geometry, Datamosh, Cuttlefish)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_151508.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_151508.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_151508.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_180411",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_180411.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_180411.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_180411.jpg",
+      "description": "Core Reactor (Crystalline / Demoscene) · Orbiting Rings · Cuttlefish rippling",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_180411.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_180411.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_180411.js",
+        "shader_files_2/phosphor_reef_engine_20260620_180453.js",
+        "shader_files_2/phosphor_signal_reef_engine_20260620_181146.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_181827",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_181827.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_181827.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_181827.jpg",
+      "description": "Ping-pong targets for temporal memory, datamoshing, and cuttlefish simulation · BUFFER A: THE LIVING PHOSPHOR REEF / DATAMOSH / HYPERBOLIC ENGINE · Hash functions",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_181827.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_181827.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_181827.js",
+        "shader_files_2/phosphor_reef_engine_20260620_182744.js",
+        "shader_files_2/phosphor_signal_reef_20260620_182858.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_183416",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_183416.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_183416.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_183416.jpg",
+      "description": "Hashing & Noise (Glitchcore / Datamosh / Procedural Gen) · Hyperbolic Tiling Fold (Poincare approx via inversion) · Crystalline SDF (Octahedron/Diamond Reactor)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_183416.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_183416.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_183416.js",
+        "shader_files_2/phosphor_reef_engine_20260620_183755.js",
+        "shader_files_2/phosphor_signal_reef_20260620_184157.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_184844",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_184844.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_184844.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_184844.jpg",
+      "description": "PASS A: The Phosphor Reef Engine (Base Geometry, Datamosh, Feedback) · Hyperbolic / Mobius Inversion · 1. Autostereogram Wallpaper Shift",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_184844.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_184844.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_184844.js",
+        "shader_files_2/phosphor_reef_engine_20260620_185840.js",
+        "shader_files_2/phosphor_signal_reef_engine_20260620_203103.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_203835",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_203835.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_203835.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_203835.jpg",
+      "description": "Render Targets for Ping-Pong Feedback (Datamosh / Cuttlefish memory) · Nearest for datamosh/glitch feel · Float for accumulation/feedback",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_203835.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_203835.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_203835.js",
+        "shader_files_2/phosphor_reef_engine_20260620_204005.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_210004",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210004.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210004.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210004.jpg",
+      "description": "PHOSPHOR SIGNAL REEF ENGINE — Fused Alchemical Masterpiece by The Weird Code Guy · Fusing: cuttlefish_chromatics (live display stack) + vhs_analog_artifacts (signal decay) · + color_systems (perceptual OKLab spaces) + glitchcore_style (hyperpop rupture energy)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_210004.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_210004.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_210004.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_210938",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210938.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210938.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_210938.jpg",
+      "description": "Screen-aligned orthographic setup · OKLAB COLOR CONVERSIONS · RAYMARCHED SIGNAL REEF SDF",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_210938.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_210938.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_210938.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_212759",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_212759.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_212759.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_212759.jpg",
+      "description": "Perceptual noise functions · Core generator combining multiple repo DNA styles · 1. Datamosh coordinate distortion (macroblocks + flow field)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_212759.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_212759.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_212759.js",
+        "shader_files_2/phosphor_signal_reef_engine_20260620_212258.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_213714",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_213714.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_213714.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_213714.jpg",
+      "description": "HASH & NOISE UTILITIES · OKLAB COLOR SPACE TRANSFORMS · MAIN GEOMETRY AND SYNTHESIS",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_213714.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_213714.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_213714.js",
+        "shader_files_2/phosphor_signal_reef_engine_20260620_213937.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_230957",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_230957.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_230957.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_230957.jpg",
+      "description": "Pseudo-random Hash · 2D Value Noise · Fractal Brownian Motion",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_230957.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_230957.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_230957.js",
+        "shader_files_2/phosphor_signal_reef_engine_20260620_232138.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_233924",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_233924.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_233924.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_233924.jpg",
+      "description": "Phosphor Signal Reef Engine · combining oldschool demoscene visual bravado, cuttlefish skin simulation, anamorphic flares, · and datamoshed temporal feedback.",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_233924.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_233924.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_233924.js",
+        "shader_files_2/phosphor_signal_reef_20260620_234010.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_235032",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_235032.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_235032.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260620_235032.jpg",
+      "description": "MATH & NOISE HELPERS · COLOR SYSTEMS (OKLab / OKLCh) · BRAGG REFLECTION (IRIDOPHORE GLOW)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_235032.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260620_235032.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260620_235032.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260621_125033",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125033.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125033.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125033.jpg",
+      "description": "OKLab / OKLCh conversions · Noise / FBM generators · Barrel distortion",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_125033.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_125033.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260621_125033.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260621_125544",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125544.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125544.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_125544.jpg",
+      "description": "Mathematical Utilities · Halftone Pattern Generator · Cuttlefish Chromatophore Grid",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_125544.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_125544.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260621_125544.js",
+        "shader_files_2/phosphor_signal_reef_engine_20260621_125525.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260621_130242",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_130242.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_130242.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_130242.jpg",
+      "description": "Chromatophores (Cuttlefish grid) · Popups / Early Internet Aesthetic Elements · Integrate Halftone logic",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_130242.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_130242.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260621_130242.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260621_173257",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_173257.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_173257.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_173257.jpg",
+      "description": "1. Mathematical Primities & Noise · 2. Perceptual OKLab Colorspace Conversions · 3. Halftone Mosaic Overlay",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_173257.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_173257.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260621_173257.js",
+        "shader_files_2/phosphor_reef_engine_20260621_173441.js"
+      ]
+    },
+    {
+      "name": "phosphor_reef_engine_20260621_183223",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_183223.html",
+      "js": "06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_183223.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/phosphor_reef_engine_20260621_183223.jpg",
+      "description": "Animated background plasma lines · Draw rotating oldskool demoscene polygons · Draw chromatophores (expanding pigment spots)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_183223.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/phosphor_reef_engine_20260621_183223.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_reef_engine_20260621_183223.js"
+      ]
+    },
+    {
+      "name": "phosphor_signal_reef_engine_20260621_131609",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_131609.html",
+      "js": "02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_131609.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_131609.jpg",
+      "description": "",
+      "source_category": "18_biomimicry_living_systems",
+      "source_html": "by_math/18_biomimicry_living_systems/phosphor_signal_reef_engine_20260621_131609.html",
+      "source_js": "by_math/18_biomimicry_living_systems/phosphor_signal_reef_engine_20260621_131609.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_signal_reef_engine_20260621_131609.js"
+      ]
+    },
+    {
+      "name": "phosphor_signal_reef_engine_20260621_173949",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_173949.html",
+      "js": "02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_173949.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/phosphor_signal_reef_engine_20260621_173949.jpg",
+      "description": "Phosphor Signal Reef Engine — Interactive Editorial Report Viewer · Built by The Weird Code Guy. · State Management",
+      "source_category": "18_biomimicry_living_systems",
+      "source_html": "by_math/18_biomimicry_living_systems/phosphor_signal_reef_engine_20260621_173949.html",
+      "source_js": "by_math/18_biomimicry_living_systems/phosphor_signal_reef_engine_20260621_173949.js",
+      "source_repositories": [
+        "shader_files_2/phosphor_signal_reef_engine_20260621_173949.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260618_194154",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_194154.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_194154.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_194154.jpg",
+      "description": "1. CELLULAR AUTOMATA PASS (The Machine Mind) · Continuous chaotic rule · 2. MAIN SCENE + DATAMOSH FEEDBACK PASS (Dream Physics & Op-Art)",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260618_194154.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260618_194154.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260618_194154.js",
+        "shader_files_2/prismatic_tape_oracle_20260618_194519.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260618_195123",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_195123.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_195123.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_195123.jpg",
+      "description": "RENDER TARGETS (Ping-Pong Buffers) · Required for CA and Datamosh precision · 1. CELLULAR AUTOMATA INTELLIGENCE (Lenia/Reaction-Diffusion Hybrid)",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260618_195123.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260618_195123.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260618_195123.js",
+        "shader_files_2/prismatic_tape_oracle_20260618_195327.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260618_202021",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_202021.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_202021.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260618_202021.jpg",
+      "description": "COMMON GLSL CHUNKS · SIMULATION SHADER (Raymarch + CA + Datamosh + Dream Physics) · Palette for structural color / Bragg reflection",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260618_202021.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260618_202021.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260618_202021.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_205541",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_205541.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_205541.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_205541.jpg",
+      "description": "CELLULAR AUTOMATA (Brian's Brain Variant) · Continuous noise seeding to keep the organism alive · DREAM PHYSICS ARCHITECTURE & DATAMOSH",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_205541.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_205541.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260619_205541.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_205657.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_210340.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_211142",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_211142.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_211142.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_211142.jpg",
+      "description": "Ping-Pong FBOs for Datamosh / Cellular Automata Memory · THE ORACLE ENGINE (BUFFER SHADER) · Handles Dream Physics, Op-Art, Cellular Automata, and Datamosh",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_211142.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_211142.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260619_211142.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_211310.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_212904",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_212904.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_212904.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_212904.jpg",
+      "description": "CELLULAR AUTOMATA PASS (Gray-Scott Reaction-Diffusion) · MAIN SCENE PASS (Dream Physics, Op-Art, Early Internet) · Structural Color Iridescence",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_212904.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_212904.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260619_212904.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_213617.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_213834.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_214204.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_214625",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_214625.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_214625.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_214625.jpg",
+      "description": "1. CELLULAR AUTOMATA (Dream Intelligence) · Infection / Seeding · 2. SCENE & DATAMOSH (Dream Architecture & Memory)",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_214625.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_214625.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260619_214625.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_214637.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_215138.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_215156.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_215426.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_221345",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_221345.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_221345.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260619_221345.jpg",
+      "description": "Acquire context and dimensions · Ping-pong FBOs for Datamosh & Cellular Automata · BUFFER A: THE ENGINE",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_221345.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260619_221345.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260619_221345.js",
+        "shader_files_2/prismatic_tape_oracle_20260619_221453.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260625_161140",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161140.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161140.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161140.jpg",
+      "description": "FBO Setup for Ping-Pong and Passes · Chunky pixels for early internet vibe · Better precision for feedback",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260625_161140.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260625_161140.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260625_161140.js"
+      ]
+    },
+    {
+      "name": "prismatic_tape_oracle_20260625_161657",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161657.html",
+      "js": "06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161657.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/prismatic_tape_oracle_20260625_161657.jpg",
+      "description": "Ping-Pong FBOs for Cellular Automata & Datamosh Memory · Using HalfFloatType for precision in feedback loops without massive overhead · SHARED SHADER CHUNKS",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260625_161657.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic_tape_oracle_20260625_161657.js",
+      "source_repositories": [
+        "shader_files_2/prismatic_tape_oracle_20260625_161657.js"
+      ]
+    },
+    {
+      "name": "prismatic-mycelium_20260623_132723",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/prismatic-mycelium_20260623_132723.html",
+      "js": "05-psychedelic-glitch-art/prismatic-mycelium_20260623_132723.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/prismatic-mycelium_20260623_132723.jpg",
+      "description": "Ping-pong FBOs for Temporal Datamoshing & Persistence · PASS 1: The Cathedral (Raymarched Gyroid + WFC Tiles + Mycelium) · Gyroid Lattice",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/prismatic-mycelium_20260623_132723.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/prismatic-mycelium_20260623_132723.js",
+      "source_repositories": [
+        "shader_files_2/prismatic-mycelium_20260623_132723.js"
+      ]
+    },
+    {
+      "name": "prismatic-sigil-glass_20260624_011012",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/prismatic-sigil-glass_20260624_011012.html",
+      "js": "05-psychedelic-glitch-art/prismatic-sigil-glass_20260624_011012.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/prismatic-sigil-glass_20260624_011012.jpg",
+      "description": "Temporal Sampling with Pulfrich RGB split · Slow outward spiral · Scene Generation",
+      "source_category": "09_symmetry_kaleidoscopes_sacred_geometry",
+      "source_html": "by_math/09_symmetry_kaleidoscopes_sacred_geometry/prismatic-sigil-glass_20260624_011012.html",
+      "source_js": "by_math/09_symmetry_kaleidoscopes_sacred_geometry/prismatic-sigil-glass_20260624_011012.js",
+      "source_repositories": [
+        "shader_files_2/prismatic-sigil-glass_20260624_011012.js"
+      ]
+    },
+    {
+      "name": "radshit_20260619_112936",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/radshit_20260619_112936.html",
+      "js": "06-mutant-glitch-hybrids/radshit_20260619_112936.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/radshit_20260619_112936.jpg",
+      "description": "FBO Setup - HalfFloat for precision in CA and datamosh without breaking mobile · CA PASS (Reaction Diffusion / Hidden Machine Mind) · Gray-Scott Reaction Diffusion with spatially varying feed/kill",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/radshit_20260619_112936.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/radshit_20260619_112936.js",
+      "source_repositories": [
+        "shader_files_2/radshit_20260619_112936.js",
+        "shader_files_2/radshit_20260619_113759.js"
+      ]
+    },
+    {
+      "name": "radshit_20260619_114812",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/radshit_20260619_114812.html",
+      "js": "06-mutant-glitch-hybrids/radshit_20260619_114812.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/radshit_20260619_114812.jpg",
+      "description": "HASH & NOISE (The Glitchcore / Dream Physics Entropy) · OKLAB COLOR SCIENCE (Absolute Color Rules) · CROSS-PROCESSING CHEMISTRY & STRUCTURAL COLOR",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/radshit_20260619_114812.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/radshit_20260619_114812.js",
+      "source_repositories": [
+        "shader_files_2/radshit_20260619_114812.js",
+        "shader_files_2/radshit_20260619_115422.js",
+        "shader_files_2/radshit_20260619_120441.js"
+      ]
+    },
+    {
+      "name": "rainblow-ditherscape",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/rainblow-ditherscape.html",
+      "js": "04-dither-pixel-breakage/rainblow-ditherscape.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/rainblow-ditherscape.jpg",
+      "description": "FRACTAL & METRIC COMPETITION LOGIC · DITHER ENGINES · XOR-Ghost Manifold (Bitwise coordinate logic)",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/rainblow-ditherscape.html",
+      "source_js": "by_math/16_dithering_halftone_print/rainblow-ditherscape.js",
+      "source_repositories": [
+        "repo_script_js5_code/rainblow-ditherscape.js"
+      ]
+    },
+    {
+      "name": "rainbow-kleinian",
+      "group": "04-dither-pixel-breakage",
+      "type": "curated-artwork",
+      "html": "04-dither-pixel-breakage/rainbow-kleinian.html",
+      "js": "04-dither-pixel-breakage/rainbow-kleinian.js",
+      "thumb": "_thumbs/04-dither-pixel-breakage/rainbow-kleinian.jpg",
+      "description": "4x4 Bayer Matrix for structural dither · IQ Cosine Palette - Neon Acid (color_fields) · Möbius Circle Inversion",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/rainbow-kleinian.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/rainbow-kleinian.js",
+      "source_repositories": [
+        "repo_script_js5_code/rainbow-kleinian.js"
+      ]
+    },
+    {
+      "name": "red_cctv",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/red_cctv.html",
+      "js": "02-vhs-crt-analog/red_cctv.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/red_cctv.jpg",
+      "description": "Tape Tracking Tear (Random horizontal shifts) · Head switching noise · 1. Moiré Crimson Grid",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/red_cctv.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/red_cctv.js",
+      "source_repositories": [
+        "repo_script_js5_code/red_cctv.js"
+      ]
+    },
+    {
+      "name": "repo-chroma-soup_20260704_064802",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/repo-chroma-soup_20260704_064802.html",
+      "js": "03-datamosh-digital-rot/repo-chroma-soup_20260704_064802.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/repo-chroma-soup_20260704_064802.jpg",
+      "description": "CORE MATH: Hash and Value Noise (Foam / Mycelial / Lenia / Datamosh) · FBM: Multi-scale fluid warping · CROSS-PROCESSING: Photographic S-Curve Contrast",
+      "source_category": "05_noise_flow_fluid_fields",
+      "source_html": "by_math/05_noise_flow_fluid_fields/repo-chroma-soup_20260704_064802.html",
+      "source_js": "by_math/05_noise_flow_fluid_fields/repo-chroma-soup_20260704_064802.js",
+      "source_repositories": [
+        "shaderfiles3/repo-chroma-soup_20260704_064802.js"
+      ]
+    },
+    {
+      "name": "repo-dynamic",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/repo-dynamic.html",
+      "js": "05-psychedelic-glitch-art/repo-dynamic.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/repo-dynamic.jpg",
+      "description": "Crucial for pixel art pipelines · Pass 1: SDF Raymarcher (Reaction-Diffusion Gyroid + Structural Color) · Approximating Gray-Scott / Turing patterns via nested Gyroids",
+      "source_category": "10_raymarched_3d_sdf_gyroids",
+      "source_html": "by_math/10_raymarched_3d_sdf_gyroids/repo-dynamic.html",
+      "source_js": "by_math/10_raymarched_3d_sdf_gyroids/repo-dynamic.js",
+      "source_repositories": [
+        "repo_script_js5_code/repo-dynamic.js"
+      ]
+    },
+    {
+      "name": "repo-visual",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/repo-visual.html",
+      "js": "05-psychedelic-glitch-art/repo-visual.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/repo-visual.jpg",
+      "description": "Generate Fibonacci Word for Aperiodic Tiling (1D Quasicrystal projection) · 1. TEMPORAL ECHO (Phosphor Noir Background) · Clear offscreen for fresh geometry",
+      "source_category": "07_quasicrystals_aperiodic_order",
+      "source_html": "by_math/07_quasicrystals_aperiodic_order/repo-visual.html",
+      "source_js": "by_math/07_quasicrystals_aperiodic_order/repo-visual.js",
+      "source_repositories": [
+        "repo_script_js5_code/repo-visual.js"
+      ]
+    },
+    {
+      "name": "RepoFlow",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/RepoFlow.html",
+      "js": "05-psychedelic-glitch-art/RepoFlow.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/RepoFlow.jpg",
+      "description": "14-Color \"Lisa Frank\" Acid Palette · Dark Space Purple · Precompute YUV for accurate perceptual color distance",
+      "source_category": "16_dithering_halftone_print",
+      "source_html": "by_math/16_dithering_halftone_print/RepoFlow.html",
+      "source_js": "by_math/16_dithering_halftone_print/RepoFlow.js",
+      "source_repositories": [
+        "repo_script_js5_code/RepoFlow.js"
+      ]
+    },
+    {
+      "name": "rgb_subpixels",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/rgb_subpixels.html",
+      "js": "02-vhs-crt-analog/rgb_subpixels.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/rgb_subpixels.jpg",
+      "description": "Calculate grid scaling based on resolution to maintain square cells · Subpixel triad centers within the cell · Aspect correction for the subpixels so they render as circular dots",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/rgb_subpixels.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/rgb_subpixels.js",
+      "source_repositories": [
+        "repo_script_js5_code/rgb_subpixels.js"
+      ]
+    },
+    {
+      "name": "rotting_signal",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/rotting_signal.html",
+      "js": "03-datamosh-digital-rot/rotting_signal.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/rotting_signal.jpg",
+      "description": "CONTROLS & CONSTANTS · CORE UTILITIES · LAYER 1: OP-ART & MOIRÉ INTERFERENCE",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/rotting_signal.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/rotting_signal.js",
+      "source_repositories": [
+        "repo_script_js5_code/rotting_signal.js",
+        "repo_script_js5_code/signal-decay.js"
+      ]
+    },
+    {
+      "name": "screendoor",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/screendoor.html",
+      "js": "02-vhs-crt-analog/screendoor.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/screendoor.jpg",
+      "description": "Barrel distortion (face pressed against monitor lens effect) · Wobble (very slight grid instability / micro-saccades) · Pixel scaling - extremely high density but visible",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/screendoor.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/screendoor.js",
+      "source_repositories": [
+        "repo_script_js5_code/screendoor.js"
+      ]
+    },
+    {
+      "name": "signal_decay",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/signal_decay.html",
+      "js": "03-datamosh-digital-rot/signal_decay.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/signal_decay.jpg",
+      "description": "FERAL MATH & NOISE PRIMITIVES · 1. DIGITAL GLITCH & COMPRESSION ROT · Simulates macroblock failure, datamoshing, and packet loss",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/signal_decay.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/signal_decay.js",
+      "source_repositories": [
+        "repo_script_js5_code/signal_decay.js"
+      ]
+    },
+    {
+      "name": "spectral-mandelbrot-portal_20260626_155150",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/spectral-mandelbrot-portal_20260626_155150.html",
+      "js": "03-datamosh-digital-rot/spectral-mandelbrot-portal_20260626_155150.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/spectral-mandelbrot-portal_20260626_155150.jpg",
+      "description": "Fractal Friday: Candy-Acid Mandelbrot with Julia Portals & Datamosh · Optimized for Low-Power Hardware: Capped iterations, single fractal pass, simple ping-pong FBO. · Disabled for performance",
+      "source_category": "01_fractals_escape_time_and_ifs",
+      "source_html": "by_math/01_fractals_escape_time_and_ifs/spectral-mandelbrot-portal_20260626_155150.html",
+      "source_js": "by_math/01_fractals_escape_time_and_ifs/spectral-mandelbrot-portal_20260626_155150.js",
+      "source_repositories": [
+        "shader_files_2/spectral-mandelbrot-portal_20260626_155150.js"
+      ]
+    },
+    {
+      "name": "stereo-wiggle_20260622_181341",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/stereo-wiggle_20260622_181341.html",
+      "js": "05-psychedelic-glitch-art/stereo-wiggle_20260622_181341.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/stereo-wiggle_20260622_181341.jpg",
+      "description": "WFC Entropy / Fungal noise field · Triply Periodic Minimal Surfaces (TPMS) · Global spatial warp (Datamoshing / Tensor bias)",
+      "source_category": "14_visual_perception_stereograms_phosphenes",
+      "source_html": "by_math/14_visual_perception_stereograms_phosphenes/stereo-wiggle_20260622_181341.html",
+      "source_js": "by_math/14_visual_perception_stereograms_phosphenes/stereo-wiggle_20260622_181341.js",
+      "source_repositories": [
+        "shader_files_2/stereo-wiggle_20260622_181341.js"
+      ]
+    },
+    {
+      "name": "structural-moire",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/structural-moire.html",
+      "js": "05-psychedelic-glitch-art/structural-moire.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/structural-moire.jpg",
+      "description": "Procedural paper grain / xerox noise · Occult Mandala / Kaleidoscope Fold · Print Artifact: Halftone Dot Screen",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/structural-moire.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/structural-moire.js",
+      "source_repositories": [
+        "repo_script_js5_code/structural-moire.js"
+      ]
+    },
+    {
+      "name": "subpixel_grid",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/subpixel_grid.html",
+      "js": "02-vhs-crt-analog/subpixel_grid.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/subpixel_grid.jpg",
+      "description": "Grid density - determines the scale of the subpixel triads · Horizontal offsets for R, G, B subpixels within the cell · Vertical centering with slight elongation",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/subpixel_grid.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/subpixel_grid.js",
+      "source_repositories": [
+        "repo_script_js5_code/subpixel_grid.js"
+      ]
+    },
+    {
+      "name": "subpixel-grid",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/subpixel-grid.html",
+      "js": "02-vhs-crt-analog/subpixel-grid.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/subpixel-grid.jpg",
+      "description": "Domain warp for subtle magnetic/thermal wobble · 1. VR Lens Distortion (Barrel) · Distort coordinates outward",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/subpixel-grid.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/subpixel-grid.js",
+      "source_repositories": [
+        "repo_script_js5_code/subpixel-grid.js"
+      ]
+    },
+    {
+      "name": "subpixel-moire",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/subpixel-moire.html",
+      "js": "02-vhs-crt-analog/subpixel-moire.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/subpixel-moire.jpg",
+      "description": "THE WEIRD CODE GUY: CHROMATIC CANNIBALISM & SILICON NECROSIS · We do not just overlay grids. We extract the interferential cross-products. · The Hostile Substrate: A perfect RGB triad LED structure",
+      "source_category": "08_waves_interference_moire_cymatics",
+      "source_html": "by_math/08_waves_interference_moire_cymatics/subpixel-moire.html",
+      "source_js": "by_math/08_waves_interference_moire_cymatics/subpixel-moire.js",
+      "source_repositories": [
+        "repo_script_js5_code/subpixel-moire.js"
+      ]
+    },
+    {
+      "name": "synergy",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/synergy.html",
+      "js": "05-psychedelic-glitch-art/synergy.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/synergy.jpg",
+      "description": "THE MECHANISM: Phason-Corrupted 5D Cut-and-Project Ditherpunk · We simulate the continuous density field of a 5D hypercubic lattice projected to 2D. · We then infect it with a strict Bayer 4x4 dither and force it through a 5-color biological palette.",
+      "source_category": "07_quasicrystals_aperiodic_order",
+      "source_html": "by_math/07_quasicrystals_aperiodic_order/synergy.html",
+      "source_js": "by_math/07_quasicrystals_aperiodic_order/synergy.js",
+      "source_repositories": [
+        "repo_script_js5_code/synergy.js"
+      ]
+    },
+    {
+      "name": "tibetan-nebula_20260617_091030",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/tibetan-nebula_20260617_091030.html",
+      "js": "05-psychedelic-glitch-art/tibetan-nebula_20260617_091030.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/tibetan-nebula_20260617_091030.jpg",
+      "description": "THE WEIRD CODE GUY: KIOSHI-ABSORBER-V1 + ALCHEMICAL SCRIPTURE MODULE · THEME: Tibetan Thangka Style Nebula Formation · MECHANISM: \"Divine Data Corruption\" x \"Volumetric Gas\".",
+      "source_category": "09_symmetry_kaleidoscopes_sacred_geometry",
+      "source_html": "by_math/09_symmetry_kaleidoscopes_sacred_geometry/tibetan-nebula_20260617_091030.html",
+      "source_js": "by_math/09_symmetry_kaleidoscopes_sacred_geometry/tibetan-nebula_20260617_091030.js",
+      "source_repositories": [
+        "shader_files_2/tibetan-nebula_20260617_091030.js"
+      ]
+    },
+    {
+      "name": "urcute_texture",
+      "group": "01-webcore-myspace",
+      "type": "curated-artwork",
+      "html": "01-webcore-myspace/urcute_texture.html",
+      "js": "01-webcore-myspace/urcute_texture.js",
+      "thumb": "_thumbs/01-webcore-myspace/urcute_texture.jpg",
+      "description": "Create the \"U R CUTE\" text texture · Draw cute ornaments · Hash and Noise functions for organic/physical texture",
+      "source_category": "17_typography_text_glyph_systems",
+      "source_html": "by_math/17_typography_text_glyph_systems/urcute_texture.html",
+      "source_js": "by_math/17_typography_text_glyph_systems/urcute_texture.js",
+      "source_repositories": [
+        "repo_script_js5_code/urcute_texture.js"
+      ]
+    },
+    {
+      "name": "vhs_crt_glitch",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/vhs_crt_glitch.html",
+      "js": "02-vhs-crt-analog/vhs_crt_glitch.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/vhs_crt_glitch.jpg",
+      "description": "Impossible Space / Reaction Diffusion Simulation via Domain Warp · Moiré Mid-Layer (Sinusoidal Liquid Interference) · Two slightly offset grids to create spatial beat frequencies",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/vhs_crt_glitch.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/vhs_crt_glitch.js",
+      "source_repositories": [
+        "repo_script_js5_code/vhs_crt_glitch.js"
+      ]
+    },
+    {
+      "name": "vhs_glitch",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/vhs_glitch.html",
+      "js": "02-vhs-crt-analog/vhs_glitch.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/vhs_glitch.jpg",
+      "description": "V-Sync Logic: The analog roll · Sync loss burst · Function to draw the SMPTE color bars and base analog signal",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/vhs_glitch.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/vhs_glitch.js",
+      "source_repositories": [
+        "repo_script_js5_code/vhs_glitch.js"
+      ]
+    },
+    {
+      "name": "vhs_pause",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/vhs_pause.html",
+      "js": "02-vhs-crt-analog/vhs_pause.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/vhs_pause.jpg",
+      "description": "Feral Hash for tape noise · Wave Sinusoidal Moiré (Repo: moire-as-point/04_wave_sinusoidal) · Creates smooth, liquid fringes rather than sharp digital bands.",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/vhs_pause.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/vhs_pause.js",
+      "source_repositories": [
+        "repo_script_js5_code/vhs_pause.js"
+      ]
+    },
+    {
+      "name": "vhs-coral",
+      "group": "06-mutant-glitch-hybrids",
+      "type": "curated-artwork",
+      "html": "06-mutant-glitch-hybrids/vhs-coral.html",
+      "js": "06-mutant-glitch-hybrids/vhs-coral.js",
+      "thumb": "_thumbs/06-mutant-glitch-hybrids/vhs-coral.jpg",
+      "description": "Base Gray-Scott parameters (Coral Growth / Fingerprint hybrid) · Heat Damage Simulation: the tape is melting in a hot car, · mutating the reaction-diffusion parameters geographically over time",
+      "source_category": "02_reaction_diffusion_turing_patterns",
+      "source_html": "by_math/02_reaction_diffusion_turing_patterns/vhs-coral.html",
+      "source_js": "by_math/02_reaction_diffusion_turing_patterns/vhs-coral.js",
+      "source_repositories": [
+        "repo_script_js5_code/vhs-coral.js"
+      ]
+    },
+    {
+      "name": "vhs-pause",
+      "group": "02-vhs-crt-analog",
+      "type": "curated-artwork",
+      "html": "02-vhs-crt-analog/vhs-pause.html",
+      "js": "02-vhs-crt-analog/vhs-pause.js",
+      "thumb": "_thumbs/02-vhs-crt-analog/vhs-pause.jpg",
+      "description": "Hash and Noise · Distance field for a box · Abstract pattern (looks like paused video UI or fragmented content)",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/vhs-pause.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/vhs-pause.js",
+      "source_repositories": [
+        "repo_script_js5_code/vhs-pause.js"
+      ]
+    },
+    {
+      "name": "vivid_glitch_decay",
+      "group": "03-datamosh-digital-rot",
+      "type": "curated-artwork",
+      "html": "03-datamosh-digital-rot/vivid_glitch_decay.html",
+      "js": "03-datamosh-digital-rot/vivid_glitch_decay.js",
+      "thumb": "_thumbs/03-datamosh-digital-rot/vivid_glitch_decay.jpg",
+      "description": "Pseudo-random hash functions · The core Op-Art / Moiré signal generator · Radial Hypnosis Field",
+      "source_category": "15_signal_processing_vhs_crt_glitch",
+      "source_html": "by_math/15_signal_processing_vhs_crt_glitch/vivid_glitch_decay.html",
+      "source_js": "by_math/15_signal_processing_vhs_crt_glitch/vivid_glitch_decay.js",
+      "source_repositories": [
+        "repo_script_js5_code/vivid_glitch_decay.js",
+        "repo_script_js5_code/vivid_glitch_lenia.js"
+      ]
+    },
+    {
+      "name": "wowwwwww_20260630_194327",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/wowwwwww_20260630_194327.html",
+      "js": "05-psychedelic-glitch-art/wowwwwww_20260630_194327.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/wowwwwww_20260630_194327.jpg",
+      "description": "Bayer 4x4 matrix for Ditherpunk / Pixel Voxel texturing · Cellular structure / Reaction-Diffusion bloom base · Dihedral group folding (Kaleidoscope Engine)",
+      "source_category": "09_symmetry_kaleidoscopes_sacred_geometry",
+      "source_html": "by_math/09_symmetry_kaleidoscopes_sacred_geometry/wowwwwww_20260630_194327.html",
+      "source_js": "by_math/09_symmetry_kaleidoscopes_sacred_geometry/wowwwwww_20260630_194327.js",
+      "source_repositories": [
+        "shader_files_2/wowwwwww_20260630_194327.js",
+        "shader_files_2/wowwwwww_20260630_194335.js",
+        "shader_files_2/wowwwwww_20260630_194411.js"
+      ]
+    },
+    {
+      "name": "wowwwwww_20260630_195539",
+      "group": "05-psychedelic-glitch-art",
+      "type": "curated-artwork",
+      "html": "05-psychedelic-glitch-art/wowwwwww_20260630_195539.html",
+      "js": "05-psychedelic-glitch-art/wowwwwww_20260630_195539.js",
+      "thumb": "_thumbs/05-psychedelic-glitch-art/wowwwwww_20260630_195539.jpg",
+      "description": "MATH & FOLDING (Kaleidoscope, Non-Orientable Manifolds) · DITHERING & TEXTURE (Ditherpunk, Pixel-Voxel) · CONTINUOUS CELLULAR AUTOMATA & NOISE (Lenia, Speckle)",
+      "source_category": "09_symmetry_kaleidoscopes_sacred_geometry",
+      "source_html": "by_math/09_symmetry_kaleidoscopes_sacred_geometry/wowwwwww_20260630_195539.html",
+      "source_js": "by_math/09_symmetry_kaleidoscopes_sacred_geometry/wowwwwww_20260630_195539.js",
+      "source_repositories": [
+        "shader_files_2/wowwwwww_20260630_195539.js"
+      ]
+    }
+  ],
+  "recovered_variants": [
+    {
+      "name": "myspace-glitchscape",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "recovered-from-myspace/archive-variants/repo_script_js5_code/myspace-glitchscape.html",
+      "js": "recovered-from-myspace/archive-variants/repo_script_js5_code/myspace-glitchscape.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "neon-subpixel-pulse",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "recovered-from-myspace/archive-variants/repo_script_js5_code/neon-subpixel-pulse.html",
+      "js": "recovered-from-myspace/archive-variants/repo_script_js5_code/neon-subpixel-pulse.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "repo-ascii",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "recovered-from-myspace/archive-variants/repo_script_js5_code/repo-ascii.html",
+      "js": "recovered-from-myspace/archive-variants/repo_script_js5_code/repo-ascii.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "vivid_glitch",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "recovered-from-myspace/archive-variants/repo_script_js5_code/vivid_glitch.html",
+      "js": "recovered-from-myspace/archive-variants/repo_script_js5_code/vivid_glitch.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "vivid_glitch_lenia",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "recovered-from-myspace/archive-variants/repo_script_js5_code/vivid_glitch_lenia.html",
+      "js": "recovered-from-myspace/archive-variants/repo_script_js5_code/vivid_glitch_lenia.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "vivid_glitchcore",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "recovered-from-myspace/archive-variants/repo_script_js5_code/vivid_glitchcore.html",
+      "js": "recovered-from-myspace/archive-variants/repo_script_js5_code/vivid_glitchcore.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "vivid_signal_decay",
+      "source_repo": "merrypranxter/repo_script_js5_code",
+      "html": "recovered-from-myspace/archive-variants/repo_script_js5_code/vivid_signal_decay.html",
+      "js": "recovered-from-myspace/archive-variants/repo_script_js5_code/vivid_signal_decay.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "amazinglyglitchy_20260611_150640",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/amazinglyglitchy_20260611_150640.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/amazinglyglitchy_20260611_150640.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "glitchscape_20260611_142934",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_142934.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_142934.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "glitchscape_20260611_143650",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_143650.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_143650.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "glitchscape_20260611_153228",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_153228.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_153228.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "glitchscape_20260611_160049",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_160049.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_160049.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "myspace-glitch_20260611_154144",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/myspace-glitch_20260611_154144.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/myspace-glitch_20260611_154144.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "myspace-glitchscape_20260611_152933",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/myspace-glitchscape_20260611_152933.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/myspace-glitchscape_20260611_152933.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "myspace-glitchscape_20260612_004519",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/myspace-glitchscape_20260612_004519.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/myspace-glitchscape_20260612_004519.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "myspace_glitchscape_20260611_154350",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/myspace_glitchscape_20260611_154350.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/myspace_glitchscape_20260611_154350.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "ooooooooo_glitchy_20260611_145314",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/ooooooooo_glitchy_20260611_145314.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/ooooooooo_glitchy_20260611_145314.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "chroma_codec_shrine_20260618_192141",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/chroma_codec_shrine_20260618_192141.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/chroma_codec_shrine_20260618_192141.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "chromatophore_codec_shrine_20260618_184028",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184028.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184028.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "chromatophore_codec_shrine_20260618_184555",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184555.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/chromatophore_codec_shrine_20260618_184555.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "myspace-glitchscape_20260612_004546",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/myspace-glitchscape_20260612_004546.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/myspace-glitchscape_20260612_004546.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "glitchscape_20260611_142951",
+      "source_repo": "merrypranxter/shader_files_2",
+      "html": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_142951.html",
+      "js": "recovered-from-myspace/archive-variants/shader_files_2/glitchscape_20260611_142951.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "geocities_cathedral_20260709_213502",
+      "source_repo": "merrypranxter/shaderfiles3",
+      "html": "recovered-from-myspace/archive-variants/shaderfiles3/geocities_cathedral_20260709_213502.html",
+      "js": "recovered-from-myspace/archive-variants/shaderfiles3/geocities_cathedral_20260709_213502.js",
+      "type": "recovered-variant"
+    },
+    {
+      "name": "geocities_cathedral_20260709_213510",
+      "source_repo": "merrypranxter/shaderfiles3",
+      "html": "recovered-from-myspace/archive-variants/shaderfiles3/geocities_cathedral_20260709_213510.html",
+      "js": "recovered-from-myspace/archive-variants/shaderfiles3/geocities_cathedral_20260709_213510.js",
+      "type": "recovered-variant"
+    }
+  ],
+  "legacy_root": [
+    {
+      "name": "acidic-vhs-decay.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/acidic-vhs-decay.html",
+      "original": "acidic-vhs-decay.html"
+    },
+    {
+      "name": "acidic-vhs-rot.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/acidic-vhs-rot.html",
+      "original": "acidic-vhs-rot.html"
+    },
+    {
+      "name": "amber-phosphor.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/amber-phosphor.html",
+      "original": "amber-phosphor.html"
+    },
+    {
+      "name": "analog-decay (1).html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/analog-decay (1).html",
+      "original": "analog-decay (1).html"
+    },
+    {
+      "name": "analog_decay (1).html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/analog_decay (1).html",
+      "original": "analog_decay (1).html"
+    },
+    {
+      "name": "astral-vhs.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/astral-vhs.html",
+      "original": "astral-vhs.html"
+    },
+    {
+      "name": "chroma_codec_shrine_20260618_191140.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/chroma_codec_shrine_20260618_191140.html",
+      "original": "chroma_codec_shrine_20260618_191140.html"
+    },
+    {
+      "name": "chromatophore_codec_shrine_20260618_185338.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/chromatophore_codec_shrine_20260618_185338.html",
+      "original": "chromatophore_codec_shrine_20260618_185338.html"
+    },
+    {
+      "name": "chromatophore_codec_shrine_20260618_190717.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/chromatophore_codec_shrine_20260618_190717.html",
+      "original": "chromatophore_codec_shrine_20260618_190717.html"
+    },
+    {
+      "name": "degraded-signal.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/degraded-signal.html",
+      "original": "degraded-signal.html"
+    },
+    {
+      "name": "geocities_cathedral_20260709_213502.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/geocities_cathedral_20260709_213502.html",
+      "original": "geocities_cathedral_20260709_213502.html"
+    },
+    {
+      "name": "glitchiness1_20260611_151242.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/glitchiness1_20260611_151242.html",
+      "original": "glitchiness1_20260611_151242.html"
+    },
+    {
+      "name": "glitchscape.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/glitchscape.html",
+      "original": "glitchscape.html"
+    },
+    {
+      "name": "magenta-glitch-tape.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/magenta-glitch-tape.html",
+      "original": "magenta-glitch-tape.html"
+    },
+    {
+      "name": "myspace-glitch_20260611_153108.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/myspace-glitch_20260611_153108.html",
+      "original": "myspace-glitch_20260611_153108.html"
+    },
+    {
+      "name": "myspace-glitchscape_20260611_153739 (1).html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/myspace-glitchscape_20260611_153739 (1).html",
+      "original": "myspace-glitchscape_20260611_153739 (1).html"
+    },
+    {
+      "name": "myspace-glitchscape_20260611_153739.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/myspace-glitchscape_20260611_153739.html",
+      "original": "myspace-glitchscape_20260611_153739.html"
+    },
+    {
+      "name": "myspace_glitchscape_20260611_154350.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/myspace_glitchscape_20260611_154350.html",
+      "original": "myspace_glitchscape_20260611_154350.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_151508.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260620_151508.html",
+      "original": "phosphor_reef_engine_20260620_151508.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_180453.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260620_180453.html",
+      "original": "phosphor_reef_engine_20260620_180453.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_204005.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260620_204005.html",
+      "original": "phosphor_reef_engine_20260620_204005.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_210004.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260620_210004.html",
+      "original": "phosphor_reef_engine_20260620_210004.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_210938.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260620_210938.html",
+      "original": "phosphor_reef_engine_20260620_210938.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_212759.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260620_212759.html",
+      "original": "phosphor_reef_engine_20260620_212759.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_233924.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260620_233924.html",
+      "original": "phosphor_reef_engine_20260620_233924.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260620_235032.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260620_235032.html",
+      "original": "phosphor_reef_engine_20260620_235032.html"
+    },
+    {
+      "name": "phosphor_reef_engine_20260621_183223.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_reef_engine_20260621_183223.html",
+      "original": "phosphor_reef_engine_20260621_183223.html"
+    },
+    {
+      "name": "phosphor_signal_reef_20260620_184157.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_signal_reef_20260620_184157.html",
+      "original": "phosphor_signal_reef_20260620_184157.html"
+    },
+    {
+      "name": "phosphor_signal_reef_engine_20260620_203103.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/phosphor_signal_reef_engine_20260620_203103.html",
+      "original": "phosphor_signal_reef_engine_20260620_203103.html"
+    },
+    {
+      "name": "prismatic_tape_oracle.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle.html",
+      "original": "prismatic_tape_oracle.html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260618_194519.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260618_194519.html",
+      "original": "prismatic_tape_oracle_20260618_194519.html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_204529.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260619_204529.html",
+      "original": "prismatic_tape_oracle_20260619_204529.html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_210340.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260619_210340.html",
+      "original": "prismatic_tape_oracle_20260619_210340.html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_213834 (1).html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260619_213834 (1).html",
+      "original": "prismatic_tape_oracle_20260619_213834 (1).html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_213834.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260619_213834.html",
+      "original": "prismatic_tape_oracle_20260619_213834.html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_214625.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260619_214625.html",
+      "original": "prismatic_tape_oracle_20260619_214625.html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_215156 (1).html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260619_215156 (1).html",
+      "original": "prismatic_tape_oracle_20260619_215156 (1).html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260619_215156.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260619_215156.html",
+      "original": "prismatic_tape_oracle_20260619_215156.html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260625_161140 (1).html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260625_161140 (1).html",
+      "original": "prismatic_tape_oracle_20260625_161140 (1).html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260625_161140 (2).html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260625_161140 (2).html",
+      "original": "prismatic_tape_oracle_20260625_161140 (2).html"
+    },
+    {
+      "name": "prismatic_tape_oracle_20260625_161140.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/prismatic_tape_oracle_20260625_161140.html",
+      "original": "prismatic_tape_oracle_20260625_161140.html"
+    },
+    {
+      "name": "rainblow-ditherscape (1).html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/rainblow-ditherscape (1).html",
+      "original": "rainblow-ditherscape (1).html"
+    },
+    {
+      "name": "signal-decay.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/signal-decay.html",
+      "original": "signal-decay.html"
+    },
+    {
+      "name": "subpixel-grid.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/subpixel-grid.html",
+      "original": "subpixel-grid.html"
+    },
+    {
+      "name": "vivid_glitch_decay.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/vivid_glitch_decay.html",
+      "original": "vivid_glitch_decay.html"
+    },
+    {
+      "name": "vivid_glitchcore.html",
+      "type": "legacy-html",
+      "html": "legacy-root-html/vivid_glitchcore.html",
+      "original": "vivid_glitchcore.html"
+    }
+  ]
+}
